@@ -1,2 +1,6 @@
 venv3
 .idea
+node_modules
+./data
+Train.csv
+Train.zip
