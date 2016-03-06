@@ -4,3 +4,5 @@ node_modules
 ./data
 Train.csv
 Train.zip
+TrainClean.csv
+data/pieces
