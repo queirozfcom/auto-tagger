@@ -6,3 +6,4 @@ Train.csv
 Train.zip
 TrainClean.csv
 data/pieces
+__pycache__
