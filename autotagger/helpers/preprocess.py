@@ -1,5 +1,5 @@
 from pandas import read_csv
-
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 def load_dataset(path_to_file, ignore_malformed=True):
     """
@@ -16,4 +16,5 @@ def load_dataset(path_to_file, ignore_malformed=True):
     :return: (samples,labels)
     """
 
-
+    # TODO REMEMBER OFF-BY-1 ERROR!
+    # RECORD N HAS ID N+1
