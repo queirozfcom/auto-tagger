@@ -36,7 +36,6 @@ pyzmq==15.2.0
 qtconsole==4.2.0
 requests==2.8.1
 scikit-learn==0.17.1
--e git+git@github.com:queirozfcom/private-scikit-multilearn.git@d1bdc686dba289cf96864f97bcfe19c345125750#egg=scikit_multilearn
 scipy==0.16.1
 simplegeneric==0.8.1
 six==1.10.0
