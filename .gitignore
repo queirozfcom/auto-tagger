@@ -2,6 +2,7 @@ venv3
 .idea
 node_modules
 ./data
+data/stackoverflow
 Train.csv
 Train.zip
 TrainClean.csv
