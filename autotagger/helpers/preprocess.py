@@ -7,7 +7,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 _datasets = ['stackoverflow']
 
 
-def load_dataset(dataset_name, use_full_dataset=False, ignore_malformed=True):
+def load_dataset(dataset_name, use_full_dataset=False, max_features=1000,
+                 ignore_malformed=True):
     """
     Loads multilabel dataset into scikit-learn default format for posterior learning.
 
@@ -17,6 +18,7 @@ def load_dataset(dataset_name, use_full_dataset=False, ignore_malformed=True):
 
     :param dataset_name: string
     :param use_full_dataset: boolean
+    :param max_features: integer default 1000
     :param ignore_malformed: boolean
     :return: (samples,labels)
     """
@@ -27,22 +29,21 @@ def load_dataset(dataset_name, use_full_dataset=False, ignore_malformed=True):
                                                                   _datasets))
 
     if dataset_name == 'stackoverflow':
-        return _load_stackoverflow(use_full_dataset, ignore_malformed)
+        return _load_stackoverflow(use_full_dataset, max_features,
+                                   ignore_malformed)
 
 
         # TODO REMEMBER OFF-BY-1 ERROR!
         # RECORD N HAS ID N+1
 
 
-def _load_stackoverflow(use_full_dataset, ignore_malformed):
-    max_features = 1000
-
+def _load_stackoverflow(use_full_dataset, max_features, ignore_malformed):
     if use_full_dataset:
         path = "../../../data/stackoverflow/TrainClean.csv"
     else:
         path = "../../../data/stackoverflow/pieces/aa"
 
-    abs_path = os.path.abspath(__file__+"/"+path)
+    abs_path = os.path.abspath(__file__ + "/" + path)
 
     df = read_csv(abs_path,
                   names=['id', 'title', 'body', 'tags'],
