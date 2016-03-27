@@ -9,3 +9,16 @@ TrainClean.csv
 data/pieces
 __pycache__
 venv2
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
