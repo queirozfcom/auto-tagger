@@ -14,10 +14,18 @@ Tag documents. Automatically.
    $ cat Train.csv | tr '\n' ' ' | tr '\r\n' '\n' > TrainClean.csv
    ```
 
-- Break the file into 100 pieces to make debugging easier.
+- Remove the first header line:
 
    ```
-   $ split -n 100 TrainClean.csv pieces/
+   $ tail -n +2 TrainClean.csv > tmp
+   $ rm TrainClean.csv
+   $ mv tmp TrainClean.csv
+   ```
+
+- Break the file into 500MB pieces to make debugging easier.
+
+   ```
+   $ split --line-bytes=500MB TrainClean.csv pieces/
    ```
 
 
