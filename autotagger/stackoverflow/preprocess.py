@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import re
 import pickle
@@ -26,7 +27,7 @@ def load_pickle_sklearn_format(name):
     return X, Y
 
 
-def load_dataset_sklearn_format(max_features=1000):
+def load_stackoverflow_partial_sklearn_format(max_features=1000):
     """
     Loads multilabel dataset into scikit-learn default format for posterior learning.
 

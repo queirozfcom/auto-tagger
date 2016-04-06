@@ -1,4 +1,6 @@
-from autotagger.helpers.preprocess import load_dataset
+from __future__ import print_function
+from autotagger.stackoverflow.preprocess import \
+    load_stackoverflow_partial_sklearn_format
 
 
 def info():
@@ -7,7 +9,7 @@ def info():
 
 
 def binary_relevance():
-    (X, Y) = load_dataset("/home/felipe/auto-tagger/data/pieces/aa")
+    (X, Y) = load_stackoverflow_partial_sklearn_format()
 
     print("Shape of X is {0}\n".format(X.shape))
     print("Shape of Y is {0}\n".format(Y.shape))
