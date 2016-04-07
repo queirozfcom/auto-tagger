@@ -22,3 +22,6 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+data/bibsonomy/
+data/imdb/
+data/steam/
