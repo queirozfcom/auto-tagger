@@ -25,3 +25,4 @@ var/
 data/bibsonomy/
 data/imdb/
 data/steam/
+*.pyc
