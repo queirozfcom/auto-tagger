@@ -1,8 +1,7 @@
 venv3
 .idea
 node_modules
-./data
-data/stackoverflow
+data/
 Train.csv
 Train.zip
 TrainClean.csv
@@ -27,7 +26,11 @@ data/imdb/
 data/steam/
 *.pyc
 
-## scala
+# notebooks
+
+.ipynb_checkpoints/
+
+# scala
 
 ### Scala ###
 *.class

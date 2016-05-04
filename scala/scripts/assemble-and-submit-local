@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+spark_root="/home/felipe/Downloads/spark-1.6.1-bin-hadoop2.6/"
+
+project_root="/home/felipe/auto-tagger/scala/"
+
+
+
+cd "$project_root"
+
+sbt assembly
+
+"$spark_root"bin/spark-submit \
+  --class com.queirozf.Word2Vec\
+  --master local[*]\
+  --conf "spark.driver.memory=6g"\
+  --conf "spark.driver.maxResultSize=2g"\
+  /home/felipe/auto-tagger/scala/target/scala-2.10/auto-tagger-scala-assembly-1.0.jar
