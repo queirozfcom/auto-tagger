@@ -1,5 +1,6 @@
 package com.queirozf
 
+import org.apache.spark.mllib.linalg.DenseVector
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
 import org.apache.spark.sql.Row
@@ -7,11 +8,13 @@ import org.apache.spark.ml.feature._
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
 import org.apache.spark.{SparkContext, SparkConf, Logging}
 import org.apache.spark.sql.functions.udf
+import org.apache.spark.ml.classification.{NaiveBayes, OneVsRest, LogisticRegression}
+
 
 /**
-  * Created by felipe on 04/05/16.
+  * Created by felipe on 05/05/16.
   */
-object Word2Vec extends Logging {
+object MultiLabel extends Logging {
 
   def main(args: Array[String]) {
 
@@ -35,37 +38,46 @@ object Word2Vec extends Logging {
 
     val count = df.count()
 
-
     // no html tags
-    val removeHtmlTags = udf { str: String =>
+    val removeHtmlTagsUDF = udf { str: String =>
       val tagsPat = """<[^>]+>""".r
       tagsPat.replaceAllIn(str, "")
     }
 
     val df1 = df
-      .withColumn("cleanBody", removeHtmlTags(df("body")))
+      .withColumn("cleanBody", removeHtmlTagsUDF(df("body")))
       .drop(df("body"))
 
-    val df2 = new Tokenizer()
-      .setInputCol("cleanBody")
-      .setOutputCol("bodyTokens")
-      .transform(df1)
-      .drop(df1("cleanBody"))
+    val splitOnSpaceUDF = udf { str: String =>
+      str.split(" ")
+    }
 
-    val word2Vec = new Word2Vec()
-      .setInputCol("bodyTokens")
-      .setOutputCol("vectors")
-      .setVectorSize(50)
-      .setMinCount(10)
+    val df2 = df1
+      .withColumn("tags-array", splitOnSpaceUDF(df1("tags")))
+      .drop(df1("tags"))
 
-    val df3 = word2Vec.fit(df2).transform(df2)
+//    val toLinalgVectorUDF = udf{ arr:Array[String] =>
+//      new DenseVector()
+//    }
 
-    println("--------------")
-    println("--------------")
-    println("--------------")
-    println("--------------")
-    df3.show()
+    val indexer = new VectorIndexer()
+      .setInputCol("tags-array")
+      .setOutputCol("tags-indexes")
+      .fit(df2)
 
+
+    val base = new LogisticRegression()
+
+    val ovr = new OneVsRest()
+    ovr.setClassifier(base)
+    val  ovrModel = ovr.fit(df2)
+
+
+    //    val encoder = new OneHotEncoder()
+    //      .setInputCol("tags-array")
+    //      .setOutputCol("tags")
+    //
+    //    val df3 = encoder.transform(df2)
 
 
   }

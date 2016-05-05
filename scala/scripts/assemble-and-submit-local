@@ -4,8 +4,6 @@ spark_root="/home/felipe/Downloads/spark-1.6.1-bin-hadoop2.6/"
 
 project_root="/home/felipe/auto-tagger/scala/"
 
-
-
 cd "$project_root"
 
 sbt assembly
