@@ -17,12 +17,19 @@ object ReadRawRCV1 extends App {
 
   val inputDir = s"${projectDir}extracted/"
 
+  val inputFileSingle = s"${projectDir}reuters-full.xml"
+
   val outputDir = s"${projectDir}csv"
+
+  val outputDirParquet = s"${projectDir}parquet"
 
   val spark = SparkSession
     .builder()
     .appName("Spark SQL basic example")
     .getOrCreate()
+
+//  spark.sqlContext.setConf("spark.sql.small.file.combine","true")
+
 
   //  val customSchema = StructType(Array(
   //    StructField("_itemid", StringType, nullable = true),
@@ -55,20 +62,29 @@ object ReadRawRCV1 extends App {
     matches
   }
 
+
+
+//    val dflite = spark.sqlContext.read
+//      .format("com.databricks.spark.xml")
+//      .schema(customSchema)
+//      .option("rowTag", "newsitem")
+//      .load(s"$inputDir/104239newsML.xml")
+
+
+
+
   val extractCodesUdf = udf(extractCodes _)
 
-  //  val dflite = spark.sqlContext.read
-  //    .format("com.databricks.spark.xml")
-  //    .schema(customSchema)
-  //    .option("rowTag", "newsitem")
-  //    .load(s"$inputDir/104239newsML.xml")
 
 
-  val df: DataFrame = spark.sqlContext.read
+  println(spark.sqlContext.getAllConfs)
+
+    val df: DataFrame = spark.sqlContext.read
     .format("com.databricks.spark.xml")
     .schema(customSchema)
     .option("rowTag", "newsitem")
-    .load(s"$inputDir/")
+    .load(s"$inputFileSingle")
+    .repartition(1)
 
   val dfout = df
     .select(
@@ -79,7 +95,6 @@ object ReadRawRCV1 extends App {
 
 
   dfout
-    .repartition(1)
     .write
     .option("quoteAll", true)
     .mode(SaveMode.Overwrite)
