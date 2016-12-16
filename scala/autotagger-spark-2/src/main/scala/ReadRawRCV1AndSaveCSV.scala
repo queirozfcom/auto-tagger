@@ -9,7 +9,7 @@ import org.apache.spark.sql.functions.udf
 /**
   * Created by felipe on 04/12/16.
   */
-object ReadRawRCV1 extends App {
+object ReadRawRCV1AndSaveCSV extends App {
 
   val homeDir = System.getenv("HOME")
 
