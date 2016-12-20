@@ -15,7 +15,9 @@ object CleanAndOneHot extends App {
 
   val projectDir = s"file://$homeDir/auto-tagger/data/RawRCV1/csv"
 
-  val inputFileSingle = s"${projectDir}/reuters-rcv1-full.csv"
+//  val inputFileSingle = s"${projectDir}/reuters-rcv1-full.csv"
+
+  val inputFileSingle = s"${projectDir}/xaa"
 
   val outputDir = s"${projectDir}/csv/out"
 
