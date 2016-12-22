@@ -3,8 +3,12 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql._
 
+import org.apache.spark.ml.feature._
+
 import scala.collection.mutable
 import org.apache.spark.sql.functions.udf
+
+import org.apache.spark.mllib.linalg._
 
 /**
   * Created by felipe on 16/12/16.
@@ -40,8 +44,6 @@ object CleanAndOneHot extends App {
   val df = spark.read.schema(schema).csv(inputFileSingle)
 
   val df2 = df.select(df("id"),df("title"),df("text"),splitStringColumnUdf(df("tags")).as("tagsArray")).drop(df("tags"))
-
-
 
   val ds = df2.as[(Array[String], String, String, String)]
 
