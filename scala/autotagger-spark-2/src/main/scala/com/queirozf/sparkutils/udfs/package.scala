@@ -10,7 +10,7 @@ import scala.collection.JavaConverters._
   */
 package object udfs {
 
-  private def extractCodes(metadataColumn: String): String = {
+  def extractCodes(metadataColumn: String): String = {
     val Pat = """<code code='([^']+)'>""".r
     val matches = Pat.findAllMatchIn(metadataColumn).toList.map(m => m.group(1)).mkString(",")
     matches

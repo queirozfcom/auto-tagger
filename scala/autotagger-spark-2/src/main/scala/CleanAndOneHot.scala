@@ -1,4 +1,6 @@
+import com.queirozf.sparkutils.VectorReducers
 import com.queirozf.sparkutils.udfs.splitStringColumnUdf
+import org.apache.spark.ml
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql._
@@ -7,7 +9,7 @@ import org.apache.spark.sql.expressions.UserDefinedFunction
 
 import scala.collection.mutable
 import org.apache.spark.sql.functions.udf
-import org.apache.spark.mllib.linalg._
+import org.apache.spark.ml.linalg._
 import org.apache.spark.rdd.RDD
 
 /**
@@ -17,7 +19,7 @@ object CleanAndOneHot extends App {
 
   val homeDir = System.getenv("HOME")
 
-  val projectDir = s"file://$homeDir/auto-tagger/data/RawRCV1/csv"
+  val projectDir = s"file://$homeDir/auto-tagger/data/RawRCV1/csv/in"
 
   //  val inputFileSingle = s"${projectDir}/reuters-rcv1-full.csv"
 
@@ -50,14 +52,15 @@ object CleanAndOneHot extends App {
     )
   )
 
-  case class Document(id: String, title: String, text: String, tagsArray: Array[String])
 
+  //  case class Document(id: String, title: String, text: String, tagsArray: Array[String])
+  //
 
   val df: DataFrame = spark.read.schema(schemaMultiLabel).csv(inputFileSingle)
 
   val df2 = df.select(df("id"), df("title"), df("text"), splitStringColumnUdf(df("tags")).as("tagsArray")).drop(df("tags"))
 
-  val ds: Dataset[Document] = df2.as[Document]
+  //  val ds: Dataset[Document] = df2.as[Document]
 
   val singleLabelRdd: RDD[Row] = df2.rdd.flatMap { case Row(id: String, title: String, text: String, tagsArray: mutable.WrappedArray[_]) =>
     tagsArray.map(aTag => Row(id, title, text, aTag))
@@ -74,15 +77,20 @@ object CleanAndOneHot extends App {
 
   val encoded = encoder.transform(indexed).drop("tagIndex")
 
-  
 
-  //  val ds = df2.as[(Array[String], String, String, String)]
+  val mergedRdd = encoded.rdd
+    .map { case Row(id: String, title: String, text: String, tagsVector: Vector) => ((id, title, text), tagsVector) }
+    .reduceByKey(VectorReducers.or _)
+    .map { case ((id: String, title: String, text: String), tags: Vector) => Row(id, title, text, tags.toArray.mkString(",")) }
 
+  val mergedDf = spark.createDataFrame(mergedRdd, schemaMultiLabel)
 
-  // works lazily but errors if I call count() or any other action
-  //  ds.flatMap{ case Document(id,title,text,tags) => tags.map(t => (id,title,text,t))}
-
-  //  val df3 = ds.toDF()
+  mergedDf
+    .repartition(1)
+    .write
+    .option("quoteAll", true)
+    .mode(SaveMode.Overwrite)
+    .csv(outputDir)
 
 
 }
