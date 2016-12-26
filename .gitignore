@@ -30,6 +30,10 @@ data/steam/
 
 .ipynb_checkpoints/
 
+# my custom stuff
+
+venv3-tf
+
 # scala
 
 ### Scala ###
