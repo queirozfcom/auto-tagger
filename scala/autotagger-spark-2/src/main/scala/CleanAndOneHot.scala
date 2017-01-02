@@ -60,8 +60,6 @@ object CleanAndOneHot extends App {
 
   val df2 = df.select(df("id"), df("title"), df("text"), splitStringColumnUdf(df("tags")).as("tagsArray")).drop(df("tags"))
 
-  //  val ds: Dataset[Document] = df2.as[Document]
-
   val singleLabelRdd: RDD[Row] = df2.rdd.flatMap { case Row(id: String, title: String, text: String, tagsArray: mutable.WrappedArray[_]) =>
     tagsArray.map(aTag => Row(id, title, text, aTag))
   }

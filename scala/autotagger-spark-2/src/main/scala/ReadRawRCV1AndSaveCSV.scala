@@ -28,7 +28,7 @@ object ReadRawRCV1AndSaveCSV extends App {
     .appName("Spark SQL basic example")
     .getOrCreate()
 
-//  spark.sqlContext.setConf("spark.sql.small.file.combine","true")
+  //  spark.sqlContext.setConf("spark.sql.small.file.combine","true")
 
 
   //  val customSchema = StructType(Array(
@@ -56,30 +56,15 @@ object ReadRawRCV1AndSaveCSV extends App {
     StructField("text", StringType, nullable = true),
     StructField("metadata", StringType, nullable = true)))
 
-  def extractCodes(metadataColumn: String): String = {
+  val extractCodesUdf = udf { input: String =>
     val Pat = """<code code='([^']+)'>""".r
-    val matches = Pat.findAllMatchIn(metadataColumn).toList.map(m => m.group(1)).mkString(",")
+    val matches = Pat.findAllMatchIn(input).toList.map(m => m.group(1)).mkString(",")
     matches
   }
 
-
-
-//    val dflite = spark.sqlContext.read
-//      .format("com.databricks.spark.xml")
-//      .schema(customSchema)
-//      .option("rowTag", "newsitem")
-//      .load(s"$inputDir/104239newsML.xml")
-
-
-
-
-  val extractCodesUdf = udf(extractCodes _)
-
-
-
   println(spark.sqlContext.getAllConfs)
 
-    val df: DataFrame = spark.sqlContext.read
+  val df: DataFrame = spark.sqlContext.read
     .format("com.databricks.spark.xml")
     .schema(customSchema)
     .option("rowTag", "newsitem")
