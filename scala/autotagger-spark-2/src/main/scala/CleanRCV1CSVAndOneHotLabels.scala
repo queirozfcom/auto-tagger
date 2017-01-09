@@ -15,11 +15,11 @@ import org.apache.spark.rdd.RDD
 /**
   * Created by felipe on 16/12/16.
   */
-object CleanAndOneHot extends App {
+object CleanRCV1CSVAndOneHotLabels extends App {
 
   val homeDir = System.getenv("HOME")
 
-  val projectDir = s"file://$homeDir/auto-tagger/data/RawRCV1/csv/in"
+  val projectDir = s"file://$homeDir/auto-tagger/data/rcv1/csv/in"
 
   //  val inputFileSingle = s"${projectDir}/reuters-rcv1-full.csv"
 
