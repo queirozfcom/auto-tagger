@@ -18,9 +18,9 @@ object ReadCSVAndTokenizeDocuments extends App {
 
   val projectDir = s"file://$homeDir/auto-tagger/data/rcv1"
 
-  //  val inputFileSingle = s"${projectDir}/reuters-rcv1-full.csv"
+  val fullInputFileSingle = s"${projectDir}/csv/in/reuters-rcv1-full.csv"
 
-  val inputFileSingle = s"${projectDir}/csv/in/xaa"
+  val sampleInputFileSingle = s"${projectDir}/csv/in/xaa"
 
   val outputPath = s"${projectDir}/string/out"
 
@@ -46,8 +46,9 @@ object ReadCSVAndTokenizeDocuments extends App {
     .option("mode", "DROPMALFORMED")
     .option("escape","""\""")
     .schema(schema)
-    .csv(inputFileSingle)
+    .csv(fullInputFileSingle)
     .as[Document]
+    .filter( d => d.text != null)
 
 
   val clean = ds.map {
@@ -73,7 +74,7 @@ object ReadCSVAndTokenizeDocuments extends App {
   val mergedDf: DataFrame = tokenizedDf.select(mkStringUdf(tokenizedDf.col("words")).as("textString"))
 
   mergedDf
-    .repartition(1)
+    .repartition(10)
     .write
     .mode(SaveMode.Overwrite)
     .text(outputPath)
