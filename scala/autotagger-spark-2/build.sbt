@@ -2,10 +2,11 @@ name := "autotagger-spark-2"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
 
+resolvers += Resolver.bintrayRepo("queirozfcom","maven")
 
-val sparkVersion = "2.0.2"
+val sparkVersion = "2.1.0"
 
 resolvers += Resolver.mavenLocal
 
@@ -15,6 +16,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion
 
 libraryDependencies += "com.databricks" %% "spark-xml" % "0.4.1"
+//libraryDependencies += "com.queirozf" %% "spark-xml" % "0.4.7"
 
 assemblyMergeStrategy in assembly := {
   case PathList("com", "typesafe", xs@_*) => MergeStrategy.first
@@ -28,6 +30,7 @@ assemblyMergeStrategy in assembly := {
   case PathList("com", "codahale", xs@_*) => MergeStrategy.last
   case PathList("com", "yammer", xs@_*) => MergeStrategy.last
   case "about.html" => MergeStrategy.rename
+  case "overview.html" => MergeStrategy.rename
   case "META-INF/ECLIPSEF.RSA" => MergeStrategy.last
   case "META-INF/mailcap" => MergeStrategy.last
   case "META-INF/mimetypes.default" => MergeStrategy.last

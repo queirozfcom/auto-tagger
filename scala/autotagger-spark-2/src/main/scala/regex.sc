@@ -1,8 +1,10 @@
 
 
-val input = """foo bar-..7 90foo"""
+val input = """<foobar>adsadsa</foobar>"""
 
-input.split("""\W+""")
+val pat = "<[^>]+>".r
+
+pat.replaceAllIn(input,"")
 
 val arr = Array.empty[String]
 
