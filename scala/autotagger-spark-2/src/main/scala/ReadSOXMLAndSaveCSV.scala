@@ -37,7 +37,7 @@ object ReadSOXMLAndSaveCSV extends App {
   case class Post(id:String, title: String, body: String, tags: String)
   case class Post2(id:String, title: String, body: String, tags: Array[String])
 
-//  println(spark.sqlContext.getAllConfs)
+
 
   val df: DataFrame = spark.sqlContext.read
     .option("mode", "DROPMALFORMED")
@@ -45,7 +45,7 @@ object ReadSOXMLAndSaveCSV extends App {
     .schema(customSchema)
     .option("rowTag", "row")
     .load(s"$pathToInputXML")
-    .repartition(200)
+    .repartition(1)
 
   val dsout = df
     .where( df.col("_PostTypeId") === "1" )
