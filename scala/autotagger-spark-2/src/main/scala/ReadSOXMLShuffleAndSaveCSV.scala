@@ -8,17 +8,27 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions.udf
 import com.queirozf.sparkutils.udfs.splitStringColumnUdf
+import org.apache.spark.sql.functions.rand
 
 /**
   * Created by felipe on 27/04/17.
   */
-object ReadSOXMLAndSaveCSV extends App {
+object ReadSOXMLShuffleAndSaveCSV extends App {
+
+  // reads an xml file containing posts, selects only questions (type ==1)
+
+
+  val SEED = 42
 
   val pathToInputXML = args(0)
 
+  val numPartitions = args(1).toInt
+
+  //  val outNumPartitions = args(2).toInt
+
   val output = pathToInputXML.replace(".xml", "-csv")
 
-//  val output = "/home/felipe/spark-output"
+  //  val output = "/home/felipe/spark-output"
 
   val spark = SparkSession
     .builder()
@@ -34,9 +44,9 @@ object ReadSOXMLAndSaveCSV extends App {
     StructField("_Body", StringType, nullable = true),
     StructField("_Tags", StringType, nullable = true)))
 
-  case class Post(id:String, title: String, body: String, tags: String)
-  case class Post2(id:String, title: String, body: String, tags: Array[String])
+  case class Post(id: String, title: String, body: String, tags: String)
 
+  case class Post2(id: String, title: String, body: String, tags: Array[String])
 
 
   val df: DataFrame = spark.sqlContext.read
@@ -45,36 +55,30 @@ object ReadSOXMLAndSaveCSV extends App {
     .schema(customSchema)
     .option("rowTag", "row")
     .load(s"$pathToInputXML")
-    .repartition(1)
+    .repartition(numPartitions)
 
-  val dsout = df
-    .where( df.col("_PostTypeId") === "1" )
+  println(s"\n\nNUM PARTITIONS: ${df.rdd.getNumPartitions}\n\n")
+
+  df
+    .where(df.col("_PostTypeId") === "1")
     .select(
       df("_Id").as("id"),
       df("_Title").as("title"),
       df("_Body").as("body"),
       df("_Tags").as("tags")
     ).as[Post]
-
-  val tagPat = "<[^>]+>".r
-
-  val angularBracketsPat = "><|>|<"
-
-  val whitespacePat = """\s+""".r
-
-  dsout
-    .map{
-      case Post(id,title,body,tags) =>
-
-        val body1 = tagPat.replaceAllIn(body,"")
-        val body2 = whitespacePat.replaceAllIn(body1," ")
-
-        Post(id,title.toLowerCase,body2.toLowerCase, tags.split(angularBracketsPat).mkString(","))
-
+    .map {
+      case Post(id, title, body, tags) =>
+        Post(id, title.toLowerCase, body.toLowerCase, tags.toLowerCase)
     }
-    .write
-    .option("quoteAll", true)
-    .mode(SaveMode.Overwrite)
-    .csv(output)
+    .foreachPartition { rdd =>
+      if (rdd.nonEmpty) {
+        println(s"HI! I'm an RDD and I have ${rdd.size} elements!")
+      }
+    }
+  //    .write
+  //    .option("quoteAll", true)
+  //    .mode(SaveMode.Overwrite)
+  //    .csv(output)
 
 }
