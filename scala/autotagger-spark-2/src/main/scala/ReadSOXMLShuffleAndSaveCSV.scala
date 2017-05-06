@@ -16,6 +16,7 @@ import org.apache.spark.sql.functions.rand
 object ReadSOXMLShuffleAndSaveCSV extends App {
 
   // reads an xml file containing posts, selects only questions (type ==1)
+  // using spark-xml
 
 
   val SEED = 42
@@ -71,6 +72,7 @@ object ReadSOXMLShuffleAndSaveCSV extends App {
       case Post(id, title, body, tags) =>
         Post(id, title.toLowerCase, body.toLowerCase, tags.toLowerCase)
     }
+    .orderBy(rand(SEED))
     .foreachPartition { rdd =>
       if (rdd.nonEmpty) {
         println(s"HI! I'm an RDD and I have ${rdd.size} elements!")

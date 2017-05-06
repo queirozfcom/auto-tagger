@@ -25,7 +25,6 @@ for root, directories, filenames in os.walk(path):
         # in python 3 print needs parens    
         print(os.path.join(root, directory))
     for filename in filenames:
-        # in python 3 print needs parens
 
         full_path_to_file = os.path.join(root,filename)
 
@@ -38,13 +37,3 @@ for root, directories, filenames in os.walk(path):
         with open(full_path_to_file,'w') as f:    
             for _, line in data:
                 f.write(line)
-                
-
-# print 'This script was passed', len(sys.argv), 'arguments.'
-# print 'Arguments:', str(sys.argv)
-
-# [[ "$source" != "" ]]
-
-# for f in some/path/*; do
-#   echo "$f"
-# done 

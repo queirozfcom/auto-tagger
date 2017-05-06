@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+source="$1"
+num_lines="$2"
+
+
+[[ "$source" != "" ]]
+[[ "$num_lines" != "" ]]
+
+shuf -n "$num_lines" "$source" | sed 's/ \/>/><foo bar="quux"><\/foo><\/row>/'
