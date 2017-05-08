@@ -54,7 +54,7 @@ def read_glove_100():
     return embeddings_index
 
 def read_stackoverflow_sample_small():
-    path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Small-Sample-Posts-csv/Small-Sample-Posts.csv"
+    path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/Small-Sample-Posts-Shuffled.csv"
 
     texts = []
     labels_index = {}
@@ -69,7 +69,7 @@ def read_stackoverflow_sample_small():
 
             text = title + " " + body
 
-            tags_array = tags.split(',') 
+            tags_array = [t.strip() for t in tags.split(',')] 
 
             texts.append(text)
             labels.append(tags_array)
