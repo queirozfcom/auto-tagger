@@ -33,11 +33,20 @@ def get_probabilities_index(Y):
             
     return proportion_index
     
+def get_predicted_indices_by_threshold(predicted_tag_probabilities,
+                                   threshold=0.08):
+    
+    predicted_label_indices= np.zeros(len(predicted_tag_probabilities),dtype='int64')
+    
+    predicted_label_indices[predicted_tag_probabilities > threshold] = 1
 
-def get_predicted_indices(
+    return predicted_label_indices
+    
+    
+def get_predicted_indices_by_tag_doc_fraction(
     tag_probabilities_index,
     predicted_tag_probabilities,
-    relative_difference_threshold):
+    relative_difference_threshold=None):
     """
     
     (if predicted_index is not in the index, assume the average over all tags
@@ -57,7 +66,7 @@ def get_predicted_indices(
         
         relative_difference = (prob-avg_prob)/avg_prob
         
-        if avg_prob is None:
+        if avg_prob is None or relative_difference_threshold is None:
             if prob > mean_over_all_tags:
                 output.append(1)
             else:
@@ -70,6 +79,31 @@ def get_predicted_indices(
 
     return np.array(output).reshape(1,-1)
     
+    
+def get_top_k_predicted_indices(
+    predicted_tag_probabilities,
+    k=5):
+    """
+    
+    (if predicted_index is not in the index, assume the average over all tags
+    """
+    
+    
+    tags_probs = [ (tag,prob) for tag,prob in enumerate(predicted_tag_probabilities.ravel())]
+   
+    sorted_tags_probs = sorted(tags_probs,key=lambda tpl:tpl[1],reverse=True)
+       
+    tags_ordered = [tag for tag,_ in sorted_tags_probs][:k]
+    
+    predicted_label_indices = np.zeros(len(tags_probs),dtype='int64')
+       
+    predicted_label_indices[tags_ordered] = 1   
+       
+    predicted_label_indices = predicted_label_indices.reshape(1,-1)
+    
+    return predicted_label_indices
+   
+
     
 def truncate_labels(labels,min_doc_count):
     """

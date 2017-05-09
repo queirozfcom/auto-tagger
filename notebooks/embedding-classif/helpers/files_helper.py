@@ -39,11 +39,18 @@ def read_20_newgroup_files():
         
     return (texts,labels_index,labels)
 
-def read_glove_100():
+def read_glove(d=100):
+    
+    supported_dimensions = [50,100,200,300]
+    
+    if d not in supported_dimensions:
+        raise ValueError("argument d must be one of {0}".format(",".join(supported_dimensions)))
+    
+    
     GLOVE_DIR = "/media/felipe/SAMSUNG/GloVe"
     embeddings_index = {}
 
-    with open(os.path.join(GLOVE_DIR,"glove.6B.100d.txt"),'r') as f:
+    with open(os.path.join(GLOVE_DIR,"glove.6B.{0}d.txt".format(d)),'r') as f:
         for line in f:
             values = line.split()
             word = values[0]
@@ -74,6 +81,30 @@ def read_stackoverflow_sample_small():
             texts.append(text)
             labels.append(tags_array)
 
-    return(texts,labels)             
+    return(texts,labels)
+
+def read_stackoverflow_sample_medium():
+    path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/Medium-Sample-Posts-Shuffled.csv"
+
+    texts = []
+    labels_index = {}
+    labels = []
+
+    with open(path_to_file,'r') as f:
+        reader = csv.reader(f,quotechar='"', delimiter=',',
+                     escapechar='\\', skipinitialspace=True)
+
+        for line in reader:
+            id,title,body,tags = line[0],line[1],line[2],line[3].strip(',')
+
+            text = title + " " + body
+
+            tags_array = [t.strip() for t in tags.split(',')] 
+
+            texts.append(text)
+            labels.append(tags_array)
+
+    return(texts,labels)   
+
             
      
