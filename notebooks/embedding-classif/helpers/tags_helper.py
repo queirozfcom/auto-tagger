@@ -46,6 +46,7 @@ def get_predicted_indices_by_threshold(predicted_tag_probabilities,
 def get_predicted_indices_by_tag_doc_fraction(
     tag_probabilities_index,
     predicted_tag_probabilities,
+    multiplier=1.0,
     relative_difference_threshold=None):
     """
     
@@ -66,12 +67,17 @@ def get_predicted_indices_by_tag_doc_fraction(
         
         relative_difference = (prob-avg_prob)/avg_prob
         
-        if avg_prob is None or relative_difference_threshold is None:
+        if avg_prob is None:
             if prob > mean_over_all_tags:
                 output.append(1)
             else:
                 output.append(0)
-        else:
+        elif relative_difference_threshold is None:
+            if prob > avg_prob * multiplier:
+                output.append(1)
+            else:
+                output.append(0)
+        else:   
             if prob > avg_prob and relative_difference > relative_difference_threshold:
                 output.append(1)
             else:
