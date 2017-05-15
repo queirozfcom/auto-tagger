@@ -35,12 +35,19 @@ def get_probabilities_index(Y):
     
 def get_predicted_indices_by_threshold(predicted_tag_probabilities,
                                    threshold=0.08):
+    """
+    returns a binary 1-row matrix (1 row, N columns), where each 
+    element==1 means that tag is predicted to be true, while a 
+    0 element means that tag is predicted not to be active
+    """
     
     predicted_label_indices= np.zeros(len(predicted_tag_probabilities),dtype='int64')
     
     predicted_label_indices[predicted_tag_probabilities > threshold] = 1
 
-    return predicted_label_indices
+    predicted_label_indices_as_matrix = predicted_label_indices.reshape(1,-1)
+    
+    return predicted_label_indices_as_matrix
     
     
 def get_predicted_indices_by_tag_doc_fraction(
