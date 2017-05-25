@@ -90,7 +90,7 @@ def read_glove_weighted(d,weight_index):
             overall +=1        
             embeddings_index[word] = coefs * weight
            
-    print("overall, {0} out of {1} embeddings were weighted".format(matches,overall))
+    print("overall, {0} out of {1} embeddings were weighted. Total available embeddings: {2}".format(matches, len(weight_index), overall))
     
     return embeddings_index    
       
