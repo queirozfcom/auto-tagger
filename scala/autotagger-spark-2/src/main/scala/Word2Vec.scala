@@ -1,17 +1,14 @@
-package com.queirozf
-
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
 import org.apache.spark.sql.Row
 import org.apache.spark.ml.feature._
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
-import org.apache.spark.{SparkContext, SparkConf, Logging}
+import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.sql.functions.udf
 
-/**
-  * Created by felipe on 04/05/16.
-  */
-object Word2Vec extends Logging {
+// this example was written for spark 1.6.x and has not yet been converted to spark 2.x format.
+// it might work, but it may not.
+object Word2Vec  {
 
   def main(args: Array[String]) {
 

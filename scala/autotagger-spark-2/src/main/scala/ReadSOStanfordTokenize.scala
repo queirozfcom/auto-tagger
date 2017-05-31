@@ -8,13 +8,18 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions.udf
 import com.queirozf.sparkutils.udfs.splitStringColumnUdf
-
 import org.apache.commons.lang3.StringEscapeUtils
+import org.apache.spark.sql.functions.rand
+import java.io.StringReader
+
+import edu.stanford.nlp.process.PTBTokenizer
+import edu.stanford.nlp.ling.CoreLabel
+import edu.stanford.nlp.process.CoreLabelTokenFactory
 
 /**
   * Created by felipe on 27/04/17.
   */
-object ReadSOShuffleAndSaveCSV extends App {
+object ReadSOStanfordTokenize extends App {
 
   // reads an xml file containing posts, selects only questions (type ==1)
   // using regular sc.TextFile because spark-xml crashes evrything
@@ -24,6 +29,7 @@ object ReadSOShuffleAndSaveCSV extends App {
   val SEED = 42
 
   val rng = scala.util.Random
+
   rng.setSeed(SEED)
 
   val pathToInputFile = args(0)
@@ -32,7 +38,10 @@ object ReadSOShuffleAndSaveCSV extends App {
 
   val outNumPartitions = args(2).toInt
 
-  val output = pathToInputFile.replace(".xml", "-shuffled")
+  val pathToOutputFile = pathToInputFile.replace(".xml", ".txt")
+
+
+  val OPTIONS = "ptb3Escaping=false,asciiQuotes=true"
 
   val spark = SparkSession
     .builder()
@@ -40,65 +49,59 @@ object ReadSOShuffleAndSaveCSV extends App {
     .getOrCreate()
 
 
-  case class Post(id: String, title: String, body: String, tags: String)
+  case class Post(title: String, body: String)
 
   import spark.implicits._
 
-  val rdd = spark.sparkContext.textFile(pathToInputFile, numPartitions)
+  val HTML_TAGS_PATTERN = """<[^>]+>""".r
 
-  val htmlTagsPat = """<[^>]+>""".r
+  val WHITESPACE_OR_NEWLINE_PATTERN = """\s+|\R+""".r
 
-  val whitespaceOrNewlinePat = """\s+|\R+""".r
 
-  val tagspat = """<|>"""
-
-  rdd
-    .filter { str => str.startsWith("  <row ") && str.contains("""PostTypeId="1"""") }
+  spark
+    .sparkContext
+    .textFile(pathToInputFile, numPartitions)
+    .filter { str => str.startsWith("  <row ") }
     .sortBy(_ => rng.nextInt(), numPartitions = outNumPartitions)
-    .toDS()
     .map { str =>
 
       val parts = str.split(""""""")
 
-      var id: String = ""
       var title: String = ""
       var body: String = ""
-      var tags: String = ""
 
       // these fields sometimes come out of order so we can't just say that part(3) is always field "title"
+      // also, only  questions have titles, answers only have body
       parts.zipWithIndex.foreach { case (s, idx) =>
 
-        if (s.trim == "<row Id=") id = parts(idx + 1)
         if (s.trim == "Body=") body = parts(idx + 1)
         if (s.trim == "Title=") title = parts(idx + 1)
-        if (s.trim == "Tags=") tags = parts(idx + 1)
 
       }
-
-      id = id.trim
 
       title = StringEscapeUtils.unescapeXml(title).toLowerCase.trim
 
       body = StringEscapeUtils.unescapeXml(body).toLowerCase // decode xml entities
-      body = htmlTagsPat.replaceAllIn(body, " ") // take out htmltags
-      body = whitespaceOrNewlinePat.replaceAllIn(body, " ").trim // replace multiple whitespaces with a single one
+      body = HTML_TAGS_PATTERN.replaceAllIn(body, " ") // take out htmltags
+      body = WHITESPACE_OR_NEWLINE_PATTERN.replaceAllIn(body, " ").trim // replace multiple whitespaces with a single one
 
-      tags = StringEscapeUtils.unescapeXml(tags).toLowerCase
-      // TODO FIXME
-      tags = tags.split(tagspat).filterNot(s => s.trim == "" || s.trim == ",").mkString(", ").trim
+      val rawText = title + " " + body
 
-      Post(
-        id,
-        title,
-        body,
-        tags
-      )
+      val tok = new PTBTokenizer[CoreLabel](
+        new StringReader(rawText),
+        new CoreLabelTokenFactory(),
+        OPTIONS)
+
+      var out: String = ""
+
+      while (tok.hasNext){
+        val next = tok.next()
+        out += " " + next
+      }
+
+      out
 
     }
-    .toDF()
-    .write
-    .option("quoteAll", true)
-    .mode(SaveMode.Overwrite)
-    .csv(output)
+    .saveAsTextFile(pathToOutputFile)
 
 }

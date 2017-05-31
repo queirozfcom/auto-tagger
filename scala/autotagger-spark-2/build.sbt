@@ -16,7 +16,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion
 
 libraryDependencies += "com.databricks" %% "spark-xml" % "0.4.1"
-//libraryDependencies += "com.queirozf" %% "spark-xml" % "0.4.7"
+libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
 
 assemblyMergeStrategy in assembly := {
   case PathList("com", "typesafe", xs@_*) => MergeStrategy.first

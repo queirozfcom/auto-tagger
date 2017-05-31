@@ -1,20 +1,18 @@
-package com.queirozf
-
 import org.apache.spark.mllib.linalg.DenseVector
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
 import org.apache.spark.sql.Row
 import org.apache.spark.ml.feature._
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType}
-import org.apache.spark.{SparkContext, SparkConf, Logging}
+import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.sql.functions.udf
 import org.apache.spark.ml.classification.{NaiveBayes, OneVsRest, LogisticRegression}
 
 
-/**
-  * Created by felipe on 05/05/16.
-  */
-object MultiLabel extends Logging {
+
+// this example was written for spark 1.6.x and has not yet been converted to spark 2.x format.
+// it might work, but it may not.
+object MultiLabel {
 
   def main(args: Array[String]) {
 
@@ -56,9 +54,9 @@ object MultiLabel extends Logging {
       .withColumn("tags-array", splitOnSpaceUDF(df1("tags")))
       .drop(df1("tags"))
 
-//    val toLinalgVectorUDF = udf{ arr:Array[String] =>
-//      new DenseVector()
-//    }
+    //    val toLinalgVectorUDF = udf{ arr:Array[String] =>
+    //      new DenseVector()
+    //    }
 
     val indexer = new VectorIndexer()
       .setInputCol("tags-array")
