@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+num_expected_args=0
+num_args=$#
+description="
+Takes all files ending in .txt in the CWD, replaces newlines
+with spaces and join all files, output to STDOUT.
+"
+
+if [ "$num_args" -neq "$num_expected_args" ]; then
+  echo "$description";
+  return
+
+fi
+

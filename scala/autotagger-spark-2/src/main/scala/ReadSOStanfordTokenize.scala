@@ -11,7 +11,9 @@ import com.queirozf.sparkutils.udfs.splitStringColumnUdf
 import org.apache.commons.lang3.StringEscapeUtils
 import org.apache.spark.sql.functions.rand
 import java.io.StringReader
+import java.util.Locale
 
+import ReadCSVAndTokenizeDocuments.outputPath
 import edu.stanford.nlp.process.PTBTokenizer
 import edu.stanford.nlp.ling.CoreLabel
 import edu.stanford.nlp.process.CoreLabelTokenFactory
@@ -36,12 +38,13 @@ object ReadSOStanfordTokenize extends App {
 
   val numPartitions = args(1).toInt
 
-  val outNumPartitions = args(2).toInt
+  //  val outNumPartitions = args(2).toInt
 
   val pathToOutputFile = pathToInputFile.replace(".xml", ".txt")
 
 
-  val OPTIONS = "ptb3Escaping=false,asciiQuotes=true"
+  //  val OPTIONS = "ptb3Escaping=false,asciiQuotes=true"
+  val OPTIONS = "ptb3Escaping=false"
 
   val spark = SparkSession
     .builder()
@@ -53,19 +56,28 @@ object ReadSOStanfordTokenize extends App {
 
   import spark.implicits._
 
-  val HTML_TAGS_PATTERN = """<[^>]+>""".r
+  val HTML_TAGS_PATTERN = """<[^>]+>"""
 
-  val WHITESPACE_OR_NEWLINE_PATTERN = """\s+|\R+""".r
+  val WHITESPACE_OR_NEWLINE_PATTERN = """\s+|\R+"""
 
+  import java.util.Locale
+
+  Locale.setDefault(new Locale("en", "US"))
 
   spark
     .sparkContext
     .textFile(pathToInputFile, numPartitions)
     .filter { str => str.startsWith("  <row ") }
-    .sortBy(_ => rng.nextInt(), numPartitions = outNumPartitions)
+    .toDS()
     .map { str =>
 
+      Locale.setDefault(new Locale("en", "US"))
+
       val parts = str.split(""""""")
+
+      val locale = Locale.getDefault
+
+      println("locale is: " + locale.getDisplayName)
 
       var title: String = ""
       var body: String = ""
@@ -80,10 +92,11 @@ object ReadSOStanfordTokenize extends App {
       }
 
       title = StringEscapeUtils.unescapeXml(title).toLowerCase.trim
-
       body = StringEscapeUtils.unescapeXml(body).toLowerCase // decode xml entities
-      body = HTML_TAGS_PATTERN.replaceAllIn(body, " ") // take out htmltags
-      body = WHITESPACE_OR_NEWLINE_PATTERN.replaceAllIn(body, " ").trim // replace multiple whitespaces with a single one
+
+      body = """<[^>]+>""".r.replaceAllIn(body, " ") // take out htmltags
+      body = """\s+|\R+""".r.replaceAllIn(body, " ").trim // replace multiple whitespaces with a single one
+
 
       val rawText = title + " " + body
 
@@ -94,14 +107,16 @@ object ReadSOStanfordTokenize extends App {
 
       var out: String = ""
 
-      while (tok.hasNext){
+      while (tok.hasNext) {
         val next = tok.next()
-        out += " " + next
+        out += next + " "
       }
 
-      out
+      out.trim
 
     }
-    .saveAsTextFile(pathToOutputFile)
+    .write
+    .mode(SaveMode.Overwrite)
+    .text(pathToOutputFile)
 
 }

@@ -10,12 +10,11 @@ val sparkVersion = "2.1.0"
 
 resolvers += Resolver.mavenLocal
 
-libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion
-libraryDependencies += "org.apache.spark" %% "spark-streaming" % sparkVersion
-libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
-libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion
+libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-streaming" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion % "provided"
 
-libraryDependencies += "com.databricks" %% "spark-xml" % "0.4.1"
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
 
 assemblyMergeStrategy in assembly := {

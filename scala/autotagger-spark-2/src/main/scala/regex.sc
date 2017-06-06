@@ -1,36 +1,44 @@
+import java.util.Locale
 
+var body:String = "foo bar"
+
+val HTML_TAGS_PATTERN = """<[^>]+>""".r
+
+body = HTML_TAGS_PATTERN.replaceAllIn(body, " ")
+
+//body.toLowerCase
 
 val input = List(
   """<foobar>adsadsa</foobar>""",
   """<row Id="20553964" PostTypeId="1" AcceptedAnswerId="20553965" CreationDate="2013-12-12T20:50:10.247" Score="8" ViewCount="514" Body="&lt;p&gt;In PyCharm when I move between words with the &lt;code&gt;Alt + ←/→&lt;/code&gt; shortcut it moves the cursor between whitespace separated words. How can I make it move the cursor between &lt;code&gt;underscore_seperated_words&lt;/code&gt;?&lt;/p&gt;&#xA;" OwnerUserId="238166" LastActivityDate="2016-11-27T16:15:00.003" Title="Moving between underscore separated words in PyCharm with Alt + ←/→" Tags="&lt;python&gt;&lt;pycharm&gt;&lt;shortcuts&gt;" AnswerCount="1" CommentCount="0" FavoriteCount="1"><foo bar="quux"></foo></row>"""
 )
 
-
+Locale.getDefault
 
 val parts = input(1).split(""""""")
 
-var id: String = ""
-var title: String = ""
-var body: String = ""
-var tags: String = ""
-
-parts.zipWithIndex.foreach { case (str, idx) =>
-
-  print(idx, str)
-
-  if (str == "<row Id=") id = parts(idx + 1)
-  if (str == " Body=") body = parts(idx + 1)
-  if (str == " Title=") title = parts(idx + 1)
-  if (str == " Tags=") tags = parts(idx + 1)
-
-
-}
-
-
-id
-title
-body
-tags
+//var id: String = ""
+//var title: String = ""
+//var body: String = ""
+//var tags: String = ""
+//
+//parts.zipWithIndex.foreach { case (str, idx) =>
+//
+//  print(idx, str)
+//
+//  if (str == "<row Id=") id = parts(idx + 1)
+//  if (str == " Body=") body = parts(idx + 1)
+//  if (str == " Title=") title = parts(idx + 1)
+//  if (str == " Tags=") tags = parts(idx + 1)
+//
+//
+//}
+//
+//
+//id
+//title
+//body
+//tags
 
 val str1 =
   """<p>thanks and regards.</p>
