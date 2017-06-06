@@ -103,7 +103,7 @@ object ReadSOStanfordTokenize extends App {
       val tok = new PTBTokenizer[CoreLabel](
         new StringReader(rawText),
         new CoreLabelTokenFactory(),
-        OPTIONS)
+        "ptb3Escaping=false")
 
       var out: String = ""
 
