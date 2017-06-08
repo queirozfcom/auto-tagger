@@ -6,6 +6,10 @@ val HTML_TAGS_PATTERN = """<[^>]+>""".r
 
 body = HTML_TAGS_PATTERN.replaceAllIn(body, " ")
 
+"""((?!<=\d)\.(?!\d))""".r.replaceAllIn("foo.bar 5.0  foo5.bar foo5.6bar "," . ")
+
+//"""foo(?!bar)""".r.replaceAllIn("foobar foo","X")
+
 //body.toLowerCase
 
 val input = List(

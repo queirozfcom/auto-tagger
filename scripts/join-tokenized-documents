@@ -3,16 +3,22 @@
 num_expected_args=0
 num_args=$#
 description="
-Takes all files ending in .txt in the CWD, replaces newlines
-with spaces and join all files, output to STDOUT.
+Takes all files ending in .txt in the CWD, merges
+into a single file and then transforms all occurrences
+of '\n' into ' ' (space) in the generated file.
 "
 
-if [ "$num_args" -neq "$num_expected_args" ]; then
+if [ "$num_args" -ne "$num_expected_args" ]; then
   echo "$description";
   return
 else
   for part in ./*.txt; do
     sed -i ':a;N;$!ba;s/\n/ /g' "$part"
-  done  		
+  done
+
+  cat *.txt > Stackoverflow-Tokenized.txt &&
+  tr '\n' ' ' < Stackoverflow-Tokenized.txt > Stackoverflow-Tokenized-Single-Line.txt &&
+  rm Stackoverflow-Tokenized.txt
+  
 fi
 
