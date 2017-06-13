@@ -5,10 +5,73 @@ import edu.stanford.nlp.process.{CoreLabelTokenFactory, PTBTokenizer}
 import org.apache.commons.lang3.StringEscapeUtils
 import org.apache.spark.sql._
 
+
 /**
   * Created by felipe on 27/04/17.
   */
 object ReadSOStanfordTokenize extends App {
+
+  object Helpers {
+    def tokenizePost(title: String, body: String, unescapeXml: Boolean = false): String = {
+
+      val HTML_TAGS_PATTERN = """<[^>]+>"""
+      val WHITESPACE_OR_NEWLINE_PATTERN = """\s+|\R+"""
+      val FORWARD_SLASH_PATTERN = """((?!<=\d)/(?!\d))""" // slash not preceded a digit, not followed by a digit
+      val DOT_PATTERN =
+        """((?!<=\d)\.(?!\d))""" // dot not preceded by a digit, not followed by a digit
+
+      val OPTIONS = "ptb3Escaping=false"
+
+      var bodyOut: String = ""
+      var titleOut: String = ""
+
+      if (unescapeXml) {
+        // decode xml entities
+        titleOut = StringEscapeUtils.unescapeXml(title).toLowerCase.trim
+        bodyOut = StringEscapeUtils.unescapeXml(body).toLowerCase
+      } else {
+        titleOut = title.toLowerCase.trim
+        bodyOut = body.toLowerCase.trim
+      }
+
+
+      if (titleOut.endsWith("?") || titleOut.endsWith("!") || titleOut.endsWith(".")) {
+        // do nothing
+      } else {
+        titleOut = titleOut + "." // to signal the end of the sentence.
+      }
+
+      titleOut = FORWARD_SLASH_PATTERN.r.replaceAllIn(titleOut," / ")
+      titleOut = DOT_PATTERN.r.replaceAllIn(titleOut," . ")
+
+      bodyOut = HTML_TAGS_PATTERN.r.replaceAllIn(bodyOut, " ") // take out htmltags
+      bodyOut = FORWARD_SLASH_PATTERN.r.replaceAllIn(bodyOut, " / ") // otherwise the tokenizer doesn't consider a "/" as a delimiter
+      bodyOut = DOT_PATTERN.r.replaceAllIn(bodyOut, " . ") // to make all dots be delimiters, not just some (except in numbers)
+      bodyOut = WHITESPACE_OR_NEWLINE_PATTERN.r.replaceAllIn(bodyOut, " ") // replace multiple whitespaces/newlines with a single one
+
+      val combinedOut = titleOut + " " + bodyOut
+
+      val tok = new PTBTokenizer[CoreLabel](
+        new StringReader(combinedOut),
+        new CoreLabelTokenFactory(),
+        OPTIONS)
+
+      var out: String = ""
+
+      while (tok.hasNext) {
+        val next = tok.next()
+        out += next + " "
+      }
+
+      // after tokenizing, remove spaces between triple dots
+
+      out = """\.\s\.\s\.""".r.replaceAllIn(out, " ... ")
+      out = WHITESPACE_OR_NEWLINE_PATTERN.r.replaceAllIn(out, " ") // again, because of the above
+
+      out.trim
+
+    }
+  }
 
   // reads an xml file containing posts, selects only questions (type ==1)
   // using regular sc.TextFile because spark-xml crashes evrything
@@ -29,11 +92,7 @@ object ReadSOStanfordTokenize extends App {
 
   case class Post(title: String, body: String)
 
-  import java.util.Locale
-
   import spark.implicits._
-
-  Locale.setDefault(new Locale("en", "US"))
 
   spark
     .sparkContext
@@ -42,18 +101,8 @@ object ReadSOStanfordTokenize extends App {
     .toDS()
     .map { str =>
 
-      val HTML_TAGS_PATTERN = """<[^>]+>"""
-      val WHITESPACE_OR_NEWLINE_PATTERN = """\s+|\R+"""
-      val FORWARD_SLASH_PATTERN = """((?<!\d)/(?!\d))""" // slash not preceded a digit, not followed by a digit
-      val DOT_PATTERN = """((?!<=\d)\.(?!\d))""" // dot not preceded by a digit, not followed by a digit
-
-      val OPTIONS = "ptb3Escaping=false"
 
       val parts = str.split(""""""")
-
-      val locale = Locale.getDefault
-
-      println("locale is: " + locale.getDisplayName)
 
       var title: String = ""
       var body: String = ""
@@ -67,39 +116,9 @@ object ReadSOStanfordTokenize extends App {
 
       }
 
-      title = StringEscapeUtils.unescapeXml(title).toLowerCase.trim
-      if(title.endsWith("?") || title.endsWith(".") || title.endsWith(".")){
-        // do nothing
-      }else{
-        title = title + "." // to signal the end of the sentence.
-      }
 
-      body = StringEscapeUtils.unescapeXml(body).toLowerCase // decode xml entities
-      body = HTML_TAGS_PATTERN.r.replaceAllIn(body, " ") // take out htmltags
-      body = FORWARD_SLASH_PATTERN.r.replaceAllIn(body," / ") // otherwise the tokenizer doesn't consider a "/" as a delimiter
-      body = DOT_PATTERN.r.replaceAllIn(body," . ") // to make all dots be delimiters, not just some (except in numbers)
-      body = WHITESPACE_OR_NEWLINE_PATTERN.r.replaceAllIn(body, " ") // replace multiple whitespaces/newlines with a single one
+      Helpers.tokenizePost(title, body, unescapeXml = true)
 
-      val rawText = title + " " + body
-
-      val tok = new PTBTokenizer[CoreLabel](
-        new StringReader(rawText),
-        new CoreLabelTokenFactory(),
-        OPTIONS)
-
-      var out: String = ""
-
-      while (tok.hasNext) {
-        val next = tok.next()
-        out += next + " "
-      }
-
-      // after tokenizing, remove spaces between triple dots
-
-      out = """\.\s\.\s\.""".r.replaceAllIn(out," ... ")
-      out = WHITESPACE_OR_NEWLINE_PATTERN.r.replaceAllIn(out, " ") // again, because of the above
-
-      out.trim
 
     }
     .write

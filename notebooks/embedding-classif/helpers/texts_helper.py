@@ -1,4 +1,12 @@
+import html
+import nltk
+import os
+import re
+import sys
+
+from nltk.tokenize import StanfordTokenizer
 from sklearn.feature_extraction.text import CountVectorizer
+
 
 def build_inverse_word_index(word_index):
     """

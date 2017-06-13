@@ -17,6 +17,9 @@ libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion % "pro
 
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.7.0"
 
+libraryDependencies += "net.sf.opencsv" % "opencsv" % "2.3"
+
+
 assemblyMergeStrategy in assembly := {
   case PathList("com", "typesafe", xs@_*) => MergeStrategy.first
   case PathList("org", "aopalliance", xs@_*) => MergeStrategy.last
