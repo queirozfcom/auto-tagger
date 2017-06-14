@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+num_expected_args=0
+num_args=$#
+description="
+Takes a large, single-line file, first folds it
+then runs sed to remove all occurrences of 
+\"<unk>\" (these cause trouble with GloVe).
+
+Then removes any double spaces and then merges
+the file again into a single line.
+"
+
+if [ "$num_args" -ne "$num_expected_args" ]; then
+  echo "$description";
+  return
+else
+  input_file="Stackoverflow-Tokenized-Single-Line.txt"	 
+  output_file="Stackoverflow-Tokenized-Single-Line-No-Unks.txt"
+
+  fold -s "$input_file" |
+  sed 's/ <unk>//g'    |
+  tr -d '\n' > $output_file
+  
+fi
+
