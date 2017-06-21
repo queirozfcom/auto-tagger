@@ -109,6 +109,35 @@ def read_glove_stackoverflow():
             
     return embeddings_index
 
+def read_glove_stackoverflow_weighted(weight_index):
+    
+    GLOVE_DIR = "/media/felipe/SAMSUNG/StackGlove"
+    embeddings_index = {}
+
+    matches = 0
+    overall = 0
+    
+    with open(os.path.join(GLOVE_DIR,"glove.stackoverflow.7B.50d.txt"),'r') as f:
+        for line in f:
+            values = line.split()
+            word = values[0]       
+            coefs = np.asarray(values[1:],dtype='float32')
+
+            maybe_weight = weight_index.get(word)
+            
+            if maybe_weight is None:
+                weight = 1.0
+            else:
+                weight = maybe_weight
+                matches += 1
+                        
+            overall +=1        
+            embeddings_index[word] = coefs * weight
+           
+    print("overall, {0} out of {1} embeddings were weighted. Total available embeddings: {2}".format(matches, len(weight_index), overall))
+    
+    return embeddings_index    
+
 
 def read_stackoverflow_sample_small_stanford_tokenized():
     """
