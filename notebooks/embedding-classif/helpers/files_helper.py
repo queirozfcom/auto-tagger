@@ -94,12 +94,17 @@ def read_glove_wiki_weighted(d,weight_index):
     
     return embeddings_index    
 
-def read_glove_stackoverflow(): 
+def read_glove_stackoverflow(d): 
     
+    supported_dimensions = [50,100]
+    
+    if d not in supported_dimensions:
+        raise ValueError("argument d must be one of {0}".format(",".join(supported_dimensions)))    
+        
     GLOVE_DIR = "/media/felipe/SAMSUNG/StackGlove"
     embeddings_index = {}
 
-    with open(os.path.join(GLOVE_DIR,"glove.stackoverflow.7B.50d.txt"),'r') as f:
+    with open(os.path.join(GLOVE_DIR,"glove.stackoverflow.7B.{}d.txt".format(d)),'r') as f:
         for line in f:
             values = line.split()
             word = values[0]
@@ -109,15 +114,20 @@ def read_glove_stackoverflow():
             
     return embeddings_index
 
-def read_glove_stackoverflow_weighted(weight_index):
+def read_glove_stackoverflow_weighted(d,weight_index):
+              
+    supported_dimensions = [50,100]
     
+    if d not in supported_dimensions:
+        raise ValueError("argument d must be one of {0}".format(",".join(supported_dimensions)))       
+              
     GLOVE_DIR = "/media/felipe/SAMSUNG/StackGlove"
     embeddings_index = {}
 
     matches = 0
     overall = 0
     
-    with open(os.path.join(GLOVE_DIR,"glove.stackoverflow.7B.50d.txt"),'r') as f:
+    with open(os.path.join(GLOVE_DIR,"glove.stackoverflow.7B.{}d.txt".format(d)),'r') as f:
         for line in f:
             values = line.split()
             word = values[0]       
