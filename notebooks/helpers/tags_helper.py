@@ -6,15 +6,14 @@ def get_tag_assignment(strategy,predicted_tag_probabilities,**kwargs):
     Takes as parameter a strategy and a numpy ndarray containing N tag probabilities,
     such as those output by a neural net with N output units.
     
-    Additionaly, extra keyword arguments are required for the chosen strategy. E.g.,     strategy "static_threshold" requires a keyword argument named "threshold" to be
-    provided.
+    Additionaly, extra keyword arguments are required for the chosen strategy. E.g., strategy 
+    "static_threshold" requires a keyword argument named "threshold" to be provided.
     
     All strategies support a "limit" argument. The default behaviour is to return
     all tags that meet the criteria.
     
     Returns a binary tag assignment array, converting tag probabilities into actual
     tag assignments, according to the chosen strategy.
-    
     """
     
     supported_strategies = [
@@ -173,6 +172,52 @@ def get_probability_index(Y_train_pred):
         index[i] = value
     
     return index    
+    
+
+def get_tag_document_index(binary_label_matrix, label_names):
+    """
+    Returns a dict, tag => [document_id1, document_id2, document_id3, ...]
+    """
+    
+    index = dict()
+    
+    for (document_id, document_labels) in enumerate(binary_label_matrix):
+        for (label_id, label) in enumerate(label_names):
+            
+            if document_labels[label_id] == 1:
+                current_doc_ids = index.get(label)
+                
+                if current_doc_ids is None:
+                    index[label] = [document_id]
+                else:
+                    current_doc_ids.append(document_id)
+                    index[label] = current_doc_ids                           
+                        
+    return index                   
+        
+    
+
+def get_document_tag_index(binary_label_matrix, label_names):
+    """
+    Returns a dict, document_id => [tag1, tag2, tag3, ...]
+    """    
+
+    index = dict()
+    
+    for (label_id, label) in enumerate(label_names):
+        for (document_id, document_labels) in enumerate(binary_label_matrix):
+            
+            if document_labels[label_id] == 1:
+                current_labels = index.get(document_id)
+                
+                if current_labels is None:
+                    index[document_id] = [label]
+                else:
+                    current_labels.append(label)
+                    index[document_id] = current_labels
+                        
+    return index     
+    
     
 ###############################################    
 ## PRIVATE   
