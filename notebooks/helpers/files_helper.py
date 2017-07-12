@@ -149,7 +149,7 @@ def read_glove_stackoverflow_weighted(d,weight_index):
     return embeddings_index    
 
 
-def read_stackoverflow_sample_small_stanford_tokenized():
+def read_stackoverflow_sample_stanford_tokenized(name='Small-Sample-Posts-Shuffled',ssd=False):                                                     
     """
     Returns tokenized texts (title+body) and their respective tags.
     
@@ -158,7 +158,10 @@ def read_stackoverflow_sample_small_stanford_tokenized():
     
     """
         
-    path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/Small-Sample-Posts-Shuffled-Stanford-Tokenized.csv"
+    if ssd:
+        path_to_file = "/media/felipe/ssd_vol/StackHeavy/Posts-shuffled/"+name+"-Stanford-Tokenized.csv"
+    else:    
+        path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/"+name+"-Stanford-Tokenized.csv"
     
     texts = []
     labels = []
