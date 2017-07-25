@@ -159,7 +159,7 @@ def read_stackoverflow_sample_stanford_tokenized(name='Small-Sample-Posts-Shuffl
     """
         
     if ssd:
-        path_to_file = "/media/felipe/ssd_vol/StackHeavy/Posts-shuffled/"+name+"-Stanford-Tokenized.csv"
+        path_to_file = "/media/felipe/SSD_VOLUME/StackHeavy/Posts-shuffled/"+name+"-Stanford-Tokenized.csv"
     else:    
         path_to_file = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/"+name+"-Stanford-Tokenized.csv"
     

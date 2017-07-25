@@ -42,7 +42,43 @@ def evaluate_cobrinha(tag_a,
         
     return (avg_sim_wrt_tag_a-avg_sim_wrt_tag_b,mutual_sim)
 
+def get_top_k_most_similar_tags(index, target_tag_name, k):  
+    """
+    
+    returns top most similar tags, according to cosine similarity
+    
+    arguments:
+        index is a dict tag_name => tag_vector
+        target_tag_name is a string
+        k is an int
+        
+    returns:
+        a list, with the K tags most similar to `target_tag_name`
+    """
+    
+    target_tag_vector = index[target_tag_name]
 
+    # calculating the similarites
+    similarities = list()
+    curr_best = np.NINF
+    curr_tag = None
+
+    for (tag_name,tag_vector) in index.items():
+        
+        if np.array_equal(tag_vector,target_tag_vector):
+            continue
+        
+        sim = _cosine_similarity(target_tag_vector,tag_vector)
+            
+        similarities.append((tag_name,sim))
+
+        if sim > curr_best and tag_name != target_tag_name:
+            curr_best = sim
+            curr_tag = tag_name
+
+    sorted_similarities = sorted(similarities,key=lambda t: t[1],reverse=True)
+    
+    return sorted_similarities[:k]
 
 def _get_similar_sounding_tags(tag,tag_vocabulary):
     return get_close_matches(tag,tag_vocabulary)
