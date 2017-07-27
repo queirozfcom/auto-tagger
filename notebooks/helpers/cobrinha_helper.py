@@ -3,7 +3,7 @@ import numpy as np
 from difflib import SequenceMatcher,get_close_matches
 from scipy import spatial
 
-def evaluate_cobrinha(tag_a, 
+def get_metrics_for_tag_pair(tag_a, 
                       tag_b, 
                       tag_vectors_index, 
                       pairwise_similarity_index,

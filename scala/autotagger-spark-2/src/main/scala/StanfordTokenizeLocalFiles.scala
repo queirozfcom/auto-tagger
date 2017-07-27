@@ -11,9 +11,9 @@ import ReadSOStanfordTokenize.Helpers.tokenizePost
   */
 object StanfordTokenizeLocalFiles extends App{
 
-  val BASE_PATH = "/media/felipe/SSD_VOLUME/StackHeavy/Posts-shuffled/"
+  val BASE_PATH = "/media/felipe/SAMSUNG/StackHeavy/Posts-shuffled/"
 
-  val input = BASE_PATH+"Medium-Small-Sample-Posts-Shuffled.csv"
+  val input = BASE_PATH+"Medium-Sample-Posts-Shuffled.csv"
 
   val output = input.replace("Posts-Shuffled.csv","Posts-Shuffled-Stanford-Tokenized.csv")
 
