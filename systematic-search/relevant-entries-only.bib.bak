@@ -4024,19 +4024,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   keywords  = {pattern clustering;HCA;agglomerative approach;divisive approach;hierarchical clustering analysis;interval-radial algorithm;qualitative property;Algorithm design and analysis;Arrays;Benchmark testing;Clustering algorithms;Couplings;Measurement;Merging;Efficiency;Flexibility;Hierarchical Clustering;Interval-Radial Algorithm},
 }
 
-@InProceedings{5447922,
-  author    = {J. Yao and B. Cui and Y. Huang and Y. Zhou},
-  title     = {Detecting bursty events in collaborative tagging systems},
-  booktitle = {2010 IEEE 26th International Conference on Data Engineering (ICDE 2010)},
-  year      = {2010},
-  pages     = {780-783},
-  month     = {March},
-  abstract  = {Collaborative tagging systems have emerged as an ubiquitous way to annotate and organize online resources. The users' tagging actions over time reflect the changing of their interests. In this paper, we propose to detect bursty tagging event, which captures the relations among a group of correlated tags where the tags are either bursty or associated with bursty tag co-occurrence. We exploit the sliding time intervals to extract bursty features from large tag corpora as the first step, and then adopt graph clustering techniques to group bursty features into meaningful bursty events. An experimental study demonstrates the superiority of our approach.},
-  doi       = {10.1109/ICDE.2010.5447922},
-  issn      = {1063-6382},
-  keywords  = {feature extraction;graph theory;groupware;identification technology;pattern clustering;ubiquitous computing;bursty tagging event detection;collaborative tagging system;feature extraction;graph clustering technique;online resources;sliding time intervals;Collaborative software;Educational technology;Event detection;Feature extraction;Information services;Internet;Monitoring;Online Communities/Technical Collaboration;Tagging;Web sites},
-}
-
 @Article{4782972,
   author   = {M. A. Storey and J. Ryall and J. Singer and D. Myers and L. T. Cheng and M. Muller},
   title    = {How Software Developers Use Tagging to Support Reminding and Refinding},
