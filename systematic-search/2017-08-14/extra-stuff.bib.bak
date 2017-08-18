@@ -1,0 +1,383 @@
+% Encoding: UTF-8
+
+@Article{hammond_et_al_2005,
+  author  = {T. Hammond, T. Hannay, B. Lund, J. Scott},
+  title   = {Social Bookmarking Tools (I): A General Review},
+  journal = {D-Lib Magazin},
+  year    = {2005},
+  volume  = {11},
+  number  = {4},
+  month   = {April},
+  url     = {http://www.dlib.org/dlib/april05/hammond/04hammond.html},
+}
+
+@Article{Gupta:2010:SST:1882471.1882480,
+  author     = {Gupta, Manish and Li, Rui and Yin, Zhijun and Han, Jiawei},
+  title      = {Survey on Social Tagging Techniques},
+  journal    = {SIGKDD Explor. Newsl.},
+  year       = {2010},
+  volume     = {12},
+  number     = {1},
+  pages      = {58--72},
+  month      = nov,
+  issn       = {1931-0145},
+  acmid      = {1882480},
+  address    = {New York, NY, USA},
+  doi        = {10.1145/1882471.1882480},
+  issue_date = {June 2010},
+  keywords   = {bookmarking, collaborative tagging, distributed classification, ethnoclassification, folk classification, folk taxonomy, folksonomy, social classification, social indexing, social tagging, tagging},
+  numpages   = {15},
+  publisher  = {ACM},
+  url        = {http://doi.acm.org/10.1145/1882471.1882480},
+}
+
+@Article{ASI:ASI23736,
+  author   = {Belém, Fabiano M. and Almeida, Jussara M. and Gonçalves, Marcos A.},
+  title    = {A survey on tag recommendation methods},
+  journal  = {Journal of the Association for Information Science and Technology},
+  year     = {2017},
+  volume   = {68},
+  number   = {4},
+  pages    = {830--844},
+  issn     = {2330-1643},
+  abstract = {Tags (keywords freely assigned by users to describe web content) have become highly popular on Web 2.0 applications, because of the strong stimuli and easiness for users to create and describe their own content. This increase in tag popularity has led to a vast literature on tag recommendation methods. These methods aim at assisting users in the tagging process, possibly increasing the quality of the generated tags and, consequently, improving the quality of the information retrieval (IR) services that rely on tags as data sources. Regardless of the numerous and diversified previous studies on tag recommendation, to our knowledge, no previous work has summarized and organized them into a single survey article. In this article, we propose a taxonomy for tag recommendation methods, classifying them according to the target of the recommendations, their objectives, exploited data sources, and underlying techniques. Moreover, we provide a critical overview of these methods, pointing out their advantages and disadvantages. Finally, we describe the main open challenges related to the field, such as tag ambiguity, cold start, and evaluation issues.},
+  doi      = {10.1002/asi.23736},
+  url      = {http://dx.doi.org/10.1002/asi.23736},
+}
+
+@Article{INT:INT21753,
+  author   = {Godoy, Daniela and Corbellini, Alejandro},
+  title    = {Folksonomy-Based Recommender Systems: A State-of-the-Art Review},
+  journal  = {International Journal of Intelligent Systems},
+  year     = {2016},
+  volume   = {31},
+  number   = {4},
+  pages    = {314--346},
+  issn     = {1098-111X},
+  abstract = {Collaborative tagging systems, also known as folksonomies, have grown in popularity over the Web on account of their simplicity to organize several types of content (e.g., Web pages, pictures, and video) using open-ended tags. The rapid adoption of these systems has led to an increasing amount of users providing information about themselves and, at the same time, a growing and rich corpus of social knowledge that can be exploited by recommendation technologies. In this context, tripartite relationships between users, resources, and tags contained in folksonomies set new challenges for knowledge discovery approaches to be applied for the purposes of assisting users through recommendation systems. This review aims at providing a comprehensive overview of the literature in the field of folksonomy-based recommender systems. Current recommendation approaches stemming from fields such as user modeling, collaborative filtering, content, and link-analysis are reviewed and discussed to provide a starting point for researchers in the field as well as explore future research lines.},
+  doi      = {10.1002/int.21753},
+  keywords = {rank3},
+  url      = {http://dx.doi.org/10.1002/int.21753},
+}
+
+@Article{mathes_2004,
+  author   = {Adam Mathes},
+  title    = {Folksonomies - cooperative classification and communication through shared metadata},
+  journal  = {Computer Mediated Communication},
+  year     = {2004},
+  month    = {December},
+  abstract = {This paper examines user-‍generated metadata as implemented and applied in two web services designed to share and organize digital media to better understand grassroots classification. Metadata - data about data - allows systems to collocate related information, and helps users find relevant information. The creation of metadata has generally been approached in two ways: professional creation and author creation. In libraries and other organizations, creating metadata, primarily in the form of catalog records, has traditionally been the domain of dedicated professionals working with complex, detailed rule sets and vocabularies. The primary problem with this approach is scalability and its impracticality for the vast amounts of content being produced and used, especially on the World Wide Web. The apparatus and tools built around professional cataloging systems are generally too complicated for anyone without specialized training and knowledge. A second approach is for metadata to be created by authors. The movement towards creator described documents was heralded by SGML, the WWW, and the Dublin Core Metadata Initiative. There are problems with this approach as well - often due to inadequate or inaccurate description, or outright deception. This paper examines a third approach: user-‍created metadata, where users of the documents and media create metadata for their own individual use that is also shared throughout a community.},
+  url      = {http://adammathes.com/academic/computer-mediated-communication/folksonomies.html},
+}
+
+@InProceedings{Lipczak:2010:IRT:1810617.1810648,
+  author    = {Lipczak, Marek and Milios, Evangelos},
+  title     = {The Impact of Resource Title on Tags in Collaborative Tagging Systems},
+  booktitle = {Proceedings of the 21st ACM Conference on Hypertext and Hypermedia},
+  year      = {2010},
+  series    = {HT '10},
+  pages     = {179--188},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Collaborative tagging systems are popular tools for organization, sharing and retrieval of web resources. Their success is due to their freedom and simplicity of use. To post a resource, the user should only define a set of tags that would position the resource in the system's data structure -- folksonomy. This data structure can serve as a rich source of information about relations between tags and concepts they represent. To make use of information collaboratively added to folksonomies, we need to understand how users make tagging decisions. Three factors that are believed to influence user tagging decisions are: the tags used by other users, the organization of user's personal repository and the knowledge model shared between users. In our work we examine the role of another potential factor -- resource title. Despite all the advantages of tags, tagging is a tedious process. To minimize the effort, users are likely to tag with keywords that are easily available. We show that resource title, as a source of useful tags, is easy to access and comprehend. Given a choice of two tags with the same meaning, users are likely to be influenced by their presence in the title. However, a factor that seems to have stronger impact on users' tagging decisions is maintaining the consistency of the personal profile of tags. The results of our study reveal a new, less idealistic picture of collaborative tagging systems, in which the collaborative aspect seems to be less important than personal gains and convenience.
+},
+  acmid     = {1810648},
+  doi       = {10.1145/1810617.1810648},
+  isbn      = {978-1-4503-0041-4},
+  keywords  = {collaborative tagging, folksonomies, modelling},
+  location  = {Toronto, Ontario, Canada},
+  numpages  = {10},
+  url       = {http://doi.acm.org/10.1145/1810617.1810648},
+}
+
+@Article{6272482,
+  author   = {E. Portilla Olvera and D. Godoy},
+  title    = {Evaluating Term Weighting Schemes for Content-based Tag Recommendation in Social Tagging Systems},
+  journal  = {IEEE Latin America Transactions},
+  year     = {2012},
+  volume   = {10},
+  number   = {4},
+  pages    = {1973-1980},
+  month    = {June},
+  issn     = {1548-0992},
+  abstract = {Social tagging systems allow users to publish different type of resources, such as Web pages or pictures, annotate them using keywords or tags and share their resources with other users. These systems achieved widespread success on the Web on account of the simplicity for organizing resources using open-ended tags. Recently, tag recommendation strategies have been proposed to alleviate the problems of ambiguity, syntactic variations and noise in tags cause by the inherent characteristics of natural language. In this work we proposed a content-based approach that generates a list of suggested tags for annotating a given resource starting from an analysis of its textual content exclusively. Thus, the proposed method can be used in situations in which there is not enough information for creating a tag-based user profile or compare the user with others. For extracting the more relevant words different term weighting approaches were evaluated, particularly considering the HTML structure of Web pages and the grammatical category of words in order to determine promising tag candidates. Experimental results of applying this technique to tag recommendation using several term weighting approaches are reported and compared.},
+  doi      = {10.1109/TLA.2012.6272482},
+  keywords = {Web sites;grammars;hypermedia markup languages;natural language processing;text analysis;HTML structure;Web page;content-based approach;content-based tag recommendation;grammatical category;natural language;open-ended tag;resource annotation;social tagging system;syntactic variation;tag noise;tag-based user profile;term weighting scheme;textual content;word;Abstracts;HTML;Organizing;Syntactics;Tagging;Vectors;Web pages;Social tagging systems;content-based recommendation;text mining},
+}
+
+@InProceedings{Liu:2011:SWT:2145432.2145601,
+  author    = {Liu, Zhiyuan and Chen, Xinxiong and Sun, Maosong},
+  title     = {A Simple Word Trigger Method for Social Tag Suggestion},
+  booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+  year      = {2011},
+  series    = {EMNLP '11},
+  pages     = {1577--1588},
+  address   = {Stroudsburg, PA, USA},
+  publisher = {Association for Computational Linguistics},
+  abstract  = {It is popular for users in Web 2.0 era to freely annotate online resources with tags. To ease the annotation process, it has been great interest in automatic tag suggestion. We propose a method to suggest tags according to the text description of a resource. By considering both the description and tags of a given resource as summaries to the resource written in two languages, we adopt word alignment models in statistical machine translation to bridge their vocabulary gap. Based on the translation probabilities between the words in descriptions and the tags estimated on a large set of description-tags pairs, we build a word trigger method (WTM) to suggest tags according to the words in a resource description. Experiments on real world datasets show that WTM is effective and robust compared with other methods. Moreover, WTM is relatively simple and efficient, which is practical for Web applications.},
+  acmid     = {2145601},
+  isbn      = {978-1-937284-11-4},
+  location  = {Edinburgh, United Kingdom},
+  numpages  = {12},
+  url       = {http://dl.acm.org/citation.cfm?id=2145432.2145601},
+}
+
+@InProceedings{Wu:2016:TUT:2983323.2983682,
+  author    = {Wu, Yong and Yao, Yuan and Xu, Feng and Tong, Hanghang and Lu, Jian},
+  title     = {Tag2Word: Using Tags to Generate Words for Content Based Tag Recommendation},
+  booktitle = {Proceedings of the 25th ACM International on Conference on Information and Knowledge Management},
+  year      = {2016},
+  series    = {CIKM '16},
+  pages     = {2287--2292},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Tag recommendation is helpful for the categorization and searching of online content. Existing tag recommendation methods can be divided into collaborative filtering methods and content based methods. In this paper, we put our focus on the content based tag recommendation due to its wider applicability. Our key observation is the tag-content co-occurrence, i.e., many tags have appeared multiple times in the corresponding content. Based on this observation, we propose a generative model (Tag2Word), where we generate the words based on the tag-word distribution as well as the tag itself. Experimental evaluations on real data sets demonstrate that the proposed method outperforms several existing methods in terms of recommendation accuracy, while enjoying linear scalability.},
+  acmid     = {2983682},
+  doi       = {10.1145/2983323.2983682},
+  isbn      = {978-1-4503-4073-1},
+  keywords  = {generative model, tag recommendation, tag-content co-occurrence, rank2},
+  location  = {Indianapolis, Indiana, USA},
+  numpages  = {6},
+  url       = {http://doi.acm.org/10.1145/2983323.2983682},
+}
+
+@InBook{Jäschke2007,
+  pages     = {506--514},
+  title     = {Tag Recommendations in Folksonomies},
+  publisher = {Springer Berlin Heidelberg},
+  year      = {2007},
+  author    = {J{\"a}schke, Robert and Marinho, Leandro and Hotho, Andreas and Schmidt-Thieme, Lars and Stumme, Gerd},
+  editor    = {Kok, Joost N. and Koronacki, Jacek and Lopez de Mantaras, Ramon and Matwin, Stan and Mladeni{\v{c}}, Dunja and Skowron, Andrzej},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-540-74976-9},
+  abstract  = {Collaborative tagging systems allow users to assign keywords---so called ``tags''---to resources. Tags are used for navigation, finding resources and serendipitous browsing and thus provide an immediate benefit for users. These systems usually include tag recommendation mechanisms easing the process of finding good tags for a resource, but also consolidating the tag vocabulary across users. In practice, however, only very basic recommendation strategies are applied.},
+  booktitle = {Knowledge Discovery in Databases: PKDD 2007: 11th European Conference on Principles and Practice of Knowledge Discovery in Databases, Warsaw, Poland, September 17-21, 2007. Proceedings},
+  doi       = {10.1007/978-3-540-74976-9_52},
+  url       = {https://doi.org/10.1007/978-3-540-74976-9_52},
+}
+
+@InBook{jaeschke_et_al_2008,
+  title    = {Tag Recommendations in Social Bookmarking Systems},
+  year     = {2008},
+  author   = {J{\"a}schke, Robert and Marinho, Leandro and Hotho, Andreas and Schmidt-Thieme, Lars and Stumme, Gerd},
+  abstract = {Collaborative tagging systems allow users to assign
+keywords—so called “tags”—to resources. Tags are
+used for navigation, finding resources and serendipitous
+browsing and thus provide an immediate benefit for users.
+These systems usually include tag recommendation mechanisms
+easing the process of finding good tags for a resource,
+but also consolidating the tag vocabulary across users. In
+practice, however, only very basic recommendation strategies
+are applied.
+In this paper we evaluate and compare several recommendation
+algorithms on large-scale real life datasets: an adaptation
+of user-based collaborative filtering, a graph-based recommender
+built on top of the FolkRank algorithm, and simple
+methods based on counting tag occurences. We show
+that both FolkRank and Collaborative Filtering provide better
+results than non-personalized baseline methods. Moreover,
+since methods based on counting tag occurrences are computationally
+cheap, and thus usually preferable for real time
+scenarios, we discuss simple approaches for improving the
+performance of such methods. We show, how a simple recommender
+based on counting tags from users and resources
+can perform almost as good as the best recommender},
+}
+
+@InProceedings{yagnik_et_al_2014,
+  author    = {Shweta Yagnik AND Priyank Thakkar and Kotecha k.},
+  title     = {Recommending Tags for new Resources in Social Bookmarking Systems},
+  booktitle = {International Journal of Data Mining and Knowledge Management Process},
+  year      = {2014},
+  abstract  = {Social bookmarking system is a web-based resource sharing system that allows users to upload, share and organize  their  resources  i.e.  bookmarks  and  publications.  The  system  has  shifted  the  paradigm  of bookmarking  from  an  individual  activity  limited  to 
+desktop  to  a  collective  activity  on  the  web.  It  also facilitates  user  to  annotate  his  resource  with  free  form  tags  that  leads  to  large  communities  of  users to collaboratively  create  accessible  repositories  of  web  resources.  Tagging  process  has  its  own  challenges like  ambiguity,  redundancy  or  misspelled  tags  and  sometimes  user  tends  to  avoid  it  as  he  has  to  describe tag  at  his  own.  The  resultant  tag  space  is  noisy  or  very  sparse  and  dilutes  the  purpose  of  tagging.  The effective  solution  is  Tag  Recommendation  System  that  automatically  suggests  appropriate  set  of  tags  touser  while  annotating  resource.  In  this  paper,  we  propose  a  framework  that  does  not  depend  on  tagging history  of  the  resource  or  user  and  thereby  capable  of  suggesting  tags  to  the  resources  which  are  being submitted  to  the  system  first  time.  We  model  tag  recommendation  task  as  multi-label  text  classification problem and use Naive Bayes classifier as the base learner of the multilabel classifier. We experiment with Boolean,  bag-of-words  and  term  frequency-inverse  document  frequency  (TFIDF)  representation  of  the resources  and  fit  appropriate  distribution  to  the  data  based  on  the  representation  used.  Impact  of  feature selection  on  the  effectiveness  of  the  tag  recommendation  is  also  studied. Effectiveness  of  the  proposed framework is evaluated through precision, recall and f-measure metrics.  },
+  keywords  = {rank2},
+}
+
+@InProceedings{KTV08,
+  author               = {Katakis, Ioannis and Tsoumakas, Grigorios and Vlahavas, Ioannis},
+  title                = {Multilabel Text Classification for Automated Tag Suggestion},
+  booktitle            = {Proceedings of the ECML/PKDD 2008 Discovery Challenge},
+  year                 = {2008},
+  __markedentry        = {[felipe:1]},
+  abstract             = {The increased popularity of tagging during the last few years can be mainly attributed to its embracing by most of the recently thriving user-centric content publishing and management Web 2.0 applications. However, tagging systems have some limitations that have led researchers to develop methods that assist users in the tagging process, by automatically suggesting an appropriate set of tags. We have tried to model the automated tag suggestion problem as a multilabel text classification task in order to participate in the ECML/PKDD 2008 Discovery Challenge.},
+  added-at             = {2009-05-26T15:00:29.000+0200},
+  biburl               = {http://www.bibsonomy.org/bibtex/23900b844ce31bd81a537081116861a73/lysander07},
+  citeulike-article-id = {3790266},
+  interhash            = {b9a5f40935e1d4799be3e2fb7db9747d},
+  intrahash            = {3900b844ce31bd81a537081116861a73},
+  keywords             = {Semantic_Web folksonomy tagging, rank3},
+  location             = {Antwerp, Belgium},
+  posted-at            = {2008-12-15 21:05:09},
+  timestamp            = {2009-06-02T11:03:17.000+0200},
+}
+
+@Article{KRESTEL201261,
+  author   = {Ralf Krestel and Peter Fankhauser},
+  title    = {Personalized topic-based tag recommendation},
+  journal  = {Neurocomputing},
+  year     = {2012},
+  volume   = {76},
+  number   = {1},
+  pages    = {61 - 70},
+  issn     = {0925-2312},
+  note     = {Seventh International Symposium on Neural Networks (ISNN 2010) Advances in Web Intelligence},
+  abstract = {More and more content on the Web is generated by users. To organize this information and make it accessible via current search technology, tagging systems have gained tremendous popularity. Especially for multimedia content they allow to annotate resources with keywords (tags) which opens the door for classic text-based information retrieval. To support the user in choosing the right keywords, tag recommendation algorithms have emerged. In this setting, not only the content is decisive for recommending relevant tags but also the user's preferences. In this paper we introduce an approach to personalized tag recommendation that combines a probabilistic model of tags from the resource with tags from the user. As models we investigate simple language models as well as Latent Dirichlet Allocation. Extensive experiments on a real world dataset crawled from a big tagging system show that personalization improves tag recommendation, and our approach significantly outperforms state-of-the-art approaches.},
+  doi      = {http://dx.doi.org/10.1016/j.neucom.2011.04.034},
+  keywords = {Tag recommendation, Personalization, Language models, Topic models},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0925231211003985},
+}
+
+@InProceedings{Song:2008:RAT:1390334.1390423,
+  author    = {Song, Yang and Zhuang, Ziming and Li, Huajing and Zhao, Qiankun and Li, Jia and Lee, Wang-Chien and Giles, C. Lee},
+  title     = {Real-time Automatic Tag Recommendation},
+  booktitle = {Proceedings of the 31st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  year      = {2008},
+  series    = {SIGIR '08},
+  pages     = {515--522},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  abstract  = {Tags are user-generated labels for entities. Existing research on tag recommendation either focuses on improving its accuracy or on automating the process, while ignoring the efficiency issue. We propose a highly-automated novel framework for real-time tag recommendation. The tagged training documents are treated as triplets of (words, docs, tags), and represented in two bipartite graphs, which are partitioned into clusters by Spectral Recursive Embedding (SRE). Tags in each topical cluster are ranked by our novel ranking algorithm. A two-way Poisson Mixture Model (PMM) is proposed to model the document distribution into mixture components within each cluster and aggregate words into word clusters simultaneously. A new document is classified by the mixture model based on its posterior probabilities so that tags are recommended according to their ranks. Experiments on large-scale tagging datasets of scientific documents (CiteULike) and web pages del.icio.us) indicate that our framework is capable of making tag recommendation efficiently and effectively. The average tagging time for testing a document is around 1 second, with over 88% test documents correctly labeled with the top nine tags we suggested.},
+  acmid     = {1390423},
+  doi       = {10.1145/1390334.1390423},
+  isbn      = {978-1-60558-164-4},
+  keywords  = {graph partitioning, mixture model, tagging system},
+  location  = {Singapore, Singapore},
+  numpages  = {8},
+  url       = {http://doi.acm.org/10.1145/1390334.1390423},
+}
+
+@Article{lipczak_et_al_2009,
+  author = {Marek Lipczak and Yeming Hu and Yael Kollet, and Evangelos Milios},
+  title  = {Tag Sources for Recommendation in Collaborative Tagging Systems},
+  year   = {2009},
+  url    = {https://www.kde.cs.uni-kassel.de/ws/dc09/papers/paper_19.pdf},
+}
+
+@Article{mrosek_et_al_2009,
+  author = {Johannes Mrosek and Stefan Bussmann and Hendrik Albers and Kai Posdziech and Benedikt Hengefeld},
+  title  = {Content- and Graph-based Tag Recommendation: Two Variations},
+  year   = {2009},
+  url    = {https://www.kde.cs.uni-kassel.de/ws/dc09/papers/paper_18.pdf},
+}
+
+@Article{ju_and_hwang_2009,
+  author = {Sanghun Ju and Kyu-Baek Hwang},
+  title  = {A Weighting Scheme for Tag Recommendation in Social Bookmarking Systems},
+  year   = {2009},
+  url    = {https://www.kde.cs.uni-kassel.de/ws/dc09/papers/paper_05.pdf},
+}
+
+@InProceedings{7925205,
+  author        = {Ruilin Tao and Tianfang Yao},
+  title         = {Tag recommendation based on Paragraph Vector},
+  booktitle     = {2016 2nd IEEE International Conference on Computer and Communications (ICCC)},
+  year          = {2016},
+  pages         = {2786-2789},
+  month         = {Oct},
+  __markedentry = {[felipe:1]},
+  abstract      = {With the rapid development of Q&A communities, the amount of questions present on Internet as “explosive” growth. Using tags to organize these questions is a reasonable and effective way. Most of traditional tag recommendations are based on bag-of-words as features. Despite their popularity, bag-of-words features ignore semantics and lose the ordering of the words. Paragraph Vector overcomes the weakness of bag-of-words model. Empirical results show that Paragraph Vector outperforms bag-of-words for tag recommendation.},
+  doi           = {10.1109/CompComm.2016.7925205},
+  keywords      = {question answering (information retrieval);recommender systems;vectors;Internet;Q and A communities;bag-of-words model;paragraph vector;tag recommendation;Explosives;Films;multilabel;paragraph vector;tag recommendation, rank4},
+}
+
+@InBook{Illig2011,
+  pages         = {136--149},
+  title         = {A Comparison of Content-Based Tag Recommendations in Folksonomy Systems},
+  publisher     = {Springer Berlin Heidelberg},
+  year          = {2011},
+  author        = {Illig, Jens and Hotho, Andreas and J{\"a}schke, Robert and Stumme, Gerd},
+  editor        = {Wolff, Karl Erich and Palchunov, Dmitry E. and Zagoruiko, Nikolay G. and Andelfinger, Urs},
+  address       = {Berlin, Heidelberg},
+  isbn          = {978-3-642-22140-8},
+  __markedentry = {[felipe:1]},
+  abstract      = {Recommendation algorithms and multi-class classifiers can support users of social bookmarking systems in assigning tags to their bookmarks. Content based recommenders are the usual approach for facing the cold start problem, i.e., when a bookmark is uploaded for the first time and no information from other users can be exploited. In this paper, we evaluate several recommendation algorithms in a cold-start scenario on a large real-world dataset.},
+  booktitle     = {Knowledge Processing and Data Analysis: First International Conference, KONT 2007, Novosibirsk, Russia, September 14-16, 2007 and First International Conference, KPP 2007,Darmstadt, Germany, September 28-30, 2007. Revised Selected Papers},
+  doi           = {10.1007/978-3-642-22140-8_9},
+  keywords      = {rank3},
+  url           = {https://doi.org/10.1007/978-3-642-22140-8_9},
+}
+
+@Article{Song:2011:ATR:1921591.1921595,
+  author     = {Song, Yang and Zhang, Lu and Giles, C. Lee},
+  title      = {Automatic Tag Recommendation Algorithms for Social Recommender Systems},
+  journal    = {ACM Trans. Web},
+  year       = {2011},
+  volume     = {5},
+  number     = {1},
+  pages      = {4:1--4:31},
+  month      = feb,
+  issn       = {1559-1131},
+  abstract   = {The emergence of Web 2.0 and the consequent success of social network Web sites such as Del.icio.us and Flickr introduce us to a new concept called social bookmarking, or tagging. Tagging is the action of connecting a relevant user-defined keyword to a document, image, or video, which helps the user to better organize and share their collections of interesting stuff. With the rapid growth of Web 2.0, tagged data is becoming more and more abundant on the social network Web sites. An interesting problem is how to automate the process of making tag recommendations to users when a new resource becomes available.
+
+In this article, we address the issue of tag recommendation from a machine learning perspective. From our empirical observation of two large-scale datasets, we first argue that the user-centered approach for tag recommendation is not very effective in practice. Consequently, we propose two novel document-centered approaches that are capable of making effective and efficient tag recommendations in real scenarios. The first, graph-based, method represents the tagged data in two bipartite graphs, (document, tag) and (document, word), then finds document topics by leveraging graph partitioning algorithms. The second, prototype-based, method aims at finding the most representative documents within the data collections and advocates a sparse multiclass Gaussian process classifier for efficient document classification. For both methods, tags are ranked within each topic cluster/class by a novel ranking method. Recommendations are performed by first classifying a new document into one or more topic clusters/classes, and then selecting the most relevant tags from those clusters/classes as machine-recommended tags.
+
+Experiments on real-world data from Del.icio.us, CiteULike, and BibSonomy examine the quality of tag recommendation as well as the efficiency of our recommendation algorithms. The results suggest that our document-centered models can substantially improve the performance of tag recommendations when compared to the user-centered methods, as well as topic models LDA and SVM classifiers.
+},
+  acmid      = {1921595},
+  address    = {New York, NY, USA},
+  articleno  = {4},
+  doi        = {10.1145/1921591.1921595},
+  issue_date = {February 2011},
+  keywords   = {Gaussian processes, Tagging system, graph partitioning, mixture model, multi-label classification, prototype selection, rank2},
+  numpages   = {31},
+  publisher  = {ACM},
+  url        = {http://doi.acm.org/10.1145/1921591.1921595},
+}
+
+@Article{Vig:2012:TGE:2362394.2362395,
+  author     = {Vig, Jesse and Sen, Shilad and Riedl, John},
+  title      = {The Tag Genome: Encoding Community Knowledge to Support Novel Interaction},
+  journal    = {ACM Trans. Interact. Intell. Syst.},
+  year       = {2012},
+  volume     = {2},
+  number     = {3},
+  pages      = {13:1--13:44},
+  month      = sep,
+  issn       = {2160-6455},
+  acmid      = {2362395},
+  address    = {New York, NY, USA},
+  articleno  = {13},
+  doi        = {10.1145/2362394.2362395},
+  issue_date = {September 2012},
+  keywords   = {Tagging, conversational recommenders, data mining, information retrieval, machine learning, recommender systems},
+  numpages   = {44},
+  publisher  = {ACM},
+  url        = {http://doi.acm.org/10.1145/2362394.2362395},
+}
+
+@Article{DBLP:journals/corr/abs-cs-0508082,
+  author    = {Scott A. Golder and Bernardo A. Huberman},
+  title     = {The Structure of Collaborative Tagging Systems},
+  journal   = {CoRR},
+  year      = {2005},
+  volume    = {abs/cs/0508082},
+  bibsource = {dblp computer science bibliography, http://dblp.org},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/abs-cs-0508082},
+  timestamp = {Wed, 07 Jun 2017 14:40:39 +0200},
+  url       = {http://arxiv.org/abs/cs/0508082},
+}
+
+@Conference{beckstein_et_al_2006,
+  author        = {Beckstein C. and Sack H. and Peter H.},
+  title         = {Tags and Dependencies: an Integrated View of Document Annotation},
+  year          = {2006},
+  volume        = {209},
+  note          = {cited By},
+  __markedentry = {[felipe:1]},
+  abstract      = {The debate within the Web community over the optimal means by which to organize information often pits formalized classifications against distributed collaborative tagging systems. A number of questions remain unanswered, however, regarding the nature of collaborative tagging systems including the dynamics of such systems and whether coherent classification schemes can emerge from undirected tagging by users. Currently millions of users are using collaborative tagging without centrally organizing principles, and many suspect this exhibits features considered to be indicative of a complex system. If this is the case, it remains to be seem whether collaborative tagging by users over time leads to emergent classification schemes that could be formalized into an ontology usable by the Semantic Web. This paper uses data from "popular" tagged sites on the social bookmarking site del.icio.us to examine the dynamics of such collaborative tagging systems. In particular, we are trying to determine whether the distribution of tag frequencies stabilizes, which indicates a degree of cohesion or consensus among users about the optimal tags to describe particular sites. We use tag co-occurrence networks for a sample domain of tags to analyze the meaning of particular tags given their relationship to other tags and automatically create an ontology. We also produce a generative model of collaborative tagging in order to model and understand some of the basic dynamics behind the process.},
+  document_type = {Conference Paper},
+  journal       = {CEUR Workshop Proceedings},
+  source        = {Scopus},
+  url           = {http://ceur-ws.org/Vol-209/saaw06-short01-beckstein.pdf},
+}
+
+@Article{xu_et_al_2006,
+  author  = {Zhichen Xu and Yun Fu and Jianchang Mao and Difu Su},
+  title   = {Towards the Semantic Web: Collaborative Tag Suggestions},
+  journal = {Collaborative Web Tagging Workshop on Fifteenth International World Wide Web Conference},
+  year    = {2006},
+  url     = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.97.4194&rep=rep1&type=pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
