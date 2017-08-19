@@ -1,0 +1,46 @@
+% Encoding: UTF-8
+
+@InProceedings{4281096,
+  author    = {S. Jeschke and N. Natho and S. Rittau and M. Wilke},
+  title     = {mArachna - Applying Natural Language Processing Techniques to Ontology Engineering},
+  booktitle = {Seventh IEEE International Conference on Advanced Learning Technologies (ICALT 2007)},
+  year      = {2007},
+  pages     = {571-575},
+  month     = {July},
+  abstract  = {The knowledge contained in digital lectures and articles used in eLearning platforms like Moodle and Blackboard, is creating new demands for intelligent retrieval mechanisms. One basic approach in support of such retrieval mechanisms is the generation of semantic annotation, based on ontologies describing both the field and the structure of the texts themselves. Many current approaches use statistical methods similar to the ones employed by Google to find correlations within the texts. While successful and efficient, this approach fails to take advantage of the additional information provided by the structure of the sources, or, i.e. the upper ontology used by the author. mArachna is based on natural language processing techniques, taking advantage of characteristic linguistic structures defined by the language used in mathematical texts. It creates a knowledge base from the mathematical relations presented in a text, mapping the ontology onto the structure of the knowledge base.},
+  doi       = {10.1109/ICALT.2007.185},
+  issn      = {2161-3761},
+  keywords  = {computer aided instruction;information retrieval;natural language processing;ontologies (artificial intelligence);Google;digital articles;digital lectures;e-Learning;intelligent retrieval;mArachna;natural language processing;ontology engineering;semantic annotation;Content management;Education;Electronic learning;Knowledge engineering;Knowledge management;Least squares approximation;Mathematics;Natural language processing;Ontologies;Statistical analysis},
+}
+
+@Article{Mika2007,
+  author        = {Peter Mika},
+  title         = {Ontologies are us: A unified model of social networks and semantics},
+  journal       = {Web Semantics: Science, Services and Agents on the World Wide Web},
+  year          = {2007},
+  volume        = {5},
+  number        = {1},
+  pages         = {5 - 15},
+  issn          = {1570-8268},
+  note          = {Selected Papers from the International Semantic Web Conference},
+  __markedentry = {[felipe:1]},
+  doi           = {http://dx.doi.org/10.1016/j.websem.2006.11.002},
+  keywords      = {Knowledge representation, Folksonomies, Tagging},
+  url           = {http://www.sciencedirect.com/science/article/pii/S1570826806000552},
+}
+
+@Conference{Benz2007109,
+  author        = {Benz, D. and Hotho, A.},
+  title         = {Position paper: Ontology learning from folksonomies},
+  year          = {2007},
+  pages         = {109-112},
+  note          = {cited By},
+  abstract      = {The emergence of collaborative tagging systems with their underlying flat and uncontrolled resource organization paradigm has led to a large number of research activities focussing on a formal description and analysis of the resulting "folksonomies". An interesting outcome is that the characteristic qualities of these systems seem to be inverse to more traditional knowledge structuring approaches like taxonomies or ontologies: The latter provide rich and precise semantics, but suffer - amongst others - from a knowledge acquisition bottleneck. An important step towards exploiting the possible synergies by bridging the gap between both paradigms is the automatic extraction of relations between tags in a folksonomy. This position paper presents preliminary results of ongoing work to induce hierarchical relationships among tags by analyzing the aggregated data of collaborative tagging systems as a basis for an ontology learning procedure.},
+  affiliation   = {Knowledge and Data Engineering Group (KDE), University of Kassel, Wilhelmshöher Allee 73, 34121 Kassel, Germany},
+  document_type = {Conference Paper},
+  journal       = {LWA 2007 - Lernen - Wissen - Adaptivitat - Learning, Knowledge, and Adaptivity, Workshop Proceedings},
+  source        = {Scopus},
+  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-77951104379&partnerID=40&md5=ffe6f02f3ada8ecbb3931bbcb46fc3a0},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

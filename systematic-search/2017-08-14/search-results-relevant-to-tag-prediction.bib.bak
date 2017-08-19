@@ -116,19 +116,6 @@
   keywords  = {graph theory;query processing;recommender systems;social networking (online);Twitter search;content similarity measure;graph summarization;graph-based approach;hash tag graph;hash tag string;hashtag recommendation;query hash tag;random walk;social graph;social network graph;Damping;Data mining;Tagging;Twitter;Web sites;Hashtag Graph;Hashtag Ranking;Hashtag Recommendation;Hashtag Search},
 }
 
-@InProceedings{4222648,
-  author    = {L. T. Cheng and M. Desmond and M. A. Storey},
-  title     = {Presentations by Programmers for Programmers},
-  booktitle = {29th International Conference on Software Engineering (ICSE'07)},
-  year      = {2007},
-  pages     = {788-792},
-  month     = {May},
-  abstract  = {A common form of live technical presentation is that given by programmers for a programming audience during conferences, demonstrations, code reviews, and tutorials. Such presentations require manual switching between general presentation software and the integrated development environment (IDE), as well as reconfiguration of the IDE's UI to be readable by an audience. In this paper, we present a novel system that allows programmers to easily combine traditional slideware with seamless transitions to user-specified regions of the IDE along with special effects for live demonstration.},
-  doi       = {10.1109/ICSE.2007.67},
-  issn      = {0270-5257},
-  keywords  = {programming environments;technical presentation;general presentation software;integrated development environment;live technical presentation;programming audience;slideware;Computer science;Educational programs;Feedback;Motion pictures;Navigation;Programming profession;Software engineering;Switches;User interfaces},
-}
-
 @InProceedings{6831541,
   author    = {D. T. Nguyen and S. Das and M. T. Thai},
   title     = {Influence maximization in multiple online social networks},
@@ -370,19 +357,6 @@
   abstract  = {Computational thinking has recently been widely recognized as a fundamental skill that should be cultivated for everyone and in every field. Although there is an increasing interest in research in teaching and learning computational thinking in recent years, an engaging, effective online learning system is yet to be built for teaching, learning, and applying computational thinking online. To this end, we have developed DATAVIEW, an online social learning system for learning computational thinking concepts and skills online. The main contributions of this paper are: 1) we developed a new, effective online learning model for computational thinking based on our previous widely-applied R2D2 model. A signature characteristic of this new model is being interactive and learner-centered, thus "i" is carried out through the entire learning experiences, which provides teaching facilities to instructors and interactional tools among instructors and learners, 2) we implemented, validated, and refined iR2D2 in our DATAVIEW computational thinking online service, 3) We propose to use the DBR (design-based-research) approach to study the relationship between technology and teaching in the context of computational thinking, generating research results and findings applicable to online teaching in other domains as well.},
   doi       = {10.1109/SCC.2015.54},
   keywords  = {computer aided instruction;social networking (online);workflow management software;DATAVIEW computational thinking online service;learning computational thinking;online social learning system;online teaching;scientific workflows;signature characteristic;skills online;Algebra;Computational efficiency;Computational modeling;Computers;Education;Learning systems;Visualization;DATAVIEW;computational thinking;eLearning;scientific workflow management systems},
-}
-
-@InProceedings{4362639,
-  author    = {M. A. Storey and L. T. Cheng and J. Singer and M. Muller and D. Myers and J. Ryall},
-  title     = {How Programmers can Turn Comments into Waypoints for Code Navigation},
-  booktitle = {2007 IEEE International Conference on Software Maintenance},
-  year      = {2007},
-  pages     = {265-274},
-  month     = {Oct},
-  abstract  = {We have developed a new approach for software navigation called TagSEA (Tagging of Software Engineering Activities). TagSEA combines the notion of "waypointing" with "social tagging" to support programmers in defining navigational structures over a software system. In this paper we present the results from a case study series, conducted with professional programmers, that demonstrates how this tool supports navigation and under what circumstances. We conclude with insights into user-definable navigational structures, and how they can support software maintenance more effectively.},
-  doi       = {10.1109/ICSM.2007.4362639},
-  issn      = {1063-6773},
-  keywords  = {software maintenance;TagSEA;software maintenance;software navigation;software system;tagging-software engineering activities;Application software;Filters;Navigation;Programming profession;Software engineering;Software maintenance;Software systems;Software tools;Tagging;Vocabulary},
 }
 
 @InProceedings{4785070,
@@ -658,32 +632,6 @@
   keywords  = {groupware;social networking (online);Email;IM;collaboration awareness;collaborative work;lightweight informal communication media;microblogging;project teams;social software;wikis;Collaboration;Companies;Electronic mail;Interviews;Media;Social network services;Software;Awareness in Collaboration Systems;Social Software Based Collaboration},
 }
 
-@InProceedings{4427190,
-  author    = {P. Klaisubun and P. Kajondecha and T. Ishikawa},
-  title     = {Behavior Patterns of Information Discovery in Social Bookmarking Service},
-  booktitle = {Web Intelligence, IEEE/WIC/ACM International Conference on},
-  year      = {2007},
-  pages     = {784-787},
-  month     = {Nov},
-  abstract  = {The paper describes an analysis of users' behaviors in discovering useful information resources by using social bookmarking service. The aims of the analysis are to evaluate the effectiveness of social bookmarking service for information discovery and to propose improvements in its navigational function. We analyzed users' behaviors of information discovery in an experimental social bookmarking service and evaluated the effectiveness of social navigation for information discovery. The results of the analysis show users frequently select tags to focus topics to search and prefer to browse others' libraries to find related information around the focused topics.},
-  doi       = {10.1109/WI.2007.146},
-  keywords  = {Information analysis;Information resources;Libraries;Navigation;Online Communities/Technical Collaboration;Paper technology;Pattern analysis;Search engines},
-}
-
-@Article{4472199,
-  author   = {J. M. Torres and D. Hutchinson},
-  title    = {Picture this},
-  journal  = {Communications Engineer},
-  year     = {2007},
-  volume   = {5},
-  number   = {6},
-  pages    = {20-25},
-  month    = {Dec},
-  issn     = {1479-8352},
-  abstract = {Not Available},
-  doi      = {10.1049/ce:20070606},
-}
-
 @InProceedings{6123271,
   author    = {C. Mira and P. Feijao and T. Duque-Estrada and J. Meidanis and C. A. Joly},
   title     = {The SinBiota 2.0 Biodiversity Information System},
@@ -694,18 +642,6 @@
   abstract  = {For the last 10 years, SinBiota, the information system of the Biota-FAPESP Program, has served the community storing and displaying data in maps, and providing a common base for researchers in different areas to communicate and exchange biodiversity data. State administration has also used the system to support new laws and regulations. Now it is time to rethink the system, which has grown in an ad-hoc, unstructured way, aiming at the support that will be needed for the next 10 years. In a project jointly funded by Microsoft Research and FAPESP, we aim at the creation of a specification for the new SinBiota 2.0 system, including cutting-edge services and technologies on information technology, in order to achieve a number of goals, namely: guarantee the use and expansion of the system for the next ten years, support the availability of a larger volume of higher quality environmental data, oriented also to the educational and public administration sectors, provide more efficient sharing of data among BIOTA researchers, inter-operate with international initiatives, provide effective tools to assist researchers in finding relevant information amongst a large amount of environment data. The expected results at the end of this project are the composition of a specification (Reference Document) of the SinBiota 2.0 system, and the implementation of a prototype that will gradually replace the current system. We propose in this work the system architecture and our vision of the main features that would allow SinBiota 2.0 to meet the expectations of the biodiversity research community and other stakeholders. We also describe a prototype application that implements most of the features present in the current SinBiota 1.0 system, as well as some of the new features envisaged for the new version.},
   doi       = {10.1109/eScience.2011.28},
   keywords  = {biology computing;data communication;electronic data interchange;environmental science computing;information systems;BIOTA researchers;Biota-FAPESP Program;Microsoft Research;Reference Document;SinBiota 2.0;biodiversity data communication;biodiversity data exchange;biodiversity information system;data sharing;educational administration sectors;higher quality environmental data;information technology;laws;public administration sectors;regulations;Biodiversity;Bioinformatics;Collaboration;Computer architecture;Data visualization;Multimedia communication;biodiversity;e-science applications;information systems},
-}
-
-@InProceedings{4430482,
-  author    = {H. S. Al-Khalifa},
-  title     = {CoolRank: A Social Solution for Ranking Bookmarked Web Resources},
-  booktitle = {2007 Innovations in Information Technologies (IIT)},
-  year      = {2007},
-  pages     = {208-212},
-  month     = {Nov},
-  abstract  = {Users tag resources for a variety of reasons and using a variety of conventions. The tags that they provide are stored in social bookmarking services, so these services can provide a rich gateway to a wide and interesting quantity of web resources. The cognitive effort that has gone into making these tags has presumably added value to the description of the resource. In this work we utilize the quantitative value of these tags for ranking bookmarked web resources in social bookmarking services. Our proposed solution is called CoolRank, a simple and intuitive model to rank bookmarked web resources in a social bookmarking service, such as del.icio.us. CoolRank makes use of both quantitative information, based on the number of people who have bookmarked a web resource, and subjective information, based on the words people have used in their tags.},
-  doi       = {10.1109/IIT.2007.4430482},
-  keywords  = {Web services;information resources;information retrieval;CoolRank;bookmarked Web resources ranking;quantitative information;social bookmarking services;Educational institutions;Frequency;Indexing;Information science;Information systems;Tagging;Taxonomy;Technical Activities Guide -TAG;Uniform resource locators;Vocabulary},
 }
 
 @InProceedings{6618436,
@@ -1226,18 +1162,6 @@
   keywords  = {Big Data;batch processing (computers);graph theory;social networking (online);DEMON;batch-oriented algorithm;dynamic graphs;high-volume graph streams;incremental local-first community detection method;large-scale real world networks;network analysis;real-world big networks;social analytics;Detection algorithms;Image edge detection;Joining processes;Peer-to-peer computing;Performance evaluation;Real-time systems;Social network services;High performance computing;Network theory (graphs)},
 }
 
-@InProceedings{4278557,
-  author    = {J. Carroll},
-  title     = {Where to Now? Generating Visions for mBusiness from the Drivers of Use},
-  booktitle = {International Conference on the Management of Mobile Business (ICMB 2007)},
-  year      = {2007},
-  pages     = {13-13},
-  month     = {July},
-  abstract  = {Harnessing the potential of mBusiness has proved significantly more difficult that initially expected. Despite high rates of diffusion and acceptance of mobile devices, there has only been modest uptake of mobile content services. Many of the early visions of mBusiness focused on the capabilities of technology whereas commercial success depends on the value derived from the application of technology by customers or users. This paper outlines an alternative approach to setting visions that is grounded in understanding of users' appropriation of technology. The approach is illustrated through analysis of the drivers of mobile content services. Some of the implications of applying this approach are outlined and future areas for research are indicated.},
-  doi       = {10.1109/ICMB.2007.73},
-  keywords  = {electronic commerce;mobile computing;mobile business;mobile content service;Appropriate technology;Business;Information systems;Investments;Mobile handsets;Motion pictures;TV;Videos;Web and internet services;YouTube},
-}
-
 @InProceedings{4739703,
   author    = {B. Li and Q. Zhu},
   title     = {The Determination of Semantic Dimension in Social Tagging System Based on SOM Model},
@@ -1322,18 +1246,6 @@
   abstract  = {Divergences in conceptual modeling choices are inherent to the collaborative ontology development. Such divergences have been typically solved through some process of negotiation among the participants of the development process. When negotiating, the participants argue to defend their ideas based on their past experiences. We propose to support and to guide the argumentation using philosophical notions brought by the OntoClean methodology to show the participants the consequences of their conceptual modeling choices. So the participants can choose the modeling option that better represents the intended model of the domain. This paper presents an approach for collaborative ontology development in a distributed way, specifically to support activities of the conceptualization phase and the whole process of discussion to reach consensus, aiming at developing ontologies that better fit the intended models for a domain.},
   doi       = {10.1109/CSCWD.2011.5960075},
   keywords  = {ontologies (artificial intelligence);OntoClean methodology;argumentation process;collaborative ontology development;conceptual modeling choice;negotiation process;Buildings;Collaboration;Nominations and elections;Ontologies;Tagging;Unified modeling language;Vocabulary;OntoClean;argumentation process;collaborative ontology development},
-}
-
-@InProceedings{4427063,
-  author    = {J. Yang and Y. Matsuo and M. Ishizuka},
-  title     = {An Augmented Tagging Scheme with Triple Tagging and Collective Filtering},
-  booktitle = {Web Intelligence, IEEE/WIC/ACM International Conference on},
-  year      = {2007},
-  pages     = {35-38},
-  month     = {Nov},
-  abstract  = {Collaborative tagging is increasingly drawing attentions. However the keyword based tagging scheme has its limitations and it can be observed that tagging society are seeking and using new tagging patterns. This paper proposes a subject-predicate-object scheme for users to triple tag web resources. We first introduce the triple tag model and discuss its relations with existing tag schema and RDF model. Then a filter-based framework that supports the query of triple tags is proposed. The implementation and a case study in the comparison shopping domain are exhibited.},
-  doi       = {10.1109/WI.2007.120},
-  keywords  = {Feedback loop;Information filtering;Information filters;Information resources;International collaboration;Joining processes;Mobile handsets;Resource description framework;Tagging;Web pages},
 }
 
 @InProceedings{5685957,
@@ -2032,19 +1944,6 @@
   keywords  = {collaborative filtering;intelligent sensors;mobile computing;music;recommender systems;smart phones;social sciences;collaborative filtering algorithms;item filtering;mobile devices;personalized music recommendation service;pervasive computing environment;sensor networks;situation awareness-based personalized mobile recommendation service;smart phone sensor data;smart services;social awareness-based personalized mobile recommendation service;user social network;Collaboration;Electrocardiography;Equations;Mathematical model;Mobile communication;Prototypes;Social network services;Pervasive computing;collaborative filteirng;personalized recommendation;situation awareness;socially awareness},
 }
 
-@InProceedings{5235050,
-  author    = {B. D. Goodman and S. N. Goldman},
-  title     = {Freeing creativity by understanding the role of best practices},
-  booktitle = {2007 IEEE International Engineering Management Conference},
-  year      = {2007},
-  pages     = {308-311},
-  month     = {July},
-  abstract  = {Best practices are the encapsulation of experience that when repeated attempt to achieve similar outcomes. Many professions, including management, software engineering and user experience design, leverage best practices, their practitioners creating them as often as the professional landscape changes because of culture, business conditions or technology. While best practices offer the means for communicating known approaches to common challenges, they also tend toward boxing creativity-presuming the answer-which can inadvertently inhibit innovation. This paper describes best practices, offers two case studies illustrating where best practices go awry and offers the suggestion that following too close to the book can stifle creativity and innovation.},
-  doi       = {10.1109/IEMC.2007.5235050},
-  issn      = {2159-3590},
-  keywords  = {innovation management;knowledge management;best practices;creativity;innovation;user experience;Best practices;Collaboration;Collaborative software;Employment;Encapsulation;Innovation management;Standards organizations;Tagging;Technological innovation;Technology management;best practices;creativity;innovation;software development;teaming;user experience},
-}
-
 @InProceedings{5279690,
   author    = {Z. m. Wang and F. Yang},
   title     = {A Multiple-Mode Mobile Location-Based Information Retieve System},
@@ -2307,19 +2206,6 @@
   doi       = {10.2200/S00460ED1V01Y201212WBE004},
   pages     = {117-},
   url       = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6813264},
-}
-
-@InProceedings{4362619,
-  author    = {C. Oezbek and L. Prechelt},
-  title     = {JTourBus: Simplifying Program Understanding by Documentation that Provides Tours Through the Source Code},
-  booktitle = {2007 IEEE International Conference on Software Maintenance},
-  year      = {2007},
-  pages     = {64-73},
-  month     = {Oct},
-  abstract  = {Many small and medium-sized systems have little or no design documentation, which makes program understanding during maintenance enormously more difficult when performed by outsiders. Thus, if only minimal design documentation is available, which form should it take to maximize its usefulness? We suggest that it is helpful if the documentation describes a tour through the source code, leading the user directly to relevant details. This work reports an evaluation of this conceptual idea in the form of a controlled experiment with 59 student subjects working on a difficult program understanding task in the context of the 27 KLOC JHotDraw graphics framework. One group received a plain text documentation, the other received tour-structured documentation which they navigated by using an Eclipse plugin called JTourBus that we constructed for the experiment. The results indicate that program understanding can be achieved somewhat faster (albeit not more correctly) with JTourBus than with a plain text document.},
-  doi       = {10.1109/ICSM.2007.4362619},
-  issn      = {1063-6773},
-  keywords  = {reverse engineering;system documentation;Eclipse plugin;JTourBus framework;KLOC JHotDraw graphics framework;plain text documentation;program understanding;source code;tour-structured documentation;Computer aided software engineering;Computer architecture;Documentation;Graphics;Natural languages;Navigation;Process design;Programming profession;Reverse engineering;Software design;delocalized concern;design documentation;program understanding},
 }
 
 @InProceedings{7369614,
@@ -3089,18 +2975,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   keywords  = {computer games;meta data;multimedia computing;artifact evaluation;games with a purpose;human-created artifact;personal archive;semantics acquisition;user generated valid metadata;user personal generated multimedia content;Approximation algorithms;Computational modeling;Games;Humans;Manuals;Multimedia communication;Semantics;games with a purpose;human computing;semantic web;user collaboration},
 }
 
-@InProceedings{4427528,
-  author    = {G. Correndo and H. Alani},
-  title     = {Survey of Tools for Collaborative Knowledge Construction and Sharing},
-  booktitle = {2007 IEEE/WIC/ACM International Conferences on Web Intelligence and Intelligent Agent Technology - Workshops},
-  year      = {2007},
-  pages     = {7-10},
-  month     = {Nov},
-  abstract  = {The fast growth and spread of Web 2.0 environments have demonstrated the great willingness of general Web users to contribute and share various type of content and information. Many very successful web sites currently exist which thrive on the wisdom of the crowd, where web users in general are the sole data providers and curators. The Semantic Web calls for knowledge to be semantically represented using ontologies to allow for better access and sharing of data. However, constructing ontologies collaboratively is not well supported by most existing ontology and knowledge-base editing tools. This has resulted in the recent emergence of a new range of collaborative ontology construction tools with the aim of integrating some Web 2.0 features into the process of structured knowledge construction. This paper provides a survey of the start of the art of these tools, and highlights their significant features and capabilities.},
-  doi       = {10.1109/WI-IATW.2007.35},
-  keywords  = {groupware;knowledge based systems;ontologies (artificial intelligence);semantic Web;Web 2.0;collaborative knowledge construction;collaborative knowledge sharing;semantic Web;Buildings;Collaborative tools;Collaborative work;Computer science;Conferences;Intelligent agent;International collaboration;Ontologies;Proposals;Semantic Web;ontologycollaborative toolssemantic web},
-}
-
 @InProceedings{5563758,
   author    = {Huan-Yu Lin and Jun-Ming Su and Yi-Li Liu and Jin-Long Li and Shian-Shyong Tseng and Shien-Chang Tang},
   title     = {OSCAR: an Online Scalable Adaptive Recommender for improving the recommendation effectiveness of entertainment video webshop},
@@ -3188,18 +3062,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   abstract  = {Web 2.0 tools and environments have made tagging, the act of assigning keywords to on-line objects, a popular way to annotate shared resources. The success of now-prominent tagging systems makes tagging "the natural way for people to classify objects as well as an attractive way to discover new material". One of the most challenging problems is to harvest the semantics from these systems, which can support a number of applications, including tag clustering and tag recommendation. We conduct detailed studies on different types of tag relations and tag similarity measures, and propose a scalable measure that we name Reliability Factor Similarity Measure (RFSM). We compare it with two other measures having similar scalability by integrating them into hierarchical clustering methods and performing tag clustering on a subset of Flickr data. The results suggest that RFSM outperforms those two measures when it is applies for tag clustering purpose. We also present an alternative way of utilizing discovered tag relations to set up tag refining rules in order to deal with some noise in the initial tag sets, which can in turn improve the precision of tag relations.},
   doi       = {10.1109/APWeb.2010.65},
   keywords  = {Web sites;identification technology;pattern clustering;Flickr;Web 2.0 tools;asymmetric similarity measure;hierarchical clustering method;keyword assigning;reliability factor similarity measure;shared resource annotation;tag clustering;tag recommendation;tag relations;tag similarity measures;Australia;Clustering algorithms;Clustering methods;Conducting materials;Costs;Information technology;Performance evaluation;Scalability;Tagging;Vocabulary;Clustering;Folksonomy;Reliability Factor Similarity Measure;Tag;Web 2.0},
-}
-
-@InProceedings{4427196,
-  author    = {M. Quasthoff and H. Sack and C. Meinel},
-  title     = {Why HTTPS Is Not Enough -- A Signature-Based Architecture for Trusted Content on the Social Web},
-  booktitle = {Web Intelligence, IEEE/WIC/ACM International Conference on},
-  year      = {2007},
-  pages     = {820-824},
-  month     = {Nov},
-  abstract  = {Easy to use, interactive web applications accumulating data from heterogeneous sources represent a recent trend on the World Wide Web, referred to as the Social Web. There however, security standards are often disregarded in favor of interface design or brand new features. This prevents the new services from gaining ground in the enterprise, in medical or e-government environments. We propose the deployment of XML Digital Signatures on web content and demonstrate how an architecture enabling for various security properties would look like. The solution proposed will benefit from the research on security engineering in Service-Oriented Architectures and thus allows for an in-depth analysis on the results.},
-  doi       = {10.1109/WI.2007.23},
-  keywords  = {Internet;XML;digital signatures;software architecture;HTTP;World Wide Web;XML digital signatures;interface design;security standards;service-oriented architectures;signature-based architecture;social Web;trusted content;Data security;Electronic government;Information security;Internet;Protection;Service oriented architecture;Videos;Web sites;World Wide Web;XML},
 }
 
 @InProceedings{6132817,
@@ -3448,19 +3310,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   keywords  = {classification;image retrieval;indexing;ontologies (artificial intelligence);semantic Web;social networking (online);Flickr;Web 2.0 photo sharing system;folksonomies;indexing;ontologies;semantic Web;tag categorizations;tag clusters;tag-based photo retrieval function;Semantic Web;Web2.0;folksonomy;ontology},
 }
 
-@InProceedings{4221772,
-  author    = {F. Wang and C. Rabsch and P. Kling and P. Liu and J. Pearson},
-  title     = {Web-based Collaborative Information Integration for Scientific Research},
-  booktitle = {2007 IEEE 23rd International Conference on Data Engineering},
-  year      = {2007},
-  pages     = {1232-1241},
-  month     = {April},
-  abstract  = {Scientific research becomes increasingly reliant on collaborative effort among multiple institutions and interdisciplinary consortia, through sharing scientific experiments and data and collaboration on analysis of data and results. Besides information sharing, there is a growing need to create a framework to enable collaborative, cross-disciplinary research, which can facilitate a research community into a default mode of collaboration, including: i) enabling scientific researchers to dynamically interact with others, collaboratively author, annotate, review, comment on others' data, and discuss their research; ii) providing a dynamic collaboration environment by harnessing collective contributions from a group of researchers; and iii) facilitating broader participation of people into research projects. While traditional data management and integration systems put much focus on passively integrating existing data, the collaboration among data providers and users is quite limited. In this paper, we present a Web-based collaborative platform to dynamically integrate information for scientific research. Besides data integration, the system provides essential collaboration capabilities to boost user participation and collaboration. The system will not only enable users as active information contributors to bring significant new values to the data, but also provide an environment for scientific researchers to do collaborative research in a large research community.},
-  doi       = {10.1109/ICDE.2007.368982},
-  issn      = {1063-6382},
-  keywords  = {Internet;data integrity;information retrieval;scientific information systems;Web-based collaborative information integration;collective contributions;data integration system;data management;dynamic collaboration environment;scientific research;Collaboration;Collaborative work;Computer science;Data analysis;Data systems;Information analysis;Large scale integration;Large-scale systems;Mathematics;Optical imaging},
-}
-
 @InProceedings{5693415,
   author    = {N. Abdullah and Y. Xu and S. Geva and J. Chen},
   title     = {Infrequent Purchased Product Recommendation Making Based on User Behaviour and Opinions in E-commerce Sites},
@@ -3703,18 +3552,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   abstract  = {The wide diffusion of community tagging sites and related folksonomies has made the knowledge discovery and retrieval still much more urgent topic. If tagging systems allow users to add freely keywords to web resources, clicking on a tag has the side effect of a tag-based query, since enables the users to explore related content. The collective knowledge expressed though user-annotated data has a big potential, but needs to be filtered in a digest form so that the search result better reflects the users' preferences and actual aims. Starting from these considerations, our work presents an agent-based approach for a scalable semi-automatic generation of annotation tags, personalized on each user's preferences and tastes. Primary is the role of agents which assist users in the tagging activities as well as the retrieval of resources related to their interest. A user-friendly interface proposes an integrated one-shot view for interacting with a tagging system.},
   doi       = {10.1109/IA.2011.5953613},
   keywords  = {Internet;Web sites;data mining;human computer interaction;multi-agent systems;query processing;user interfaces;Web resources;agent-assisted tagging system;annotation tag semi-automatic generation;community tagging sites;folkonomy-based information retrieval;knowledge discovery;knowledge retrieval;tag-based query;user-annotated data;user-friendly interface;Communities;Computational modeling;Context;Lattices;Tagging;Web pages;Fuzzy Formal Concept Analysis (FFCA);Multi-agent system;Personalization;Tagging},
-}
-
-@InProceedings{4427589,
-  author    = {T. Ishikawa and P. Klaisubun and M. Honma},
-  title     = {Navigation Efficiency of Social Bookmarking Service},
-  booktitle = {2007 IEEE/WIC/ACM International Conferences on Web Intelligence and Intelligent Agent Technology - Workshops},
-  year      = {2007},
-  pages     = {280-283},
-  month     = {Nov},
-  abstract  = {The paper describes an experiment on the navigation efficiency of social bookmarking service for information discovery. The purpose is to evaluate the effects of navigation information that can be used in choosing users' libraries, which includes the number of bookmarks in each library, the ratio of user's bookmarks in a bookmark collection, and the ratio of bookmarks with certain tags in each library. The experiment was performed by computer simulation for an example real dataset. The navigation efficiency was evaluated by the average number of bookmarks browsed to find a randomly selected target bookmark for each randomly selected tag. The result shows that all these information effect on the navigation efficiency with statistical significance.},
-  doi       = {10.1109/WI-IATW.2007.62},
-  keywords  = {information retrieval;library automation;bookmark collection;information discovery;navigation efficiency;social bookmarking service;Computational modeling;Computer simulation;Conferences;Displays;Information resources;Intelligent agent;Libraries;Navigation;Paper technology;Web pages;social bookmarkingsocial navigationnavigation efficiencycomputer simulation},
 }
 
 @InProceedings{5945349,
@@ -4040,18 +3877,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   keywords = {computer aided instruction;groupware;student experiments;CLAS;collaborative lecture annotation system;distributed learning;educational performance;students perception;Collaboration;Comuter aide instruction;Distance learning;Education courses;Electronic learning;History;Collaboration;Computer aided instruction;Comuter aide instruction;Distance learning;Education courses;Electronic learning;History;collaborative tools;distance learning;educational technology},
 }
 
-@InProceedings{4553859,
-  author    = {J. Gelernter},
-  title     = {A quantitative analysis of collaborative tags: Evaluation for information retrieval #x2014;a preliminary study},
-  booktitle = {2007 International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2007)},
-  year      = {2007},
-  pages     = {376-381},
-  month     = {Nov},
-  abstract  = {Collaborative (or social tagging) options are being added to many database catalogs on the assumption that not only those who assign tags but also those who use the catalog find such tags beneficial. But no quantitative analyses of collaborative tags exist to support this assumption. Based on questionnaires mixing collaborative tag clouds from http://www.LibraryThing.com and controlled library of congress subject heading (LCSH) strings from the library of congress catalog http://catalog.loc.gov, it was found that controlled vocabulary terms are selected above collaborative terms; that the string format is preferred to the cloud; that strings appear to ldquoperformrdquo better in terms of reflecting book content; and that it is important to users that recall is high (where uncontrolled vocabulary retrieval is generally low). Results were found to be dependent upon particulars of tag cloud or string. The outcome indicates that catalog users would derive fewer information retrieval benefits from the current form of collaborative clouds than from the staid strings of the Library of Congress Subject Headings.},
-  doi       = {10.1109/COLCOM.2007.4553859},
-  keywords  = {cataloguing;database management systems;groupware;information retrieval;collaborative clouds;collaborative tags;database catalogs;information retrieval;quantitative analysis;Books;Catalogs;Collaboration;Databases;Information analysis;Information retrieval;Libraries;Tag clouds;Tagging;Vocabulary;collaborative tags;information retrieval;recall;social tagging;tag cloud},
-}
-
 @InProceedings{5360046,
   author    = {K. Liu and B. Fang and Y. Zhang},
   title     = {Detecting Tag Spam in Social Tagging Systems with Collaborative Knowledge},
@@ -4165,19 +3990,6 @@ Borgman, an often-cited authority on scholarly communication, argues that data h
   doi       = {10.1109/DEST.2010.5610657},
   issn      = {2150-4938},
   keywords  = {Internet;abstracting;digital simulation;knowledge acquisition;museums;virtual reality;vocabulary;Pacific;Web digital ecosystems;abstracting;attribute search;control vocabulary;information acquisition;knowledge acquisition;social media interfaces;virtual museums;Communities;Conferences;Context;Ecosystems;Lattices;Tagging;Vocabulary},
-}
-
-@InProceedings{4419236,
-  author    = {Y. S. Dai and Q. Gao and Z. Fan and R. G. Kang},
-  title     = {User perceived quality of online social information services: from the perspective of knowledge management},
-  booktitle = {2007 IEEE International Conference on Industrial Engineering and Engineering Management},
-  year      = {2007},
-  pages     = {482-486},
-  month     = {Dec},
-  abstract  = {Features of online social information services show promises for overcoming obstacles in current knowledge management practices. This paper first discussed the potential efficacy and emerging practices of such technologies in the domain of knowledge management. Then a quality model of online social information systems was derived from prior literature on online information service quality and analyses of characteristics of emerging technologies. An online questionnaire was developed and administrated to 168 users. Four quality dimensions that are perceived as important by users were identified by factor analysis and proved to be reliable: system usability, content quality, content exchangeability and accessibility, and sociability. The findings of this research provide implications for developers of both enterprise knowledge management systems and public social Websites, and can facilitate future development of the instrument measuring the quality of online social service from other perspectives.},
-  doi       = {10.1109/IEEM.2007.4419236},
-  issn      = {2157-3611},
-  keywords  = {Internet;knowledge management;content quality;enterprise knowledge management;online social information services;public social Websites;system usability;Automotive engineering;Collaborative work;Humans;Industrial engineering;Information services;Internet;Knowledge acquisition;Knowledge management;Social network services;Web sites;Knowledge management;online service quality;online social information services;web 2.0},
 }
 
 @InProceedings{6816706,
@@ -5103,18 +4915,6 @@ References},
   keywords  = {Web sites;competitive intelligence;data integration;data mining;government data processing;information retrieval;learning (artificial intelligence);program debugging;source code (software);terrorism;Web architecture;Web architecture model;Web data patterns;Web engineering retrieval;Web logs error reports;Web mining;business intelligence development;client inputs;geo tracking system;government private sectors;government public sectors;graph mining;hackers;information pattern;machine learning;software debugging business rules;source code mining implementation tools;terrorist;Business;Databases;Text mining;Web mining;Web pages;Business Intelligence;Geo-Tracking;Pattern Analysis;Text Mining;Web mining},
 }
 
-@InProceedings{4427592,
-  author    = {T. Jiang and D. He},
-  title     = {Redefining Social Network Services: A Solution to Personal Information and Knowledge Management},
-  booktitle = {2007 IEEE/WIC/ACM International Conferences on Web Intelligence and Intelligent Agent Technology - Workshops},
-  year      = {2007},
-  pages     = {292-295},
-  month     = {Nov},
-  abstract  = {Instead of aiming at the augmentation of human communication abilities as other social software does, social network services (SNS) provide better chances for people to enhance their abilities to handle interpersonal relationships, by deriving their theoretical foundation from social network theory. However, they are far from working perfectly as reflected by the defects in the networks - distrust, fragmentation, and duplication. This paper addresses such problems innovatively in the context of personal information and knowledge management (PIKM), which involves a series of activities in our daily life and work that can be well supported by restructured SNS. While our future efforts target an operable SNS system as the solution to PIKM, our research at current stage gives full consideration to the identified problems, and achieves an initial system model with four primary modules: Personal Profile, Collaboration Workspace, Knowledge Network of Practice, and Platform.},
-  doi       = {10.1109/WI-IATW.2007.106},
-  keywords  = {groupware;information management;knowledge management;social sciences computing;collaboration workspace;knowledge network;personal information management;personal knowledge management;personal profile;social network service;social software},
-}
-
 @InProceedings{6689996,
   author    = {A. Stanescu and S. Nagar and D. Caragea},
   title     = {A Hybrid Recommender System: User Profiling from Keywords and Ratings},
@@ -5547,31 +5347,6 @@ References},
   keywords  = {Big Data;content management;music;statistical analysis;Big Data;music content distribution;music market;music representation model;sound sources;standardized music expression model;statistical analysis;visualization information;Analytical models;Classification algorithms;Data models;Feature extraction;Music;Music information retrieval;Recommender systems},
 }
 
-@InProceedings{4402881,
-  author    = {C. A. Iglesias and M. Sanchez and F. Spadoni},
-  title     = {VARIAZIONI: Collaborative Authoring of Localized Cultural Heritage Contents over the Next Generation of Mashup Web Services},
-  booktitle = {Automated Production of Cross Media Content for Multi-Channel Distribution, 2007. AXMEDIS '07. Third International Conference on},
-  year      = {2007},
-  pages     = {225-230},
-  month     = {Nov},
-  abstract  = {This paper presents developments and results from the VARIAZIONI project, funded by the Commission of the European Union under the eContentPlus program. The project aims to develop and validate an open collaborative infrastructure and methodology for authoring, distribution and delivery of European Musical Contents. VARIAZIONI approach encompasses the development of a collaborative platform where non technical users from cultural institutions can easily catalogue their existing digital assets, comprising multimedia master classes, audio/video concerts, images, scanned documents, etc., and create new contents from the existing contents of other institutions, taking into account IPR issues. We aim to demonstrate the feasibility of reusing and integrating contents in different applications, like Websites, e-courses, collaborative portals, and new distribution channels, through the usage of friendly interfaces and intelligent techniques for reducing cataloguing effort. As a result, existing contents will be more accessible and enriched through its reuse and inclusion of internet resources.},
-  doi       = {10.1109/AXMEDIS.2007.27},
-  keywords  = {Web services;groupware;VARIAZIONI;collaborative authoring;collaborative portals;distribution channels;localized cultural heritage contents;mashup Web services;Cultural differences;Europe;Intellectual property;International collaboration;Internet;Mashups;Online Communities/Technical Collaboration;Portals;Production;Web services},
-}
-
-@InProceedings{4464070,
-  author    = {M. Melenhorst and M. van Setten},
-  title     = {Usefulness of Tags in Providing Access to Large Information Systems},
-  booktitle = {2007 IEEE International Professional Communication Conference},
-  year      = {2007},
-  pages     = {1-9},
-  month     = {Oct},
-  abstract  = {In this paper we present a study in which we explore the potential use of social tagging in providing access to large information systems. Tags are user-supplied access points for information resources, e.g., short labels that characterize pieces of information. As part of long- term research efforts to assess the usefulness of tags for retrieving content from large information spaces, we set up a first experiment in which we investigate the tags people assign to content. We chose a TV-guide that offers recommendations to users on interesting programs according to their tastes to be our case. Participants were asked to tag a number of TV programs. They were also asked to give a rating for the program. The results show a variety of tags. We composed a category scheme of these tags, which on a high level distinguishes between attitude tags, content tags, and self-reference tags. Tags that reflect the genre, the participant's opinion, and the program's characteristics were assigned most often. Surprisingly, no relationship was found between attitude tags and the rating participants have assigned to the program. We feel that the results can be generalized to other settings such as the field of document design and technical communication, including instructional texts.},
-  doi       = {10.1109/IPCC.2007.4464070},
-  issn      = {2158-091X},
-  keywords  = {content-based retrieval;information systems;content retrieval;large information systems;social tagging;user-supplied access points;Computer languages;Content based retrieval;Information resources;Information retrieval;Information systems;Professional communication;Recommender systems;TV;Tagging;Vocabulary},
-}
-
 @Article{7155445,
   author   = {Xindong Wu and Huanhuan Chen and Gongqing Wu and Jun Liu and Qinghua Zheng and Xiaofeng He and Aoying Zhou and Zhong-Qiu Zhao and Bifang Wei and Ming Gao and Yang Li and Qiping Zhang and Shichao Zhang and Ruqian Lu and Nanning Zheng},
   title    = {Knowledge Engineering with Big Data},
@@ -5646,19 +5421,6 @@ References},
   doi       = {10.1109/FIE.2011.6142845},
   issn      = {0190-5848},
   keywords  = {engineering education;IGIP;engineering education;engineering pedagogy studies;international society of engineering education;Cities and towns;Conferences;Educational institutions;Engineering education;Knowledge engineering;Mobile communication;Engineering Education;IGIP;challenges;didactics;pedagogy},
-}
-
-@InProceedings{4076541,
-  author    = {J. C. Paolillo and S. Penumarthy},
-  title     = {The Social Structure of Tagging Internet Video on del.icio.us},
-  booktitle = {System Sciences, 2007. HICSS 2007. 40th Annual Hawaii International Conference on},
-  year      = {2007},
-  pages     = {85-85},
-  month     = {Jan},
-  abstract  = {The ability to tag resources with uncontrolled metadata or "folksonomies" is often characterized as one of the central features of "Web 2.0" applications. Folksonomies are said to support emergent classification, where the semantic value of the tags and their relation to one another is worked out through a negotiated process of users applying their selected tags and seeing what others have tagged the same way. Few studies exist to show how folksonomic tagging is actually done, and to what extent users share each other's tagging patterns. In this paper, we present the results of a social network analysis of two months worth of tagging Internet video on the social bookmarking system del.icio.us. The analysis reveals that specific videos are tagged in fairly coherent ways by a relatively tight group of users. However, contrary to our expectations, there does not appear to be much re-use of tags across different content, or even very many users tagging more than a few similar items. Overwhelmingly, specific clusters of tags and users are associated with individual video links. This result suggests that tagging bookmarks is highly local, and the overall collection of tags is unlikely to result in a coherent globally navigable classification system},
-  doi       = {10.1109/HICSS.2007.555},
-  issn      = {1530-1605},
-  keywords  = {Internet;meta data;multimedia communication;social sciences computing;video streaming;Folksonomic tagging;Internet video;metadata;social structure;Application software;Collaboration;Informatics;Information science;Internet;Libraries;Social network services;Tagging;Video sharing;Videoconference},
 }
 
 @InProceedings{6825965,
@@ -5994,19 +5756,6 @@ References},
   abstract  = {Folksonomy systems enable users to participate in the Web content creation process by annotating (tagging) resources with freely chosen keywords. Still, it is an open issue how to exploit this user-created content, and how to process and use these emergent semantics effectively. We investigate how the context of Web resources can be utilized to improve recommended strategies in social tagging systems. We focus on the GroupMe! system, which enables users to create groups in order to bundle Web resources. GroupMe! groups form valuable context information for the resources contained in such groups. In this paper we exploit graph-based tag recommendation strategies, evaluate them in the GroupMe! dataset, and benchmark our results against other approaches. In our evaluations we show that graph-based strategies outperform other approaches, and show the immanent benefit of graph-based recommendation strategies which exploit the group context for recommending tags to untagged resources.},
   doi       = {10.1109/WIIAT.2008.432},
   keywords  = {Internet;graph theory;groupware;information analysis;information retrieval;search engines;social networking (online);GroupMe! system;Web content creation process;folksonomy system;graph-based tag recommendation;social tagging system;Benchmark testing;Collaboration;Collaborative work;Databases;Intelligent agent;Semantic Web;Tagging;User-generated content;Videos;Web sites;folksonomy systems;tag recommendations},
-}
-
-@InProceedings{4281096,
-  author    = {S. Jeschke and N. Natho and S. Rittau and M. Wilke},
-  title     = {mArachna - Applying Natural Language Processing Techniques to Ontology Engineering},
-  booktitle = {Seventh IEEE International Conference on Advanced Learning Technologies (ICALT 2007)},
-  year      = {2007},
-  pages     = {571-575},
-  month     = {July},
-  abstract  = {The knowledge contained in digital lectures and articles used in eLearning platforms like Moodle and Blackboard, is creating new demands for intelligent retrieval mechanisms. One basic approach in support of such retrieval mechanisms is the generation of semantic annotation, based on ontologies describing both the field and the structure of the texts themselves. Many current approaches use statistical methods similar to the ones employed by Google to find correlations within the texts. While successful and efficient, this approach fails to take advantage of the additional information provided by the structure of the sources, or, i.e. the upper ontology used by the author. mArachna is based on natural language processing techniques, taking advantage of characteristic linguistic structures defined by the language used in mathematical texts. It creates a knowledge base from the mathematical relations presented in a text, mapping the ontology onto the structure of the knowledge base.},
-  doi       = {10.1109/ICALT.2007.185},
-  issn      = {2161-3761},
-  keywords  = {computer aided instruction;information retrieval;natural language processing;ontologies (artificial intelligence);Google;digital articles;digital lectures;e-Learning;intelligent retrieval;mArachna;natural language processing;ontology engineering;semantic annotation;Content management;Education;Electronic learning;Knowledge engineering;Knowledge management;Least squares approximation;Mathematics;Natural language processing;Ontologies;Statistical analysis},
 }
 
 @InProceedings{5428435,
@@ -6774,18 +6523,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   abstract  = {The semantic Web aims to create a web of data where contents can be easily discovered and integrated using metadata. Many ontologies have been proposed over the years in different domains, thus producing a semantic heterogeneity that is difficult to manage. Various automated ontology mapping techniques and tools have been developed to facilitate the bridging and integration of distributed data repositories. Nevertheless, such tools are still in need of human supervision to ensure accuracy. The spread of Web 2.0 approaches demonstrate the possibility and the added value of using collaborative techniques for improving data sharing and consensus reaching. In this paper, we describe our prototype for collaborative ontology mapping and data sharing. The possibility to exploit ontology alignments for querying data is a key capability for data sharing in a networked ontology environment.},
   doi       = {10.1109/WIIAT.2008.429},
   keywords  = {meta data;ontologies (artificial intelligence);semantic Web;Web 2.0;automated ontology mapping techniques;collaborative ontology mapping;collaborative support;community data sharing;consensus reaching;data sharing;distributed data repositories;metadata;semantic Web;semantic heterogeneity;Buildings;Collaborative tools;Collaborative work;Computer science;Intelligent agent;International collaboration;Ontologies;Prototypes;Semantic Web;Voting;collaboration;data sharing;ontology;semantic web},
-}
-
-@InProceedings{4430386,
-  author    = {S. Jeschke and M. Wilke and N. Natho and O. Pfeiffer},
-  title     = {KEA - a Mathematical Knowledge Management System combining Web 2.0 with Semantic Web Technologies},
-  booktitle = {2007 Innovations in Information Technologies (IIT)},
-  year      = {2007},
-  pages     = {138-142},
-  month     = {Nov},
-  abstract  = {We present a knowledge management system suggesting a combination of Web 2.0 and semantic Web technologies. With regard to the accumulation of knowledge as a consequence of the increasing amount of scientific publications, the demand for sophisticated knowledge management systems in the scientific education has increased lately. Above all, mathematical publications remain a major challenge, caused by the need for complicated analysis of natural language texts and mathematical formulas. The Web-based, mathematical knowledge management system KEA provides natural language processing techniques, and benefits from new Web technologies.},
-  doi       = {10.1109/IIT.2007.4430386},
-  keywords  = {knowledge management;mathematics computing;natural language processing;semantic Web;KEA;Web 2.0;mathematical formulas;mathematical knowledge management system;mathematical publications;natural language processing;natural language text;scientific education;semantic Web technologies;Collaboration;Educational technology;Equations;Information analysis;Knowledge management;Natural language processing;Natural languages;Resource description framework;Semantic Web;Social network services},
 }
 
 @InProceedings{4755330,
@@ -7703,19 +7440,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   keywords  = {Internet;content management;information filtering;matrix decomposition;probability;statistical analysis;TagRec-recommender system;Web content;Web information;complexity analysis;factor analysis;tagging wisdom;unified probabilistic matrix factorization;user rating information;user tagging information;Chaos;Collaboration;Computer science;Filtering;Humans;Information analysis;Navigation;Recommender systems;Sparse matrices;Tagging},
 }
 
-@InProceedings{4271985,
-  author    = {A. Spoerri},
-  title     = {Visual Mashup of Text and Media Search Results},
-  booktitle = {Information Visualization, 2007. IV '07. 11th International Conference},
-  year      = {2007},
-  pages     = {216-221},
-  month     = {July},
-  abstract  = {There is a growing trend of enabling users to view diverse sources of data in an integrated manner, called visual mashups. This paper addresses the problem of how to visualize diverse data sources in a single integrated display when geographical meta-data is not available or advisable to use to combine the data sources. A visual mashup of web, image, video, news, blog and tagging search results is introduced. The presented solution makes it possible to visualize relationships between the different data sources, which would be difficult to show in a series of mini-displays arranged in a grid layout.},
-  doi       = {10.1109/IV.2007.125},
-  issn      = {1550-6037},
-  keywords  = {data visualisation;meta data;multimedia computing;search engines;diverse data source visualization;geographical meta-data;media search results;searchCrystal;visual mashups;Data visualization;Displays;Feeds;Information science;Information services;Internet;Libraries;Mashups;Tagging;Web sites},
-}
-
 @InBook{6828288,
   pages     = {480-},
   title     = {Altmetrics},
@@ -7726,18 +7450,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   abstract  = {This chapter contains sections titled: Introduction, What Are Altmetrics?, Altmetrics Sources: A Summary of Research, Notable Altmetrics Findings by Source, Uses, Limitations, and Future Research, Notes, References},
   booktitle = {Beyond Bibliometrics:Harnessing Multidimensional Indicators of Scholarly Impact},
   url       = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6828288},
-}
-
-@InProceedings{4728598,
-  author    = {S. Jeschke and N. Natho and M. Wilke},
-  title     = {KEA - A Knowledge Management System for Mathematics},
-  booktitle = {2007 IEEE International Conference on Signal Processing and Communications},
-  year      = {2007},
-  pages     = {1431-1434},
-  month     = {Nov},
-  abstract  = {Information contained in mathematical digital writings creates new challenges for knowledge management systems because automated knowledge extraction from natural language texts is a technical challenge. However, mathematical texts possess a distinctive structure. KEA benefits from this structure, and extracts linguistic relations from texts, creates ontologies, and combines them to a knowledge base. This knowledge base is the core of an enhanced retrieval system. Responses of this system are user-adaptive text-based and visualized. Possible applications are mathematical encyclopaedias, context sensitive library search, intelligent book indexes and e-learning software.},
-  doi       = {10.1109/ICSPC.2007.4728598},
-  keywords  = {knowledge acquisition;knowledge management;natural language processing;semantic Web;Web engineering;automated knowledge extraction;information retrieval;knowledge engineering;knowledge management systems;natural language processing;semantic Web;Application software;Books;Data mining;Knowledge management;Mathematics;Natural languages;Ontologies;Software libraries;Visualization;Writing;Information Retrieval;Knowledge Engineering;Knowledge Mangementment System;Natural Language Processing;Semantic Web;Web Engineering},
 }
 
 @Article{6420938,
@@ -8574,17 +8286,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   keywords  = {cloud computing;computer aided instruction;resource allocation;Internet;Web2.0;cloud computing;communication technologies;enhanced e-learning ecosystem;flexible learning environment;information technologies;knowledge society;resource allocations;Biomedical monitoring;Browsers;Ecosystems;Monitoring;Cloud Computing;E-Learning;Ecosystem;Virtual Community;Web 2.0},
 }
 
-@InProceedings{4365399,
-  author    = {D. C. De Roure},
-  title     = {Keynote speeches two},
-  booktitle = {2007 2nd International Conference on Pervasive Computing and Applications},
-  year      = {2007},
-  pages     = {ii-ii},
-  month     = {July},
-  abstract  = {Not Available},
-  doi       = {10.1109/ICPCA.2007.4365399},
-}
-
 @InProceedings{5201095,
   author    = {J. Choi and W. De Neve and Y. M. Ro and K. N. Plataniotis},
   title     = {Face annotation for personal photos using collaborative face recognition in online social networks},
@@ -8630,18 +8331,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   month     = {Aug},
   abstract  = {Provides an abstract for each of the keynote presentations and a brief professional biography of each presenter. The complete presentations were not made available for publication as part of the conference proceedings.},
   doi       = {10.1109/IRI.2015.10},
-}
-
-@InProceedings{4427476,
-  author    = {A. W. M. Smeulders and J. C. v. Gemert and B. Huurnink and D. C. Koelma and O. d. Rooij and K. E. A. v. d. Sande and C. G. M. Snoek and C. J. Veenman and M. Worring},
-  title     = {Semantic Video Search},
-  booktitle = {14th International Conference of Image Analysis and Processing - Workshops (ICIAPW 2007)},
-  year      = {2007},
-  pages     = {51-58},
-  month     = {Sept},
-  abstract  = {In this paper we describe the current performance of our MediaMill system as presented in the TRECVID 2006 benchmark for video search engines. The MediaMill team participated in two tasks: concept detection and search. For concept detection we use the MediaMill Challenge as experimental platform. The MediaMill Challenge divides the generic video indexing problem into a visual-only, textual- only, early fusion, late fusion, and combined analysis experiment. We provide a baseline implementation for each experiment together with baseline results. We extract image features, on global, regional, and keypoint level, which we combine with various supervised learners. A late fusion approach of visual-only analysis methods using geometric mean was our most successful run. With this run we conquer the Challenge baseline by more than 50%. Our concept detection experiments have resulted in the best score for three concepts: i.e. desert, flag us, and charts. What is more, using LSCOM annotations, our visual-only approach generalizes well to a set of 491 concept detectors. To handle such a large thesaurus in retrieval, an engine is developed which allows users to select relevant concept detectors based on interactive browsing using advanced visualizations. Similar to previous years our best interactive search runs yield top performance, ranking 2nd and 6th overall.},
-  doi       = {10.1109/ICIAPW.2007.39},
-  keywords  = {feature extraction;image fusion;indexing;learning (artificial intelligence);search engines;semantic Web;thesauri;video retrieval;concept detection;data visualization;image feature extraction;image fusion;interactive browsing;semantic video search engine;supervised learning;thesaurus;video indexing;video retrieval;Detectors;Feature extraction;Indexing;Intelligent systems;Internet;Search engines;Tagging;Thesauri;Videoconference;Visualization},
 }
 
 @InProceedings{5571321,
@@ -11317,19 +11006,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url       = {http://www.sciencedirect.com/science/article/pii/B9780124171121000089},
 }
 
-@InCollection{Lambe200797,
-  author    = {Patrick Lambe},
-  title     = {5 - Taxonomies and knowledge management},
-  booktitle = {Organising Knowledge},
-  publisher = {Chandos Publishing},
-  year      = {2007},
-  editor    = {Lambe, Patrick},
-  pages     = {97 - 122},
-  isbn      = {978-1-84334-227-4},
-  doi       = {https://doi.org/10.1016/B978-1-84334-227-4.50005-3},
-  url       = {http://www.sciencedirect.com/science/article/pii/B9781843342274500053},
-}
-
 @InCollection{tagkey2008242,
   title     = {Chapter Nine - Making sense of things},
   booktitle = {Keeping Found Things Found},
@@ -11418,20 +11094,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url       = {http://www.sciencedirect.com/science/article/pii/B9781843345626500049},
 }
 
-@InCollection{VandenBosch20073,
-  author    = {Annette Van den Bosch},
-  title     = {Chapter 1 - Major case study: cultural memory re-presented at the Quai Branly Museum},
-  booktitle = {Museum Marketing},
-  publisher = {Butterworth-Heinemann},
-  year      = {2007},
-  editor    = {Rentschler, Ruth and , and Hede, Anne-Marie},
-  pages     = {3 - 48},
-  address   = {Oxford},
-  isbn      = {978-0-7506-8065-3},
-  doi       = {https://doi.org/10.1016/B978-0-7506-8065-3.50007-8},
-  url       = {http://www.sciencedirect.com/science/article/pii/B9780750680653500078},
-}
-
 @InCollection{tagkey20091,
   title     = {Chapter 1 - Trends in Enterprise E-discovery from the Corporate Perspective},
   booktitle = {E-discovery: Creating and Managing an Enterprisewide Program},
@@ -11471,19 +11133,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi       = {https://doi.org/10.1016/B978-0-08-100592-7.00013-7},
   key       = {tagkey2016xiii},
   url       = {http://www.sciencedirect.com/science/article/pii/B9780081005927000137},
-}
-
-@InCollection{Lambe2007237,
-  author    = {Patrick Lambe},
-  title     = {10 - The future of taxonomy work},
-  booktitle = {Organising Knowledge},
-  publisher = {Chandos Publishing},
-  year      = {2007},
-  editor    = {Lambe, Patrick},
-  pages     = {237 - 261},
-  isbn      = {978-1-84334-227-4},
-  doi       = {https://doi.org/10.1016/B978-1-84334-227-4.50010-7},
-  url       = {http://www.sciencedirect.com/science/article/pii/B9781843342274500107},
 }
 
 @InCollection{Ortega201637,
@@ -11579,19 +11228,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url       = {http://www.sciencedirect.com/science/article/pii/B9781907568978500175},
 }
 
-@InCollection{Lambe2007207,
-  author    = {Patrick Lambe},
-  title     = {9 - Implementing your taxonomy},
-  booktitle = {Organising Knowledge},
-  publisher = {Chandos Publishing},
-  year      = {2007},
-  editor    = {Lambe, Patrick},
-  pages     = {207 - 235},
-  isbn      = {978-1-84334-227-4},
-  doi       = {https://doi.org/10.1016/B978-1-84334-227-4.50009-0},
-  url       = {http://www.sciencedirect.com/science/article/pii/B9781843342274500090},
-}
-
 @InCollection{Smiraglia201541,
   author    = {Richard P. Smiraglia},
   title     = {3 - Empirical methods for visualizing domains},
@@ -11619,19 +11255,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   isbn      = {978-1-84334-596-1},
   doi       = {https://doi.org/10.1016/B978-1-84334-596-1.50011-0},
   url       = {http://www.sciencedirect.com/science/article/pii/B9781843345961500110},
-}
-
-@InCollection{Lambe2007xv,
-  author    = {Patrick Lambe},
-  title     = {Introduction},
-  booktitle = {Organising Knowledge},
-  publisher = {Chandos Publishing},
-  year      = {2007},
-  editor    = {Lambe, Patrick},
-  pages     = {xv - xviii},
-  isbn      = {978-1-84334-227-4},
-  doi       = {https://doi.org/10.1016/B978-1-84334-227-4.50016-8},
-  url       = {http://www.sciencedirect.com/science/article/pii/B9781843342274500168},
 }
 
 @InCollection{Sabharwal2015109,
@@ -12271,20 +11894,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S1005888517601948},
 }
 
-@Article{GIL20073,
-  author  = {Yolanda Gil and Enrico Motta},
-  title   = {Introduction to the special issue of JWS with selected papers from ISWC 2005},
-  journal = {Web Semantics: Science, Services and Agents on the World Wide Web},
-  year    = {2007},
-  volume  = {5},
-  number  = {1},
-  pages   = {3 - 4},
-  issn    = {1570-8268},
-  note    = {Selected Papers from the International Semantic Web Conference},
-  doi     = {http://dx.doi.org/10.1016/j.websem.2006.12.001},
-  url     = {http://www.sciencedirect.com/science/article/pii/S1570826806000576},
-}
-
 @Article{CHEN2017123,
   author   = {Yueyue Chen and Pin Lv and Deke Guo and Tongqing Zhou and Ming Xu},
   title    = {Trajectory segment selection with limited budget in mobile crowd sensing},
@@ -12558,20 +12167,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi      = {http://dx.doi.org/10.1016/j.infsof.2013.01.004},
   keywords = {Systematic mapping study, Global software development, Distributed teams, Social media, Social software, Computer-supported cooperative work},
   url      = {http://www.sciencedirect.com/science/article/pii/S0950584913000153},
-}
-
-@Article{CACHIA20071179,
-  author   = {Romina Cachia and Ramón Compañó and Olivier Da Costa},
-  title    = {Grasping the potential of online social networks for foresight},
-  journal  = {Technological Forecasting and Social Change},
-  year     = {2007},
-  volume   = {74},
-  number   = {8},
-  pages    = {1179 - 1203},
-  issn     = {0040-1625},
-  doi      = {http://dx.doi.org/10.1016/j.techfore.2007.05.006},
-  keywords = {Online Social Networks, Foresight, Emerging change, Weak signals, Collective intelligence},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0040162507001254},
 }
 
 @Article{TUSCHE2013174,
@@ -14698,18 +14293,19 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
 }
 
 @Article{Mika2007,
-  author   = {Peter Mika},
-  title    = {Ontologies are us: A unified model of social networks and semantics},
-  journal  = {Web Semantics: Science, Services and Agents on the World Wide Web},
-  year     = {2007},
-  volume   = {5},
-  number   = {1},
-  pages    = {5 - 15},
-  issn     = {1570-8268},
-  note     = {Selected Papers from the International Semantic Web Conference},
-  doi      = {http://dx.doi.org/10.1016/j.websem.2006.11.002},
-  keywords = {Knowledge representation, Folksonomies, Tagging},
-  url      = {http://www.sciencedirect.com/science/article/pii/S1570826806000552},
+  author        = {Peter Mika},
+  title         = {Ontologies are us: A unified model of social networks and semantics},
+  journal       = {Web Semantics: Science, Services and Agents on the World Wide Web},
+  year          = {2007},
+  volume        = {5},
+  number        = {1},
+  pages         = {5 - 15},
+  issn          = {1570-8268},
+  note          = {Selected Papers from the International Semantic Web Conference},
+  __markedentry = {[felipe:1]},
+  doi           = {http://dx.doi.org/10.1016/j.websem.2006.11.002},
+  keywords      = {Knowledge representation, Folksonomies, Tagging},
+  url           = {http://www.sciencedirect.com/science/article/pii/S1570826806000552},
 }
 
 @Article{Reihanian2016,
@@ -28319,21 +27915,6 @@ References},
   keywords  = {customer satisfaction;ergonomics;groupware;marketing;product design;product development;production engineering computing;software agents;DRS-WB;Web Robot Agent;collaborative filtering;collar type;color tone;customer preferences;customer sensibility;fashion design detail;human-oriented sensible product design;sensibility ergonomics design recommendation system;sensor based smartwear;skirt length;skirt type;sleeve type;user interface;weather WebBot;weather forecast information;Collaboration;Ergonomics;Filtering;Textiles;Weather forecasting;XML},
 }
 
-@Article{1637361,
-  author   = {E. Motta},
-  title    = {Knowledge Publishing and Access on the Semantic Web: A Sociotechnological Analysis},
-  journal  = {IEEE Intelligent Systems},
-  year     = {2006},
-  volume   = {21},
-  number   = {3},
-  pages    = {88-90},
-  month    = {Jan},
-  issn     = {1541-1672},
-  abstract = {The semantic Web extends the current Web with a semantic layer, which semantic-aware agents can use for reasoning. The idea is to enable a greater degree of task automation and user support than is possible with the current Web. Yet the semantic Web has implications for knowledge publishing and access. An ontology-driven world might lead to the imposition of dominant conceptual viewpoints on formal knowledge production, which might threaten the democratic nature of knowledge publishing on the Web. However, the author argue that this won't necessarily happen, if we fully exploit the inherent flexibility and "smartness" associated with semantic technologies, and we succeed in connecting the semantic Web's construction process to the social dynamics shaping the current Web},
-  doi      = {10.1109/MIS.2006.53},
-  keywords = {multi-agent systems;ontologies (artificial intelligence);semantic Web;formal knowledge production;ontology-driven system;semantic Web;semantic-aware agents;sociotechnological analysis;Digital cameras;Intelligent systems;Large-scale systems;OWL;Ontologies;Predictive models;Publishing activities;Resource description framework;Robustness;Semantic Web;Semantic Web;knowledge representation;ontologies;publishing;semantics;sociotechnological issues},
-}
-
 @Book{6976707,
   title     = {The Taxobook: Principles and Practices of Taxonomy Construction (Part 2 of a 3-Part Series):Principles and Practices of Building Taxonomies, Part 2 of a 3-Part Series},
   publisher = {Morgan \& Claypool},
@@ -28420,18 +28001,6 @@ References},
   doi       = {10.1109/ICCE.2011.5722551},
   issn      = {2158-3994},
   keywords  = {classification;content management;multimedia computing;recommender systems;TAGGEMENDOR;folksonomy;multimedia content recommendation;Collaboration;Databases;Motion pictures;Multimedia communication;Prototypes;Tag clouds},
-}
-
-@InProceedings{4053233,
-  author    = {T. Ishikawa and P. Klaisubun and M. Honma and Z. Qian},
-  title     = {ReMarkables: A Web-Based Research Collaboration Support System Using Social Bookmarking Tools},
-  booktitle = {2006 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology Workshops},
-  year      = {2006},
-  pages     = {192-195},
-  month     = {Dec},
-  abstract  = {The paper describes design and implementation of a Web-based research collaboration support system (RCSS) using social bookmarking tools for scientific research communities. A key feature of the developed system ReMarkables is that it provides topic bookmarks function to build research communities in which the members can share bookmarks with specific tags and communicate with each other using mailing list and wiki pages associated with a topic bookmark list. Also, the system provides topic recommender function to promote the research collaboration using the topic bookmark list. The system is implemented as an extension of Connotea social bookmarking tools as open source software},
-  doi       = {10.1109/WI-IATW.2006.109},
-  keywords  = {Internet;information filters;information retrieval;public domain software;Connotea social bookmarking tools;ReMarkables;Web-based research collaboration support system;open source software;scientific research communities;Books;Collaboration;Collaborative software;Collaborative tools;Intelligent agent;Libraries;Open source software;Organizing;Paper technology;Publishing},
 }
 
 @InProceedings{7924873,
@@ -33149,26 +32718,6 @@ References},
   keywords      = {electronic publishing;groupware;identification technology;scientific information systems;software agents;agent-based model;collaboration support system;collaborative tagging;research collaboration;scientific publications;scientific research communities;social software;Collaborative software;Collaborative tools;Collaborative work;Intelligent agent;Management information systems;Online Communities/Technical Collaboration;Open source software;Social network services;Software tools;Tagging},
   source        = {Scopus},
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-34250733934&doi=10.1109%2fWI-IATW.2006.33&partnerID=40&md5=89df16ab157678eca9f96360ef384cd3},
-}
-
-@Article{Nowack2006263,
-  author          = {Nowack, B.},
-  title           = {CONFOTO: Browsing and annotating conference photos on the Semantic web},
-  journal         = {Web Semantics},
-  year            = {2006},
-  volume          = {4},
-  number          = {4},
-  pages           = {263-266},
-  issn            = {1570-8268},
-  note            = {cited By},
-  abstract        = {This paper describes CONFOTO, a browsing and annotation service11http://www.confoto.org/. for conference photos which combines current web trends such as data sharing and collaborative tagging with Resource Description Framework (RDF) system advantages like unrestricted aggregation and ontology re-use. Interactive user interface components ease information exploring and editing, W3C-recommended import and export interfaces and formats facilitate data integration and re-purposing. © 2006 Elsevier B.V. All rights reserved.},
-  affiliation     = {Appmosphere Web Applications, Kruppstr. 100, 45145 Essen, Germany},
-  author_keywords = {Photo annotation; RDF; Semantic web; SPARQL; User interfaces},
-  document_type   = {Article},
-  doi             = {10.1016/j.websem.2006.09.001},
-  keywords        = {Photo annotation, RDF, Semantic web, SPARQL, User interfaces},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-33750467672&doi=10.1016%2fj.websem.2006.09.001&partnerID=40&md5=5c75f5ec6b6663d746f8305792e4d083},
 }
 
 @Article{Cai201625,
