@@ -1,6 +1,6 @@
 % Encoding: UTF-8
 
-@InProceedings{4281096,
+@InProceedings{jeschke_etal_2007,
   author    = {S. Jeschke and N. Natho and S. Rittau and M. Wilke},
   title     = {mArachna - Applying Natural Language Processing Techniques to Ontology Engineering},
   booktitle = {Seventh IEEE International Conference on Advanced Learning Technologies (ICALT 2007)},
@@ -13,7 +13,7 @@
   keywords  = {computer aided instruction;information retrieval;natural language processing;ontologies (artificial intelligence);Google;digital articles;digital lectures;e-Learning;intelligent retrieval;mArachna;natural language processing;ontology engineering;semantic annotation;Content management;Education;Electronic learning;Knowledge engineering;Knowledge management;Least squares approximation;Mathematics;Natural language processing;Ontologies;Statistical analysis},
 }
 
-@Article{Mika2007,
+@Article{mika_2007,
   author        = {Peter Mika},
   title         = {Ontologies are us: A unified model of social networks and semantics},
   journal       = {Web Semantics: Science, Services and Agents on the World Wide Web},
@@ -29,7 +29,7 @@
   url           = {http://www.sciencedirect.com/science/article/pii/S1570826806000552},
 }
 
-@Conference{Benz2007109,
+@Conference{benz_hotho_2007,
   author        = {Benz, D. and Hotho, A.},
   title         = {Position paper: Ontology learning from folksonomies},
   year          = {2007},
@@ -41,6 +41,30 @@
   journal       = {LWA 2007 - Lernen - Wissen - Adaptivitat - Learning, Knowledge, and Adaptivity, Workshop Proceedings},
   source        = {Scopus},
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-77951104379&partnerID=40&md5=ffe6f02f3ada8ecbb3931bbcb46fc3a0},
+}
+
+@Conference{wu_etal_2006,
+  author          = {Wu, H. and Zubair, M. and Maly, K.},
+  title           = {Harvesting social knowledge from folksonomies},
+  year            = {2006},
+  volume          = {2006},
+  pages           = {111-114},
+  note            = {cited By},
+  abstract        = {Collaborative tagging systems, or folksonomies, have the potential of becoming technological infrastructure to support knowledge management activities in an organization or a society. There are many challenges, however. This paper presents designs that enhance collaborative tagging systems to meet some key challenges: community identification, ontology generation, user and document recommendation. Design prototypes, evaluation methodology and selected preliminary results are presented. Copyright 2006 ACM.},
+  affiliation     = {Old Dominion University, Norfolk, VA 23508, United States},
+  author_keywords = {Collaborative filtering; Collaborative tagging; Link analysis},
+  document_type   = {Conference Paper},
+  doi             = {10.1145/1149941.1149962},
+  journal         = {Proceedings of the Seventeenth ACM Conference on Hypertext and Hypermedia, HT'06},
+  source          = {Scopus},
+  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-34247383590&doi=10.1145%2f1149941.1149962&partnerID=40&md5=fd5b87d270ff44517b6156a66d4280c2},
+}
+
+@InProceedings{schmitz_2006,
+  author = {Patrick Schmitz},
+  title  = {Inducing Ontology from Flickr Tags},
+  year   = {2006},
+  url    = {https://pdfs.semanticscholar.org/d30e/7d2d336d1cb8704e1a599db3071c2ff36b75.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
