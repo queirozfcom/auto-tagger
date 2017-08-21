@@ -9167,18 +9167,6 @@ As a fundamental and critical component of music information retrieval (MIR) sys
   keywords  = {groupware;information filtering;recommender systems;SimTrust;collaborative filtering;explicit rating data;recommender system;trust network generation;user interest similarity;user personalized tag information;interest similarity;rating;recommender;tag;trust network},
 }
 
-@InProceedings{uddin_etal_2011,
-  author    = {M. M. Uddin and M. T. Hassan and A. Karim},
-  title     = {Personalized versus non-personalized tag recommendation: A suitability study on three social networks},
-  booktitle = {2011 IEEE 14th International Multitopic Conference},
-  year      = {2011},
-  pages     = {56-61},
-  month     = {Dec},
-  abstract  = {Tag recommendation systems are either personalized or non-personalized. Personalized tag recommendation utilizes a user's tagging behavior from her tagging history for predictions. Whereas non-personalized recommendation systems recommend what is popular and relevant to the user. In this study, we have analyzed the role of personal tagging history in recommending tags. The experiments are done on three folksonomy datasets: Delicious, Flickr and Bibsonomy. Important results for three popular tag recommendation algorithms: PITF, FolkRank and Adapted PageRank are reported in terms of prediction quality. It is found that users' history usage preferences change across all data sets; hence overall prediction quality of personalized recommendation system may suffer. We discover a generic life cycle of folksonomy users on the basis of their history usage. We propose this life cycle can be used to improve an overall prediction performance of a recommendation system across all folksonomies.},
-  doi       = {10.1109/INMIC.2011.6151510},
-  keywords  = {recommender systems;social networking (online);user interfaces;Adapted PageRank algorithm;Bibsonomy dataset;Delicious dataset;Flickr dataset;FolkRank algorithm;PITF algorithm;history usage;nonpersonalized tag recommendation;personalized tag recommendation;social networks;tag recommendation system;usage preference;user tagging behavior;Adaptation models;Lead;Prediction algorithms;Folksonomy;Personalization;Tag Recommendation},
-}
-
 @Article{feng_etal_2015,
   author   = {S. Feng and Z. Feng and R. Jin},
   title    = {Learning to Rank Image Tags With Limited Training Examples},
@@ -17809,20 +17797,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84863339142&doi=10.1007%2f978-3-642-20039-7-36&partnerID=40&md5=f8c5b1ae2e3a9e894b45c814d267f3b2},
 }
 
-@Conference{benz_etal_2011,
-  author        = {Benz, D. and Körner, C. and Hotho, A. and Stumme, G. and Strohmaier, M.},
-  title         = {One tag to bind them all: Measuring term abstractness in social metadata?},
-  year          = {2011},
-  pages         = {89-96},
-  note          = {cited By},
-  abstract      = {Recent research has demonstrated how the widespread adoption of collaborative tagging systems yields emergent semantics. In recent years, much has been learned about how to harvest the data produced by taggers for engineering light-weight ontologies. For example, existing measures of tag similarity and tag relatedness have proven crucial step stones for making latent semantic relations in tagging systems explicit. However, little progress has been made on other issues, such as understanding the different levels of tag generality (or tagabstrcatsness), which is essential for, among others, identifying hierarchical relationships between concepts. In this paper we aim to address this gap. Starting from a review of linguistic definitions of wordabstrcatness, we first use several large-scale ontologies and taxonomies as grounded measures of word generality, including Yago, Wordnet, DMOZ and Wikitaxonomy. Then, we introduce and apply several folksonomy-based methods to measure the level of generality of given tags. We evaluate these methods by comparing them with the grounded measures. Our results suggest that the generality of tags in social tagging systems can be approximated with simple measures. Our work has implications for a number of problems related to social tagging systems, including search, tag recommendation, and the acquisition of light-weight ontologies from tagging data.},
-  affiliation   = {Knowledge and Data Engineering Group, University of Kassel, Germany; Knowledge Management Institute, Graz University of Technology, Austria; Data Mining and Information Retrieval Group, University of Wurzburg, Germany},
-  document_type = {Conference Paper},
-  journal       = {LWA 2011 - Technical Report of the Symposium "Lernen, Wissen, Adaptivitat - Learning, Knowledge, and Adaptivity 2011" of the GI Special Interest Groups KDML, IR and WM},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84874002791&partnerID=40&md5=b43f8abde73d838d9c9f47d7c38fb764},
-}
-
 @Article{yi_2011,
   author          = {Yi, K.},
   title           = {An empirical study on the automatic resolution of semantic ambiguity in social tags},
@@ -18087,24 +18061,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {ICAART 2011 - Proceedings of the 3rd International Conference on Agents and Artificial Intelligence},
   source          = {Scopus},
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960109961&partnerID=40&md5=c25b8bea2544da0c19f2d6ab82aa0a2f},
-}
-
-@Article{benz_etal_2011a,
-  author          = {Benz, D. and Körner, C. and Hotho, A. and Stumme, G. and Strohmaier, M.},
-  title           = {One tag to bind them all: Measuring term abstractness in social metadata},
-  journal         = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  year            = {2011},
-  volume          = {6643 LNCS},
-  number          = {PART 2},
-  pages           = {360-374},
-  note            = {cited By},
-  abstract        = {Recent research has demonstrated how the widespread adoption of collaborative tagging systems yields emergent semantics. In recent years, much has been learned about how to harvest the data produced by taggers for engineering light-weight ontologies. For example, existing measures of tag similarity and tag relatedness have proven crucial step stones for making latent semantic relations in tagging systems explicit. However, little progress has been made on other issues, such as understanding the different levels of tag generality (or tag abstractness), which is essential for, among others, identifying hierarchical relationships between concepts. In this paper we aim to address this gap. Starting from a review of linguistic definitions of word abstractness, we first use several large-scale ontologies and taxonomies as grounded measures of word generality, including Yago, Wordnet, DMOZ and WikiTaxonomy. Then, we introduce and apply several folksonomy-based methods to measure the level of generality of given tags. We evaluate these methods by comparing them with the grounded measures. Our results suggest that the generality of tags in social tagging systems can be approximated with simple measures. Our work has implications for a number of problems related to social tagging systems, including search, tag recommendation, and the acquisition of light-weight ontologies from tagging data. © 2011 Springer-Verlag Berlin Heidelberg.},
-  affiliation     = {Knowledge and Data Engineering Group (KDE), University of Kassel, Germany; Knowledge Management Institute, Graz University of Technology, Austria; Data Mining and Information Retrieval Group, University of Würzburg, Germany},
-  author_keywords = {emergent semantics; folksonomies; generality; measures; tagging},
-  document_type   = {Conference Paper},
-  doi             = {10.1007/978-3-642-21064-8_25},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960062130&doi=10.1007%2f978-3-642-21064-8_25&partnerID=40&md5=6dac1c996534161eeb1b4d373296c2b6},
 }
 
 @Conference{rawashdeh_etal_2011,
@@ -21539,20 +21495,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84884597512&partnerID=40&md5=2accd98f5cc5d32be579fb3b6fc6bad1},
 }
 
-@Conference{jaeschke_etal_2007,
-  author        = {Jäschke, R. and Marinho, L. and Hotho, A. and Schmidt-Thieme, L. and Stumme, G.},
-  title         = {Tag recommendations in folksonomies},
-  year          = {2007},
-  pages         = {13-20},
-  note          = {cited By},
-  abstract      = {Collaborative tagging systems allow users to assign kyeword-so called "tags"-to resources. Tags are used for navigation finding resources and serendipitous browsing and thus provide an immediate benefit for users. These systems usually include tag recommendation mechanisms easing the process of finding good tags for a resource, but also consolidating the tag vocabulary across users. In practice, however, only very basic recommendation strategies are applied. In this paper we present two tag recommendation algorithms: an adaptation of user-based collaborative filtering and a graph-based recommender built on top of FolkRank, an adaptation of the well-known PageRank algorithm that can cope with undirected triadic hyperedges. We evaluate and compare both algorithms on large-scale real life datasets and show that both provide better results than non-personalized baseline methods. Especially the graph-based recommender outperforms existing methods considerably.},
-  affiliation   = {Knowledge and Data Engineering Group (KDE), University of Kassel, Wilhelmshöher Allee 73, 34121 Kassel, Germany; Information Systems and Machine Learning Lab (ISMLL), University of Hildesheim, Samelsonplatz 1, 31141 Hildesheim, Germany},
-  document_type = {Conference Paper},
-  journal       = {LWA 2007 - Lernen - Wissen - Adaptivitat - Learning, Knowledge, and Adaptivity, Workshop Proceedings},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84874010563&partnerID=40&md5=0dae856bcac798424018ba8f184002d9},
-}
-
 @Article{chen_etal_2007,
   author          = {Chen, A. and Chen, H.-H. and Huang, P.},
   title           = {Predicting social annotation by spreading activation},
@@ -21749,7 +21691,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-38349038360&partnerID=40&md5=36ba811ff2f7000b3f71c34727ad06ad},
 }
 
-@Article{jaeschke_etal_2007a,
+@Article{jaeschke_etal_2007,
   author        = {Jäschke, R. and Marinho, L. and Hotho, A. and Schmidt-Thieme, L. and Stumme, G.},
   title         = {Tag recommendations in folksonomies},
   journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
@@ -21757,6 +21699,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   volume        = {4702 LNAI},
   pages         = {506-514},
   note          = {cited By},
+  __markedentry = {[felipe:1]},
   abstract      = {Collaborative tagging systems allow users to assign keywords-so called "tags"-to resources. Tags are used for navigation, finding resources and serendipitous browsing and thus provide an immediate benefit for users. These systems usually include tag recommendation mechanisms easing the process of finding good tags for a resource, but also consolidating the tag vocabulary across users. In practice, however, only very basic recommendation strategies are applied. In this paper we evaluate and compare two recommendation algorithms on large-scale real life datasets: an adaptation of user-based collaborative filtering and a graph-based recommender built on top of FolkRank, We show that both provide better results than non-personalized baseline methods. Especially the graph-based recommender outperforms existing methods considerably. © Springer-Verlag Berlin Heidelberg 2007.},
   affiliation   = {Knowledge and Data Engineering Group (KDE), University of Kassel, Wilhelmshöher Allee 73, 34121 Kassel, Germany; Research Center L3S, Appelstr. 9a, 30167 Hannover, Germany; Information Systems and Machine Learning Lab (ISMLL), University of Hildesheim, Samelsonplatz 1, 31141 Hildesheim, Germany; Brazilian National Council Scientific and Technological Research (CNPq)},
   document_type = {Conference Paper},
