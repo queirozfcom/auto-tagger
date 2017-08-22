@@ -42,7 +42,7 @@
   issn     = {2330-1643},
   abstract = {Tags (keywords freely assigned by users to describe web content) have become highly popular on Web 2.0 applications, because of the strong stimuli and easiness for users to create and describe their own content. This increase in tag popularity has led to a vast literature on tag recommendation methods. These methods aim at assisting users in the tagging process, possibly increasing the quality of the generated tags and, consequently, improving the quality of the information retrieval (IR) services that rely on tags as data sources. Regardless of the numerous and diversified previous studies on tag recommendation, to our knowledge, no previous work has summarized and organized them into a single survey article. In this article, we propose a taxonomy for tag recommendation methods, classifying them according to the target of the recommendations, their objectives, exploited data sources, and underlying techniques. Moreover, we provide a critical overview of these methods, pointing out their advantages and disadvantages. Finally, we describe the main open challenges related to the field, such as tag ambiguity, cold start, and evaluation issues.},
   doi      = {10.1002/asi.23736},
-  keywords = {rank2},
+  keywords = {rank3},
   url      = {http://dx.doi.org/10.1002/asi.23736},
 }
 

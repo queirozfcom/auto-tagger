@@ -91,4 +91,62 @@
   keywords  = {social networking (online);probabilistic generative model;real world bookmarking service;smoothing;social bookmarking systems;Bipartite graph;Calibration;Context-aware services;Detectors;Laboratories;Probability;Scalability;Smoothing methods;Tagging;Testing},
 }
 
+@InProceedings{saeed_etal_2008,
+  author    = {A. U. Saeed and M. T. Afzal and A. Latif and A. Stocker and K. Tochtermann},
+  title     = {Does Tagging Indicate Knowledge Diffusion? An Exploratory Case Study},
+  booktitle = {2008 Third International Conference on Convergence and Hybrid Information Technology},
+  year      = {2008},
+  volume    = {1},
+  pages     = {605-610},
+  month     = {Nov},
+  abstract  = {The high potential of knowledge to create economies of scale attracted the interest towards understanding the dynamics of its diffusion. The new developments in the collaborative and participatory role of web emerges new knowledge structures driving the need towards Web based indicators for studying the diffusion of knowledge on Web. We present the results of an exploratory case-study investigating the tagging and citing practices for the WWW `06 conference papers. We observed two important patterns: (1) Papers which got heavily tagged in all three applications Delicious, Citeulike and Bibsonomy (average total tags > 6) generally achieved a high number of citations. We also observed that most of the tags were from 2006 and most of the citations were from 2007. This indicated that tags may hold the potential of foretelling the future volume of regenerative diffusion of research. (2) Terms appearing in tag-clouds of highly tagged papers in 2006 reappear frequently in the titles of respective citing papers in 2007. This shows that tag clouds may have the potential of forecasting the context of diffusion as well. It furthermore indicates that the users tag the papers with multiple tags according to their specific contexts of use as well as content of that knowledge artifact. Based on these patterns we propose that tags may be used as a supplementary indicator to model the diffusion of knowledge on Web.},
+  doi       = {10.1109/ICCIT.2008.332},
+  keywords  = {Internet;citation analysis;knowledge management;Web based indicators;citing;knowledge artifact;knowledge diffusion;regenerative diffusion;tag-clouds;tagging;Citation analysis;Collaboration;Economic forecasting;Economies of scale;Information technology;Knowledge management;Management information systems;Publishing;Tagging;Technology management;Tagging;citations;knowledge diffusion},
+}
+
+@InProceedings{woon_etal_2009,
+  author    = {W. L. Woon and A. Henschel and S. Madnick},
+  title     = {A framework for technology forecasting and visualization},
+  booktitle = {2009 International Conference on Innovations in Information Technology (IIT)},
+  year      = {2009},
+  pages     = {155-159},
+  month     = {Dec},
+  abstract  = {This paper presents a novel framework for supporting the development of well-informed research policies and plans. The proposed methodology is based on the use of bibliometrics; i.e., analysis is conducted using information regarding trends and patterns of publication. While using bibliometric techniques in this way is not a new idea, the proposed approach extends previous studies in a number of important ways. Firstly, instead of being purely exploratory, the focus of our research has been on developing techniques for detecting technologies that are in the early growth phase, characterized by a rapid increase in the number of relevant publications. Secondly, to increase the reliability of the forecasting effort, we propose the use of automatically generated keyword taxonomies, allowing the growth potentials of subordinate technologies to be aggregated into the overall potential of larger technology categories. A proof-of-concept implementation of each component of the framework is presented, and is used to study the domain of renewable energy technologies. Results from this analysis are presented and discussed.},
+  doi       = {10.1109/IIT.2009.5413768},
+  keywords  = {data visualisation;information analysis;pattern recognition;technological forecasting;bibliometrics;publication pattern;research plans;research policies;technology forecasting;technology visualization;Bibliometrics;Humans;Information analysis;Pattern analysis;Phase detection;Renewable energy resources;Taxonomy;Technology forecasting;Visualization;Weather forecasting},
+}
+
+@Conference{yao_etal_2009,
+  author          = {Yao, J. and Huang, Y. and Cui, B.},
+  title           = {Constructing evolutionary taxonomy of collaborative tagging systems},
+  year            = {2009},
+  pages           = {2085-2086},
+  note            = {cited By},
+  abstract        = {Collaborative tagging systems allow users to label online resources. The tags are generally correlated and evolving according to the change of web contents, and the popularity of tags represent evolution of social interests. Tag taxonomy is a promising solution to organize the data in tagging systems. In this demonstration, we propose to construct the evolutionary taxonomy which incorporates the correlation and evolution of tags, as user generated tags grow and change temporally. We demonstrate that our approach is intuitive and efficient in tag organization which exploits the evolving characteristic of collaborative tagging systems. Copyright 2009 ACM.},
+  affiliation     = {Department of Computer Science, Key Laboratory of High Confidence Software Technologies (Ministry of Education), Peking University, China},
+  author_keywords = {Evolutioanry; Tagging system; Taxonomy},
+  document_type   = {Conference Paper},
+  doi             = {10.1145/1645953.1646314},
+  journal         = {International Conference on Information and Knowledge Management, Proceedings},
+  source          = {Scopus},
+  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-74549168308&doi=10.1145%2f1645953.1646314&partnerID=40&md5=7406bcdda7ce7c6d9f7f9c93b72b2778},
+}
+
+@Article{bischoff_etal_2009,
+  author          = {Bischoff, K. and Firan, C.S. and Georgescu, M. and Nejdl, W. and Paiu, R.},
+  title           = {Social knowledge-driven music hit prediction},
+  journal         = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  year            = {2009},
+  volume          = {5678 LNAI},
+  pages           = {43-54},
+  note            = {cited By},
+  abstract        = {What makes a song to a chart hit? Many people are trying to find the answer to this question. Previous attempts to identify hit songs have mostly focused on the intrinsic characteristics of the songs, such as lyrics and audio features. As social networks become more and more popular and some specialize on certain topics, information about users' music tastes becomes available and easy to exploit. In the present paper we introduce a new method for predicting the potential of music tracks for becoming hits, which instead of relying on intrinsic characteristics of the tracks directly uses data mined from a music social network and the relationships between tracks, artists and albums. We evaluate the performance of our algorithms through a set of experiments and the results indicate good accuracy in correctly identifying music hits, as well as significant improvement over existing approaches. © 2009 Springer.},
+  affiliation     = {L3S Research Center, Leibniz Universität Hannover, Appelstrasse 9a, Hannover 30167, Germany},
+  author_keywords = {Classification; Collaborative tagging; Hit songs; Social media},
+  document_type   = {Conference Paper},
+  doi             = {10.1007/978-3-642-03348-3_8},
+  source          = {Scopus},
+  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-70350339343&doi=10.1007%2f978-3-642-03348-3_8&partnerID=40&md5=fac26adc2e89cf5cddc965368d275efa},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
