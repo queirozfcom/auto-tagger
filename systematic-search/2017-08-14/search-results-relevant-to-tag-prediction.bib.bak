@@ -52,19 +52,6 @@
   url       = {http://ieeexplore.ieee.org/document/5546393/},
 }
 
-@InProceedings{zeng_etal_2013,
-  author    = {G. Zeng and P. Luo and E. Chen and M. Wang},
-  title     = {From Social User Activities to People Affiliation},
-  booktitle = {2013 IEEE 13th International Conference on Data Mining},
-  year      = {2013},
-  pages     = {1277-1282},
-  month     = {Dec},
-  abstract  = {This study addresses the problem of inferring users' employment affiliation information from social activities. It is motivated by the applications which need to monitoring and analyzing the social activities of the employees from a given company, especially their social tracks related to the work and business. It definitely helps to better understand their needs and opinions towards certain business area, so that the account sales targeting these customers in the given company can adjust the sales strategies accordingly. Specifically, in this task we are given a snapshot of a social network and some labeled social users who are the employees of a given company. Our goal is to identify more users from the same company. We formulate this problem as a task of classifying nodes over a graph, and develop a Supervised Label Propagation model. It naturally incorporates the rich set of features for social activities, models the networking effect by label propagation, and learns the feature weights so that the labels are propagated to the right users. To validate its effectiveness, we show our case studies on identifying the employees of "China Telecom" and "China Unicom" from Sina Weibo. The experimental results show that our method significantly outperforms the compared baseline ones.},
-  doi       = {10.1109/ICDM.2013.101},
-  issn      = {1550-4786},
-  keywords  = {learning (artificial intelligence);social networking (online);China Telecom;China Unicom;social network;social user activities;supervised label propagation model;Companies;Equations;Media;Social network services;Telecommunications;Vectors},
-}
-
 @InProceedings{escobar-molano_etal_2009,
   author    = {M. L. Escobar-Molano and A. Badia and R. Alonso},
   title     = {Exploiting tags for concept extraction and information integration},
@@ -132,43 +119,7 @@
   abstract = {As requirements of organisations change, so do the software systems within them. When changes are carried out under tough deadlines, software developers often do not follow software engineering principles, which results in deteriorated structure of the software. A badly structured system is difficult to understand for further changes. To improve structure, re-modularisation may be carried out. Clustering techniques have been used to facilitate automatic re-modularisation. However, clusters produced by clustering algorithms are difficult to comprehend unless they are labelled appropriately. Manual assignment of labels is tiresome, thus efforts should be made towards automatic cluster label assignment. In this study, the authors focus on facilitating comprehension of software clustering results by automatically assigning meaningful labels to clusters. To assign labels, the authors use term weighting schemes borrowed from the domain of information retrieval and text categorisation. Although some term weighting schemes have been used by researchers for software cluster labelling, there is a need to analyse the term weighting schemes and related issues to identify the strengths and weaknesses of these schemes for software cluster labelling. In this context, the authors analyse the behaviour of seven well-known term weighting schemes. Also, they perform the experiments on five software systems to identify software characteristics which affect the labelling behaviour of the term weighting schemes.},
   doi      = {10.1049/iet-sen.2012.0027},
   keywords = {formal specification;formal verification;information retrieval;organisational aspects;pattern clustering;text analysis;automatic cluster label assignment;automatic remodularisation;information retrieval;labels manual assignment;organisations change;software characteristics;software cluster labelling;software clustering algorithm;software developers;software engineering principles;software systems;term weighting schemes;text categorisation},
-}
-
-@InProceedings{jiang_pang_2012,
-  author    = {W. Jiang and X. l. Pang},
-  title     = {The Tag Navigation recommendation with adaptive learning method},
-  booktitle = {2012 International Conference on Management Science Engineering 19th Annual Conference Proceedings},
-  year      = {2012},
-  pages     = {46-52},
-  month     = {Sept},
-  abstract  = {Social Tags are widely used in web 2.0, and they bring the new chance and challenge to the recommender system, which is used to help users deal with information overload and provide personalized services. There are three respects of work done in this paper: firstly, the n-gram based Tag Navigation is presented to provide the assistant support for tag retrieval; secondly, the Average Mutual Information based tag similarity measure is detailed, furthermore this kind of semantic relation is applied to the retrieval intention expansion; thirdly, an approach of ranking based recommendation is presented, and the adaptive learning mechanism is explored. The experiments verify above methods, and result shows the complex features adopted in the recommendation bring improvement by 13.39%.},
-  doi       = {10.1109/ICMSE.2012.6414159},
-  issn      = {2155-1847},
-  keywords  = {information retrieval;learning (artificial intelligence);recommender systems;social networking (online);Web 2.0;adaptive learning method;average mutual information;n-gram based tag navigation;personalized services;recommender system;retrieval intention expansion;social tags;tag navigation recommendation;tag retrieval;tag similarity measure;Collaboration;Equations;Frequency measurement;Mathematical model;Mutual information;Navigation;Recommender systems;Average Mutual Information;Tag Navigation;adaptive learning algorithm;personal recommendation;retrieval intention expansion},
-}
-
-@InProceedings{bacha_benblidia_2013,
-  author    = {S. Bacha and N. Benblidia},
-  title     = {Combining Context and Content for Automatic Image Annotation on Mobile Phones},
-  booktitle = {2013 International Conference on IT Convergence and Security (ICITCS)},
-  year      = {2013},
-  pages     = {1-4},
-  month     = {Dec},
-  abstract  = {Nowadays, the explosive use of mobile phones leads to generate a large number of personal photos. The requirements of effective image retrieval becomes evident. In this paper, we overview image retrieval techniques with special emphasis on different works that consider automatic image annotation as solution to retrieve images in mobile environment. In most automatic image annotation systems, the high-level concepts are generated based, exclusively, on visual analysis or context analysis of the image. Emerging approaches consider that the fusion of content and context analysis is beneficial for automatic image annotation. We focus in this paper on the type of information, visual and contextual, used to generate semantic that describes the image and the new methods that combine both content and context for automatic image annotation.},
-  doi       = {10.1109/ICITCS.2013.6717813},
-  keywords  = {content management;image retrieval;mobile handsets;automatic image annotation;content analysis;context analysis;image retrieval;mobile phones;personal photos;visual analysis;Context;Feature extraction;Image retrieval;Mobile communication;Mobile handsets;Semantics;Visualization},
-}
-
-@InProceedings{saari_etal_2013,
-  author    = {P. Saari and M. Barthet and G. Fazekas and T. Eerola and M. Sandler},
-  title     = {Semantic models of musical mood: Comparison between crowd-sourced and curated editorial tags},
-  booktitle = {2013 IEEE International Conference on Multimedia and Expo Workshops (ICMEW)},
-  year      = {2013},
-  pages     = {1-6},
-  month     = {July},
-  abstract  = {Social media services such as Last.fm provide crowd-sourced mood tags which are a rich but often noisy source of information. In contrast, editorial annotations from production music libraries are meant to be incisive in nature. We compare the efficiency of these two data sources in capturing semantic information on mood expressed by music. First, a semantic computing technique devised for mood-related tags in large datasets is applied to Last.fm and I Like Music (ILM) corpora separately (250,000 tracks each). The resulting semantic estimates are then correlated with listener ratings of arousal, valence and tension. High correlations (Spearman's rho) are found between the track positions in the dimensional mood spaces and listener ratings using both data sources (0.60 <; rs <; 0.70). In addition, the use of curated editorial data provides a statistically significant improvement compared to crowd-sourced data for predicting moods perceived in music.},
-  doi       = {10.1109/ICMEW.2013.6618436},
-  keywords  = {behavioural sciences;correlation methods;music;semantic Web;social networking (online);I Like Music corpora;ILM corpora;Last.fm corpora;Spearman rho;crowd-sourced data;crowd-sourced mood tags;curated editorial tags;data sources;editorial annotations;listener ratings;mood-related tags;musical mood;noisy information source;production music libraries;semantic computing technique;semantic information;semantic models;social media services;Correlation;Editorials;Mood;Production;Semantics;Vectors;Vocabulary;Semantic computing;affective circumplex transformation;dimensional emotion model;music moods},
+  url      = {http://ieeexplore.ieee.org/document/6322850/},
 }
 
 @InProceedings{ksibi_etal_2011,
@@ -181,18 +132,6 @@
   abstract  = {The paper proposes a novel semi-automatic soft collaborative annotation scheme for video semantic indexing. To annotate video data effectively and accurately, a video collaborative soft annotation within users' judgment modeling is first proposed in this paper. We, then, introduce a semiautomatic annotation strategy which combines the active learning and self-training in order to reduce the annotators' effort. Experiments conducted in TRECVID benchmark show that the proposed approach significantly improves the performance of video annotation.},
   doi       = {10.1109/EUROCON.2011.5929417},
   keywords  = {groupware;indexing;learning (artificial intelligence);video signal processing;active learning;self-training;semantic video indexing;semiautomatic soft collaborative annotation;user judgment modeling;Accuracy;Collaboration;Indexing;Semantics;Support vector machines;Training;Visualization;active learning;self learning;semantic indexing by concept;soft annotation;users' judjment},
-}
-
-@InProceedings{pappas_paraskakis_2016,
-  author    = {D. Pappas and I. Paraskakis},
-  title     = {Adaptive knowledge retrieval using semantically enriched folksonomies},
-  booktitle = {2016 11th International Workshop on Semantic and Social Media Adaptation and Personalization (SMAP)},
-  year      = {2016},
-  pages     = {100-105},
-  month     = {Oct},
-  abstract  = {Organizations invest considerable development effort in personalized systems to reap the benefits of knowledge management. Competition and the need for innovation imply in ever-changing and emerging needs that result in costly effort to redesign such systems. A flexible knowledge management approach should achieve personalization for organizations by adapting to the domain of the organization, meanwhile simplifying the incorporation of future knowledge retrieval needs. We describe such an approach that employs a knowledge management platform at its core, which supports adding and removing multiple folksonomies, constantly enriches them with semantics and provides domain-specific recommendations and semantic search capabilities. This approach to knowledge retrieval has been applied to the domain of homemade explosives and counter-terrorism efforts as part of the HOMER project. Preliminary evaluation from the perspective of the end-users - law enforcement, security and related agencies - is presented.},
-  doi       = {10.1109/SMAP.2016.7753392},
-  keywords  = {explosives;knowledge management;law administration;national security;query formulation;recommender systems;terrorism;HOMER project;adaptive knowledge retrieval;counter-terrorism;domain-specific recommendations;folksonomies;homemade explosives;knowledge management;law enforcement;personalized systems;security;semantic search;Explosives;Knowledge management;Organizations;Recommender systems;Semantics;Tagging;Vocabulary;adaptive knowledge retrieval;folksonomy;personalization;recommender systems;result precision;semantic enrichment},
 }
 
 @InProceedings{baruzzo_etal_2009,
@@ -308,7 +247,7 @@
   keywords  = {Web sites;graph theory;groupware;pattern clustering;recommender systems;Web pages;Web recommendation model;delicious Web site;folksonomies;social resource sharing systems;tag recommendation;tripartite graph clustering;Clustering algorithms;Data mining;Data models;Recommender systems;Tagging;Training;Web pages;folksonomy;recommendation model;social resource sharing system},
 }
 
-@Article{zhang_etal_2017b,
+@Article{zhang_etal_2017,
   author   = {J. Zhang and Y. Yang and Q. Tian and L. Zhuo and X. Liu},
   title    = {Personalized Social Image Recommendation Method Based on User-Image-Tag Model},
   journal  = {IEEE Transactions on Multimedia},
@@ -335,21 +274,6 @@
   abstract = {Social tagging is the process by which many users add metadata in the form of keywords, to annotate and categorize items (songs, pictures, Web links, products, etc.). Social tagging systems (STSs) can provide three different types of recommendations: They can recommend 1) tags to users, based on what tags other users have used for the same items, 2) items to users, based on tags they have in common with other similar users, and 3) users with common social interest, based on common tags on similar items. However, users may have different interests for an item, and items may have multiple facets. In contrast to the current recommendation algorithms, our approach develops a unified framework to model the three types of entities that exist in a social tagging system: users, items, and tags. These data are modeled by a 3-order tensor, on which multiway latent semantic analysis and dimensionality reduction is performed using both the higher order singular value decomposition (HOSVD) method and the kernel-SVD smoothing technique. We perform experimental comparison of the proposed method against state-of-the-art recommendation algorithms with two real data sets (Last.fm and BibSonomy). Our results show significant improvements in terms of effectiveness measured through recall/precision.},
   doi      = {10.1109/TKDE.2009.85},
   keywords = {data analysis;meta data;recommender systems;singular value decomposition;social networking (online);tensors;3-order tensor;dimensionality reduction;higher order singular value decomposition method;kernel-SVD smoothing technique;metadata;multiway latent semantic analysis;social tagging systems;state-of-the-art recommendation algorithms;ternary semantic analysis;HOSVD.;Social tags;recommender systems;tensors, rank1},
-}
-
-@Article{kim_etal_2011,
-  author   = {H. L. Kim and J. G. Breslin and S. Decker and H. G. Kim},
-  title    = {Mining and Representing User Interests: The Case of Tagging Practices},
-  journal  = {IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans},
-  year     = {2011},
-  volume   = {41},
-  number   = {4},
-  pages    = {683-692},
-  month    = {July},
-  issn     = {1083-4427},
-  abstract = {Social tagging in online communities has become an important method for reflecting classified thoughts of individual users. A number of social Web sites provide tagging functionalities and also offer folksonomies within or across the sites. However, it is practically not easy to find users' interests based on such folksonomies. In this paper, we provide a novel approach for clustering user-centric interests by analyzing tagging practices of individual users. To do this, we collect Really Simple Syndication data from blogosphere, find conceptual clusters using formal concept analysis, and then evaluate the significance of these clusters. The results of the empirical evaluation show that we can effectively recommend different collections of tags to an individual or a set of users.},
-  doi      = {10.1109/TSMCA.2011.2132709},
-  keywords = {data mining;pattern clustering;social networking (online);clustering;folksonomies;really simple syndication data;social Web sites;social tagging;user interests;Blogs;Context;Feeds;Lattices;Ontologies;Semantics;Tagging;Concept analysis;Semantic Web;social tagging;tag ontology},
 }
 
 @InProceedings{pham_etal_2015,
@@ -388,18 +312,6 @@
   abstract  = {Web 2.0 tools and environments have made tagging, the act of assigning keywords to on-line objects, a popular way to annotate shared resources. The success of now-prominent tagging systems makes tagging "the natural way for people to classify objects as well as an attractive way to discover new material". One of the most challenging problems is to harvest the semantics from these systems, which can support a number of applications, including tag clustering and tag recommendation. We conduct detailed studies on different types of tag relations and tag similarity measures, and propose a scalable measure that we name Reliability Factor Similarity Measure (RFSM). We compare it with two other measures having similar scalability by integrating them into hierarchical clustering methods and performing tag clustering on a subset of Flickr data. The results suggest that RFSM outperforms those two measures when it is applies for tag clustering purpose. We also present an alternative way of utilizing discovered tag relations to set up tag refining rules in order to deal with some noise in the initial tag sets, which can in turn improve the precision of tag relations.},
   doi       = {10.1109/APWeb.2010.65},
   keywords  = {Web sites;identification technology;pattern clustering;Flickr;Web 2.0 tools;asymmetric similarity measure;hierarchical clustering method;keyword assigning;reliability factor similarity measure;shared resource annotation;tag clustering;tag recommendation;tag relations;tag similarity measures;Australia;Clustering algorithms;Clustering methods;Conducting materials;Costs;Information technology;Performance evaluation;Scalability;Tagging;Vocabulary;Clustering;Folksonomy;Reliability Factor Similarity Measure;Tag;Web 2.0},
-}
-
-@InProceedings{romsaiyud_premchaiswadi_2011,
-  author    = {W. Romsaiyud and W. Premchaiswadi},
-  title     = {Exploring Web Search Behavior Patterns to Personalize the Search Results},
-  booktitle = {2011 Third International Conference on Intelligent Networking and Collaborative Systems},
-  year      = {2011},
-  pages     = {313-319},
-  month     = {Nov},
-  abstract  = {Tagging refers to the metadata that many users added in the form of keywords on photos, videos, and other resources for sharing the contents via the internet. However, there are several difficulties with tagging that come from tag variation, tag ambiguity and flat organization. This paper presents the integration of social tagging and the collaborative web search to improve users' or groups of users' satisfaction in search results. The characteristics of collaborative web search enable remote collaboration among small groups of users who are working either synchronously or asynchronously on web search tasks. Our main purpose is to analyze the users' behavior patterns from the search keywords obtained from the same and different groups of users. The patterns of web search behaviors are learned and used for generating the tag-based association rules. The results of analysis can be used to improve the quality of web search for a social search community. We designed and implemented a web application for effective use of tags to improve users' experience on web search. The users are asked to assign weights to the web links based on the relevancy of the web content to the tag. These weights are used to re-rank the original search results so that tags that best serving a user's needs are at the top of the ranked list. When a new user performs a web search, the system will generate a personalized tagging recommendation to the user for selection.},
-  doi       = {10.1109/INCoS.2011.91},
-  keywords  = {Internet;data mining;groupware;meta data;resource allocation;search engines;social networking (online);Internet;Web content sharing;Web links;Web search behavior pattern;collaborative Web search quality;flat organization;keyword search;metadata;personalized tagging recommendation;resource sharing;social search community;social tagging;tag ambiguity;tag variation;tag-based association rule;user behavior pattern;Collaboration;Google;Indexes;Internet;Search engines;Tagging;Web search;collaborative web search;meta-tags;social tagging;tag-based association rules},
 }
 
 @Article{zhao_etal_2010,
@@ -443,30 +355,6 @@
   keywords  = {feedback;identification technology;interactive systems;social networking (online);annotating Web objects;digital libraries;enterprise intranets;feedback models;high-quality tag suggestions;interactive tagging;personal desktop;social Web;social tagging phenomenon;tag co-location feedback;tag-based feedback;term-based feedback;user feedback;user-generated metadata;wide-scale tagging-savvy audience;Computer science;Feedback;Intelligent agent;Software libraries;Space exploration;Tagging;Testing;USA Councils;Videos;Web pages},
 }
 
-@InProceedings{fenza_etal_2011,
-  author    = {G. Fenza and V. Loia and S. Senatore},
-  title     = {Agent-assisted tagging aimed at folkonomy-based information retrieval},
-  booktitle = {2011 IEEE Symposium on Intelligent Agent (IA)},
-  year      = {2011},
-  pages     = {1-8},
-  month     = {April},
-  abstract  = {The wide diffusion of community tagging sites and related folksonomies has made the knowledge discovery and retrieval still much more urgent topic. If tagging systems allow users to add freely keywords to web resources, clicking on a tag has the side effect of a tag-based query, since enables the users to explore related content. The collective knowledge expressed though user-annotated data has a big potential, but needs to be filtered in a digest form so that the search result better reflects the users' preferences and actual aims. Starting from these considerations, our work presents an agent-based approach for a scalable semi-automatic generation of annotation tags, personalized on each user's preferences and tastes. Primary is the role of agents which assist users in the tagging activities as well as the retrieval of resources related to their interest. A user-friendly interface proposes an integrated one-shot view for interacting with a tagging system.},
-  doi       = {10.1109/IA.2011.5953613},
-  keywords  = {Internet;Web sites;data mining;human computer interaction;multi-agent systems;query processing;user interfaces;Web resources;agent-assisted tagging system;annotation tag semi-automatic generation;community tagging sites;folkonomy-based information retrieval;knowledge discovery;knowledge retrieval;tag-based query;user-annotated data;user-friendly interface;Communities;Computational modeling;Context;Lattices;Tagging;Web pages;Fuzzy Formal Concept Analysis (FFCA);Multi-agent system;Personalization;Tagging},
-}
-
-@InProceedings{ma_cahier_2011,
-  author    = {X. Ma and J. P. Cahier},
-  title     = {Iconic categorization with knowledge-based icon systems can improve collaborative KM},
-  booktitle = {2011 International Conference on Collaboration Technologies and Systems (CTS)},
-  year      = {2011},
-  pages     = {216-223},
-  month     = {May},
-  abstract  = {Icon system could represent an efficient solution for collective iconic categorization of knowledge by providing graphical interpretation. Their pictorial characters assist visualizing the structure of text to become more understandable beyond vocabulary obstacle. In this paper we are proposing a Knowledge Engineering (KM) based iconic representation approach. We assume that these systematic icons improve collective knowledge management. Meanwhile, text (constructed under our knowledge management model - Hypertopic) helps to reduce the diversity of graphical understanding belonging to different users. This “position paper” also prepares to demonstrate our hypothesis by an “iconic social tagging” experiment which is to be accomplished in 2011 with UTT students. We describe the “socio semantic web” information portal involved in this project, and a part of the icons already designed for this experiment in Sustainability field. We have reviewed existing theoretical works on icons from various origins, which can be used to lay the foundation of robust “icons systems”.},
-  doi       = {10.1109/CTS.2011.5928690},
-  keywords  = {data visualisation;groupware;knowledge based systems;knowledge management;portals;semantic Web;collaborative KM;graphical interpretation;iconic categorization;information portal;knowledge engineering;knowledge management;knowledge-based icon systems;pictorial characters;socio semantic Web;text visualization;Knowledge based systems;Knowledge management;Knowledge representation;Portals;Shape;Visualization;Hypertopic;icon system;iconic categorization;knowledge representation;visual graphical character},
-}
-
 @InProceedings{hong_etal_2015,
   author    = {H. K. Hong and K. W. Park and D. H. Lee},
   title     = {A Novel Semantic Tagging Technique Exploiting Wikipedia-Based Associated Words},
@@ -478,34 +366,6 @@
   abstract  = {With the rise in popularity of smart devices such as smartphones and tablet PCs, the volume of multimedia contents is growing exponentially through social networks and multimedia contents sharing systems. However, the characteristics of mobile devices and tags lead to the performance degradation of the tag-based image retrieval. In this paper, we propose a novel semantic tagging method exploiting Wikipedia-based associated words. The proposed system consists of two phases. In association words construction phase, extraction manager parses the page information from Wikipedia dump, and then semantic analyzer constructs the associated words using disambiguation page. In tag recommendation phase, a user selects single meaning among various associated words, so that associated words which belong to the chosen cluster are automatically assigned to the contents. The proposed system makes it possible to annotate the multimedia contents with the reliable and relevant tags in the smart device environment.},
   doi       = {10.1109/COMPSAC.2015.87},
   keywords  = {multimedia computing;smart phones;social networking (online);Wikipedia dump;Wikipedia-based associated word;disambiguation page;mobile device;multimedia content sharing system;performance degradation;semantic analyzer;semantic tagging method;semantic tagging technique;smart device environment;smartphone;social network;tablet PC;tag recommendation phase;tag-based image retrieval;Electronic publishing;Encyclopedias;Internet;Multimedia communication;Semantics;Tagging;Associated Words;Multimedia Tagging;Semantic Tagging;Wikipedia},
-}
-
-@InProceedings{ferrer_eerola_2011,
-  author    = {R. Ferrer and T. Eerola},
-  title     = {Looking Beyond Genres: Identifying Meaningful Semantic Layers from Tags in Online Music Collections},
-  booktitle = {2011 10th International Conference on Machine Learning and Applications and Workshops},
-  year      = {2011},
-  volume    = {2},
-  pages     = {112-117},
-  month     = {Dec},
-  abstract  = {A scheme for identifying the semantic layers of music-related tags is presented. Arguments are provided why the applications of the tags cannot be effectively pursued without a reasonable understanding of their semantic qualities. The identification scheme consists of a set of filters. The first is related with social consensus, user-count ratio, and n-gram properties of tags. The next relies on look-up functions across multiple databases to determine the probable semantic layer of each tag. Examples of the semantic layers with prevalence rates are given based on application of the scheme to a subset of the Million Song Dataset. Finally, a validation of the results was carried out with an independent, smaller hand-annotated dataset, in which high agreement between the identification provided by the scheme and annotations was found.},
-  doi       = {10.1109/ICMLA.2011.89},
-  keywords  = {information retrieval;music;natural language processing;look-up function;music-related tag;n-gram;online music collection;semantic layer;social consensus;user-count ratio;Databases;Electronic publishing;Encyclopedias;Instruments;Internet;Semantics;music information retrieval;musical genre;semantic layers;social tags},
-}
-
-@Article{sen_riedl_2011,
-  author   = {S. Sen and J. Riedl},
-  title    = {Folksonomy Formation},
-  journal  = {Computer},
-  year     = {2011},
-  volume   = {44},
-  number   = {5},
-  pages    = {97-101},
-  month    = {May},
-  issn     = {0018-9162},
-  abstract = {Tags, words or short phrases attached to items on the Internet, organize the social Web. Unlike expert-maintained taxonomies such as the Dewey Decimal Classification, tags evolve organically based on the collective action of individual users. The collection of tags in a tagging system, called a folksonomy, can vary widely from site to site. The paper mentions that the combination of eager taggers and intelligent algorithms that nurture effective tagging behavior promises a bright future for tagging systems.},
-  doi      = {10.1109/MC.2011.147},
-  keywords = {social networking (online);Internet;folksonomy;intelligent algorithms;social Web;tagging behavior;tagging systems;tsg collection;Algorithms;Social network services;Taxonomy;Thesauri;Folksonomies;GroupLens;Social computing;Tagging},
 }
 
 @InProceedings{feng_wang_2014,
@@ -534,33 +394,6 @@
   abstract = {Social photos, which are taken during family events or parties, represent individuals or groups of people. We show in this paper how a Hasse diagram is an efficient visualization strategy for eliciting different groups and navigating through them. However, we do not limit this strategy to these traditional uses. Instead we show how it can also be used for assisting in indexing new photos. Indexing consists of identifying the event and people in photos. It is an integral phase that takes place before searching and sharing. In our method we use existing indexed photos to index new photos. This is performed through a manual drag and drop procedure followed by a content fusion process that we call 'propagation'. At the core of this process is the necessity to organize and visualize the photos that will be used for indexing in a manner that is easily recognizable and accessible by the user. In this respect we make use of an object Galois sub-hierarchy and display it using a Hasse diagram. The need for an incremental display that maintains the user's mental map also leads us to propose a novel way of building the Hasse diagram. To validate the approach, we present some tests conducted with a sample of users that confirm the interest of this organization, visualization and indexation approach. Finally, we conclude by considering scalability, the possibility to extract social networks and automatically create personalised albums.},
   doi      = {10.1109/TVCG.2009.201},
   keywords = {Galois fields;data analysis;data visualisation;human computer interaction;indexing;social networking (online);Hasse diagram;content fusion process;eliciting relations;formal concept analysis;indexing new photos;information visualization;object Galois sub-hierarchy;social photos;visualization strategy;Digital cameras;Displays;Facebook;Indexing;Navigation;Scalability;Social network services;Tagging;Testing;Visualization;Galois sub-hierarchy.;Hasse Diagram;Information visualization;formal concept analysis;indexation;social photos},
-}
-
-@InProceedings{chen_etal_2013a,
-  author    = {S. Chen and S. Owusu and L. Zhou},
-  title     = {Social Network Based Recommendation Systems: A Short Survey},
-  booktitle = {2013 International Conference on Social Computing},
-  year      = {2013},
-  pages     = {882-885},
-  month     = {Sept},
-  abstract  = {This paper examines the background of the recommender systems and the state-of-art technologies in this current research area. We examined the needs for recommendation systems and the enhanced performance by using the additional social network information. We compared different types of social network information and how they are used to improve the recommendation systems with a few examples. We also discussed different evaluation methods that are important to measure the performances of a recommendation system. We concluded that the recommendation system is a very important research area and could be applied in many domains. We summarized different measures towards evaluating a recommendation system especially those incorporating the social network information.},
-  doi       = {10.1109/SocialCom.2013.134},
-  keywords  = {recommender systems;social networking (online);social network based recommendation systems;social network information;state-of-art technologies;Accuracy;Bayes methods;Collaboration;Measurement;Prediction algorithms;Recommender systems;Social network services;Algorithms;Artificial Intelligence;Recommendation Systems},
-}
-
-@Article{lu_etal_2011,
-  author   = {C. Lu and X. Hu and J. r. Park},
-  title    = {Exploiting the Social Tagging Network for Web Clustering},
-  journal  = {IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans},
-  year     = {2011},
-  volume   = {41},
-  number   = {5},
-  pages    = {840-852},
-  month    = {Sept},
-  issn     = {1083-4427},
-  abstract = {Social tagging is a major characteristic of Web 2.0. A social tagging system can be modeled with a tripartite network of users, resources, and tags. In this paper, we investigate how to enhance Web clustering by leveraging the tripartite network of social tagging systems. We propose a clustering method called “Tripartite Clustering” which clusters the three types of nodes (resources, users, and tags) simultaneously by only utilizing the links in the social tagging network. We also investigate two other approaches to exploit social tagging for clustering with K-means and Link K-means. All the clustering methods are experimented on a real-world social tagging data set sampled from del.icio.us. The clustering results are evaluated against a human-maintained Web directory. The experimental results show that the social tagging network is a very useful information source for document clustering. All social-annotation-based clustering methods can significantly improve the performance of content-based clustering. Compared to social-annotation-based K-means and Link K-means, Tripartite Clustering achieves equivalent or better performance and produces more useful information.},
-  doi      = {10.1109/TSMCA.2011.2157128},
-  keywords = {Internet;document handling;information resources;pattern clustering;Link K-means;Web 2.0;Web clustering;content based clustering;document clustering;human maintained Web directory;information source;social annotation based K-means;social annotation based clustering method;social tagging data set;social tagging network;tripartite clustering;tripartite network;Clustering algorithms;Clustering methods;Measurement;Semantics;Tagging;Vectors;Web pages;Clustering methods;social annotation;social tagging;tripartite network},
 }
 
 @InProceedings{tao_yao_2016,
@@ -616,7 +449,7 @@
   keywords  = {Internet;content management;learning (artificial intelligence);optimisation;social networking (online);CI-based diffusion maximization problem;CI-based social diffusion model;CIDM problem;Internet;automatic media content annotation techniques;common interests;online community;optimization tasks;social diffusion analysis;social diffusion records;supervised learning;test stage;training stage;Computational modeling;Data mining;Feature extraction;Media;Motion pictures;Optimization;Training;Automatic annotation;common interests;diffusion maximization;social diffusion;social media},
 }
 
-@InProceedings{liu_etal_2012d,
+@InProceedings{liu_etal_2012,
   author    = {Y. Liu and N. Yang and G. Yang},
   title     = {An Approach for Personalized Tag Recommendation Based on Interest Transfer Model},
   booktitle = {2012 Ninth Web Information Systems and Applications Conference},
@@ -626,31 +459,6 @@
   abstract  = {Recently, social tagging systems become more and more popular in many Web 2.0 applications. In such systems, Users are allowed to annotate a particular resource with a freely chosen a set of tags. These user-generated tags can represent users' interests more concise and closer to human understanding. Interests will change over time. Thus, how to describe users' interests and interests transfer path become a big challenge for personalized recommendation systems. In this approach, we propose a variable-length time interval division algorithm and user interest model based on time interval. Then, in order to draw users' interests transfer path over a specific time period, we suggest interest transfer model. After that, we apply a classical community partition algorithm in our approach to separate users into communities. Finally, we raise a novel method to measure users' similarities based on interest transfer model and provide personalized tag recommendation according to similar users' interests in their next time intervals. Experimental results demonstrate the higher precision and recall with our approach than classical user-based collaborative filtering methods.},
   doi       = {10.1109/WISA.2012.43},
   keywords  = {recommender systems;user interfaces;Web 2.0 application;community partition algorithm;interest transfer model;personalized recommendation system;personalized tag recommendation;social tagging system;user interest;user similarity;user-based collaborative filtering method;user-generated tag;variable-length time interval division algorithm;Collaboration;Computational modeling;Educational institutions;Filtering;Heuristic algorithms;Mathematical model;Tagging;Interest Transfer Model;Time Interval;User Interest Model;User Interests},
-}
-
-@InProceedings{shan_etal_2015,
-  author    = {Lili Shan and Chengjie Sun and Lei Lin and Ming Liu and Xiaolong Wang and Bingquan Liu},
-  title     = {Evaluating tag quality for blogger modelling via topic models},
-  booktitle = {2015 12th International Conference on Fuzzy Systems and Knowledge Discovery (FSKD)},
-  year      = {2015},
-  pages     = {1770-1776},
-  month     = {Aug},
-  abstract  = {With the permission of annotating blog posts with tags, tags has become one of the most important resources used to describe blogger features. However, due to the irregular quality of tags, not all tags are appropriate for representing blogger's preferences. Poor tags or spam tags confuse the actual user's preferences and spam terms, thus they should be detected before they are directly used to tag bloggers. A detailed quantitative analysis on the categories of tag spam in the blogosphere is presented in this paper. Taking advantage of abundant text contents in blog posts and the relatively stable semantic relationship between tags and their target posts, an unsupervised approach based on topic models is proposed to evaluate tag quality for blogger modelling in the blogosphere. The latent interest topics of a blogger are mined out through Latent Dirichlet Allocation (LDA) topic modeling. The blog post of the blogger is represented as a distribution over latent topics and a latent topic is a distribution over words of the vocabulary. A tag is also expressed as a specific co-occurrence term vector. Ultimately, a scheme is devised to determine the similarity between each tag and its target blog post. Then the tags with less similarity value can be identified as poor tag. The experimental results indicate that the proposed method achieves more promising performance than the baselines on datasets collected from Sina Blog, which is one of the biggest Chinese blogs.},
-  doi       = {10.1109/FSKD.2015.7382215},
-  keywords  = {social networking (online);text analysis;Chinese blogs;LDA topic modeling;Sina Blog;blog post annotation;blog posts;blogger features;blogger modelling;blogger preference representation;co-occurrence term vector;irregular tag quality;latent Dirichlet allocation topic modeling;latent interest topic mining;quantitative analysis;relatively stable semantic relationship;similarity value;tag quality evaluation;tag spam;text contents;topic models;unsupervised approach;user preferences;vocabulary words;Adaptation models;Blogs;Collaboration;Reliability;Resource management;Semantics;Tagging;blog representation;semantic similarity;tag quality evaluation;topic model},
-}
-
-@InProceedings{hamdi_etal_2012,
-  author    = {S. Hamdi and A. Lopes Gancarski and A. Bouzeghoub and S. Ben Yahia},
-  title     = {Enriching the DBpedia Ontology with Shared Conceptualizations from Folksonomies},
-  booktitle = {2012 IEEE 36th Annual Computer Software and Applications Conference},
-  year      = {2012},
-  pages     = {551-556},
-  month     = {July},
-  abstract  = {Folksonomy systems and social bookmarking tools are rapidly spreading on the Web. Their steady increase reveals a more dynamic and interactive space, in which users can individually and freely share online resources and assign terms to them. In this paper, we address the problem of how to exploit these rich systems to enrich existing ontologies. Our approach taps into external tools such as the sense inventory WordNet to fix mistakes resulting from the free tagging and takes advantage from semantic relationships between tags to recognize resources' context. We carried out evaluations that mainly paid attention on the particularly challenging problem of resources' ambiguity to prove that not all resources shared in folksonomies are relevant resources for Dbpedia ontology. In this respect, it is worth of mention that our pre-processing step increases precision values to achieve an average precision of 80%.},
-  doi       = {10.1109/COMPSAC.2012.74},
-  issn      = {0730-3157},
-  keywords  = {Internet;ontologies (artificial intelligence);social networking (online);DBpedia ontology;WordNet;folksonomies;free tagging;online resource sharing;resource context;sense inventory;social bookmarking tools;Context;Google;Java;Ontologies;Semantics;Software;Tagging;folksonomy; ontology; enrichment;tags context},
 }
 
 @InProceedings{jin_etal_2010,
@@ -705,21 +513,7 @@
   keywords  = {Internet;Web sites;recommender systems;TextRank;Web 2.0;blogs;information recommendation;tags recommendation;user modeling;Abstracts;Blogs;Electronic mail;Social tagging;TF*IDF;Tags recommendation;TextRank},
 }
 
-@Article{yang_wang_2017,
-  author   = {J. Yang and J. Wang},
-  title    = {Tag clustering algorithm LMMSK: Improved K-means algorithm based on latent semantic analysis},
-  journal  = {Journal of Systems Engineering and Electronics},
-  year     = {2017},
-  volume   = {28},
-  number   = {2},
-  pages    = {374-384},
-  month    = {April},
-  abstract = {With the wide application of Web_2.0 and social software, there are more and more tag-related studies and applications. Because of the randomness and the personalization in users' tagging, tag research continues to encounter data space and semantics obstacles. With the min-max similarity (MMS) to establish the initial centroids, the traditional K-means clustering algorithm is firstly improved to the MMSK-means clustering algorithm, the superiority of which has been tested; based on MMSK-means and combined with latent semantic analysis (LSA), here secondly emerges a new tag clustering algorithm, LMMSK. Finally, three algorithms for tag clustering, MMSK-means, tag clustering based on LSA (LSA-based algorithm) and LMMSK, have been run on Matlab, using a real tag-resource dataset obtained from the Delicious Social Bookmarking System from 2004 to 2009. LMMSK's clustering result turns out to be the most effective and the most accurate. Thus, a better tag-clustering algorithm is found for greater application of social tags in personalized search, topic identification or knowledge community discovery. In addition, for a better comparison of the clustering results, the clustering corresponding results matrix (CCR matrix) is proposed, which is promisingly expected to be an effective tool to capture the evolutions of the social tagging system.},
-  doi      = {10.21629/JSEE.2017.02.18},
-  keywords = {Algorithm design and analysis;Clustering algorithms;Clustering methods;Data processing;Semantics;Tagging;Web 2.0;K-means;latent semantic analysis (LSA);min-max similarity (MMS);social tagging;tag clustering algorithm},
-}
-
-@InProceedings{wang_etal_2013c,
+@InProceedings{wang_etal_2013,
   author    = {X. Wang and S. Li and X. Zou and R. Chen and B. Zhou},
   title     = {An Automatic Tag Recommendation Algorithm for Micro-blogging Users},
   booktitle = {2013 International Conference on Computer Sciences and Applications},
@@ -729,18 +523,6 @@
   abstract  = {Online social networks such as Sina Weibo micro-blogging website allow user to annotate himself (or herself) using tags, which describe the characteristics of the user. Many researches have been done on photos, films, commodities but rare researches on users. In this paper, we try to recommend tags for users who can communicate directly with other users. Our method is based on interactive relations between users and is low cost. We present and evaluate tag recommendation method to support the user self-annotation task by recommending a set of tags for users. Experiment evaluations on real and large Sina Weibo dataset which contains more than 140 million users and distributed processing framework Hadoop shows that our method can effectively recommend relevant tags to users.},
   doi       = {10.1109/CSA.2013.100},
   keywords  = {information retrieval;social networking (online);Sina Weibo microblogging Web site;automatic tag recommendation algorithm;distributed processing framework Hadoop;online social network;user self-annotation task;Collaboration;Computers;Equations;Mathematical model;Social network services;Tagging;Web sites;Micro-blogging;Social Network;Tag Recommendation;User Tags},
-}
-
-@InProceedings{anand_2014,
-  author    = {D. Anand},
-  title     = {Evaluating folksonomy information sources for genre prediction},
-  booktitle = {2014 IEEE International Advance Computing Conference (IACC)},
-  year      = {2014},
-  pages     = {887-892},
-  month     = {Feb},
-  abstract  = {Automatic genre identification is a task which plays a crucial role in many domains such as automatic storytellers, recommender systems and web page topic detectors. Genre classification is especially interesting in the domain of narrative content which is characterized by a large number of ambiguous and overlapping categories. The rise in popularity of social tagging systems forms a rich source of input information which could be harnessed for this task. In this paper we investigate two different information folksonomy sources for the movie domain namely: keywords and tags, the first of which is user annotated and expert monitored whereas the latter is non-monitored. A comparison is performed to assess the efficacy of both sources in solving this multi-label classification problem and it is found that the in spite of being expert monitored and better structured, keywords are worse predictors of the genres of movies than tags in most cases.},
-  doi       = {10.1109/IAdCC.2014.6779440},
-  keywords  = {classification;information resources;Web page topic detectors;automatic genre identification;automatic storytellers;folksonomy information sources;genre classification;genre prediction;information folksonomy sources;movie domain;multilabel classification problem;narrative content;overlapping categories;recommender systems;social tagging systems;Conferences;Decision support systems;Handheld computers;Size measurement;Categorization;Folksonomy;information retrieval;keywords;multi-label classification;tags},
 }
 
 @InProceedings{liu_forss_2015,
@@ -753,18 +535,7 @@
   month     = {Nov},
   abstract  = {Visual labeling or automated visual annotation is of great importance to the efficient access and management of multimedia content. Many methods and techniques have been proposed for image annotation in the last decade and they have shown reasonable performance on standard datasets. Great progress has been made especially in recent couple of years with the development of deep learning models for image content analysis and extraction of content-based concept labels. However, concept objects labels are much more friendly to machine than to users. We consider that more relevant and user-friendly visual labels need to include “context” descriptors. In this study we explore the possibilities to leverage social media content as a resource for visual labeling. We developed a tag extraction system that applies heuristic rules and term weighting method to extract image tags from associated Tweet. The system retrieves tweet-image pairs from public Twitter accounts, analyzes the Tweet, and generates labels for the images. We elaborate on different visual labeling methods, tag analysis and tag refinement methods.},
   keywords  = {Context;Labeling;Media;Organizations;Tagging;Twitter;Visualization;Image Annotation;Social Media Analysis;Twitter;Visual Labeling},
-}
-
-@InProceedings{tang_dang_2012,
-  author    = {X. Tang and J. Dang},
-  title     = {An Exploratory Study of Enhancing Text Clustering with Auto-Generated Semantic Tags},
-  booktitle = {2012 Eighth International Conference on Semantics, Knowledge and Grids},
-  year      = {2012},
-  pages     = {104-111},
-  month     = {Oct},
-  abstract  = {With the exponentially growing volume of digital documents and internet content, it becomes very challenging to locate right information when desired. We heavily rely on search engines but most existing search tools are key-word based and they often return search results with low precision and recall. The emerging semantic tagging technology provides an automatic way to generate semantic tags from text. It has drawn more and more interest from text mining research communities. It is critical to study how to utilize semantic tags to improve text mining including clustering, which helps users to enhance their experience of searching and browsing documents. Unfortunately, most previous works on text clustering merely based on content information. A few recent researches take user-generated tags into account, however user generated tags are often noisy, inconsistent, redundant and lack of semantic information and hierarchical structure. In this work, we propose a Semantic Text Mining (STeM) framework to generate semantic tags for given documents and then utilize the semantic tags to improve text clustering. Different from the previous works, we represent a document by a combination of domains and high quality noun phrases. We investigate the performance of our methods in two different datasets and the results are evaluated by normalized mutual information. Experiment results demonstrated that our proposed method substantially outperformed the traditional Term Frequency-Inverse Document Frequency (TF-IDF) term vector based clustering. We find that incorporating semantic information into document representation is critical to improve the performance of text clustering.},
-  doi       = {10.1109/SKG.2012.17},
-  keywords  = {data mining;information retrieval;pattern clustering;semantic Web;text analysis;Internet content;STeM;TF-IDF term vector based clustering;autogenerated semantic tag;content information;digital documents;document browsing;document representation;document searching;hierarchical structure;high quality noun phrase;information location;keyword based search tool;normalized mutual information;search engine;semantic information;semantic tagging technology;semantic text mining;term frequency-inverse document frequency term vector;text clustering enhancement;user-generated tags;Clustering algorithms;Frequency domain analysis;Knowledge based systems;Ontologies;Semantics;Tagging;Vectors;SteM;clustering;document;semantic tags},
+  url       = {http://ieeexplore.ieee.org/document/7526962/},
 }
 
 @InProceedings{al-kofahi_etal_2010,
@@ -789,6 +560,7 @@
   month     = {March},
   abstract  = {Folksonomy allows user to tag resources independent of vocabulary and is being widely used in social web systems. But these vocabularies have some limitations like ambiguity, variation between tags and many more. Tag based ontologies are developed to overcome such issues. This paper focuses on eliminating limitations of folksonomies and extracting semantic relationship between tags to develop ontologies. Finally semantically related tag is recommendation to user as per the user search query based on developed ontology. Also the user is recommended with the latest trending tags used in social web.},
   keywords  = {ontologies (artificial intelligence);query processing;recommender systems;folksonomized ontology;folksonomy;resources tagging;semantic relationship;semantically related tag recommendation;social Web systems;tag based ontologies;user search query;vocabulary;Clustering algorithms;Context;Electronic mail;Flickr;Internet;Ontologies;Tagging;Folksonomy;Fuzzy Clustering;Ontology;Tag Recommendation},
+  url       = {http://ieeexplore.ieee.org/document/7724900/},
 }
 
 @InProceedings{yang_etal_2012,
@@ -859,19 +631,6 @@
   keywords  = {social networking (online);text analysis;Live QnA service;community-driven question answering;online community service;social interaction;social tagging behaviour;Buildings;Intelligent agent;Labeling;Navigation;Portals;Social network services;Tagging;Taxonomy;Voting;Web search;Q&A;community tags;online communities;question types;social network analysis;topic classification, rank1},
 }
 
-@InProceedings{biegel_etal_2014,
-  author    = {B. Biegel and F. Beck and B. Lesch and S. Diehl},
-  title     = {Code Tagging as a Social Game},
-  booktitle = {2014 IEEE International Conference on Software Maintenance and Evolution},
-  year      = {2014},
-  pages     = {411-415},
-  month     = {Sept},
-  abstract  = {Keywords or tags summarize documents on an abstract level and can also be used for describing code fragments. They might be leveraged for retrieving features of a software system, understanding program functionality, or providing additional context. While automatic approaches at best are only able to retrieve information that is already contained in the source code, manual tagging could add valuable extra information from qualified expertise of the developers. However, tagging code is tedious. To make code tagging more fun, we introduce a social gasification approach: developers independently tag code fragments and are rewarded if their solutions conform to the solution of other developers. We implemented the game as a Facebook plug-in. A pilot user study suggests that the game mechanics are motivating and promote the proposition of reasonable tags.},
-  doi       = {10.1109/ICSME.2014.64},
-  issn      = {1063-6773},
-  keywords  = {computer games;document handling;identification technology;information retrieval;social networking (online);source code (software);Facebook plug-in;code fragments;code tagging;document summarization;information retrieval;keywords;manual tagging;program functionality;social game;software system;source code;Conferences;Context;Games;Java;Software;Software engineering;Tagging;code tagging;crowdsourcing;documentation;gamification;social game},
-}
-
 @Article{ivanov_etal_2013,
   author   = {I. Ivanov and P. Vajda and P. Korshunov and T. Ebrahimi},
   title    = {Comparative Study of Trust Modeling for Automatic Landmark Tagging},
@@ -900,18 +659,6 @@
   abstract = {Social image analysis and retrieval is important for helping people organize and access the increasing amount of user tagged multimedia. Since user tagging is known to be uncontrolled, ambiguous, and overly personalized, a fundamental problem is how to interpret the relevance of a user-contributed tag with respect to the visual content the tag is describing. Intuitively, if different persons label visually similar images using the same tags, these tags are likely to reflect objective aspects of the visual content. Starting from this intuition, we propose in this paper a neighbor voting algorithm which accurately and efficiently learns tag relevance by accumulating votes from visual neighbors. Under a set of well-defined and realistic assumptions, we prove that our algorithm is a good tag relevance measurement for both image ranking and tag ranking. Three experiments on 3.5 million Flickr photos demonstrate the general applicability of our algorithm in both social image retrieval and image tag suggestion. Our tag relevance learning algorithm substantially improves upon baselines for all the experiments. The results suggest that the proposed algorithm is promising for real-world applications.},
   doi      = {10.1109/TMM.2009.2030598},
   keywords = {image classification;image retrieval;learning (artificial intelligence);Flickr photo;image ranking;learning social tag relevance;neighbor voting algorithm;social image analysis;social image retrieval;tag ranking;tag relevance learning algorithm;user tagged multimedia;visual content;visual neighbor;Multimedia indexing and retrieval;neighbor voting;social tagging;tag relevance learning},
-}
-
-@InProceedings{li_hu_2012,
-  author    = {S. Li and J. Hu},
-  title     = {A Social Label Automatic Tagging Based Method on Situation Semantics in Web Service Discovery},
-  booktitle = {2012 International Conference on Management of e-Commerce and e-Government},
-  year      = {2012},
-  pages     = {91-94},
-  month     = {Oct},
-  abstract  = {The traditional approach to describe web services using ontology is a departure from the perspective of web service provider which can not ensure high precision and recall ratios, that is the consistency of the service designing intent and the service using intent, the conformance of the excepted using environment and the actual using environment, and the possibility of being detected by potential users. In this paper, a social label automatic tagging based method on situation semantics in web service discovery is proposed, which takes into account both semantic web technology and user situation semantics.},
-  doi       = {10.1109/ICMeCG.2012.71},
-  keywords  = {Web services;information retrieval;ontologies (artificial intelligence);semantic Web;Web service discovery;ontology;semantic Web technology;service designing intent;situation semantics;social label automatic tagging based method;user situation semantics;Context;Educational institutions;Engines;Ontologies;Semantics;Tagging;Web services;service discovery;situation semantics;social tagging;web service},
 }
 
 @InProceedings{lei_liu_2014,
@@ -990,18 +737,6 @@
   keywords  = {social networking (online);text analysis;word processing;Twitter data streams;grouping scheme;grouping schemes;high-level topic model;named entities;pseudodocument;topic modeling algorithms;tweet labeling;word collocations;Blogs;Distributed databases;Labeling;Media;Resource management;Tagging;Twitter;Twitter;content-analysis;microblogging;social media mining;topic-modeling},
 }
 
-@InProceedings{elhussein_nakata_2012,
-  author    = {M. Elhussein and K. Nakata},
-  title     = {Analysing the Factors That Influence Tag Choice Based on Semiotic Analysis and Activity Theory},
-  booktitle = {2012 International Conference on Social Informatics},
-  year      = {2012},
-  pages     = {96-105},
-  month     = {Dec},
-  abstract  = {Social tagging has become popular around the Internet as well as in research. The main idea behind tagging is to allow users to provide metadata to the web content from their perspective to facilitate categorization and retrieval. There are many factors that influence users' tag choice. Many studies have been conducted to reveal these factors by analysing tagging data. This paper uses two theories to identify these factors, namely the semiotics theory and activity theory. The former treats tags as signs and the latter treats tagging as an activity. The theoretical analysis produced a framework that was used to identify a number of factors. These factors can be considered as categories that can be consulted to influence user tagging choice in order to support particular tagging behaviour, such as cross-lingual tagging.},
-  doi       = {10.1109/SocialInformatics.2012.78},
-  keywords  = {data analysis;social networking (online);user interfaces;Internet;Web content categorization;Web content retrieval;activity theory;cross-lingual tagging;meta data;semiotics theory;social tagging;tagging data analysis;user tag choice;Activity Theory;Social tagging;semiotic ladder;semiotics;tag choice;user collaboration, rank1},
-}
-
 @InProceedings{choi_etal_2009,
   author    = {J. Choi and W. De Neve and Y. M. Ro and K. N. Plataniotis},
   title     = {Face annotation for personal photos using collaborative face recognition in online social networks},
@@ -1042,21 +777,6 @@
   keywords  = {information retrieval;music;recommender systems;combined music label propagation model;content based music similarity distance;model label probability prediction model;music annotation;music recommendation;music retrieval;publicly accessible ground truth data;Computational modeling;Internet;Music;Music information retrieval;Prediction algorithms;Predictive models;Semantics;content-based similarity;music label;propagation model},
 }
 
-@Article{caeiro-rodriguez_etal_2015,
-  author   = {M. Caeiro-Rodríguez and J. M. Santos-Gago and M. Lama and M. Llamas-Nistal},
-  title    = {A Keyword Recommendation Experiment to Support Information Organization and Folksonomies in Edu-AREA},
-  journal  = {IEEE Revista Iberoamericana de Tecnologias del Aprendizaje},
-  year     = {2015},
-  volume   = {10},
-  number   = {2},
-  pages    = {60-68},
-  month    = {May},
-  issn     = {1932-8540},
-  abstract = {Edu-AREA is a Web 2.0 application whose main goal is to contribute to teaching innovation. It provides descriptions of educational resources and guidelines that can be used by teachers to create their lesson plans and later to document their teaching experiences. At the current stage of the Edu-AREA development, a main issue is related to the management and classification of information provided by users. This paper introduces a folksonomy approach, the architecture of the system, and the results of an experiment about keyword recommendations.},
-  doi      = {10.1109/RITA.2015.2417953},
-  keywords = {pattern classification;recommender systems;social networking (online);teaching;Edu-AREA;Web 2.0 application;educational guidelines;educational resources;folksonomy approach;information classification;information management;information organization;keyword recommendation;lesson plan creation;system architecture;teaching experience documentation;teaching innovation;Data models;Education;Ontologies;Organizations;Semantics;Vocabulary;Web 2.0;Educational activities;Information sharing;Social network services;Tagging;educational activities;information sharing;tagging},
-}
-
 @InProceedings{hassan_etal_2010,
   author    = {M. T. Hassan and A. Karim and F. Javed and N. Arshad},
   title     = {Self-Optimizing a Clustering-based Tag Recommender for Social Bookmarking Systems},
@@ -1092,6 +812,7 @@
   abstract  = {The problem of automatic music mood classification is addressed by resorting to low-rank representation of slow auditory spectro-temporal modulations. Recently, it has been shown that if each data class is linearly spanned by a subspace of unknown dimensions and the data are noiseless, the lowest-rank representation (LRR) of a set of test vector samples with respect to a set of training vector samples has the nature of being both dense for within-class affinities and almost zero for between-class affinities. Consequently, the LRR exactly reveals the classification of the data, resulting into the so-called Low-Rank Representation-based Classification (LRRC). The performance of the LRRC is compared against three well-known classifiers, namely the Sparse Representations-based Classifier, Support Vector Machines, and Nearest Neighbor classifiers for music mood classification by conducting experiments on the MTV and the Soundtracks180 datasets. The experimental results validate the effectiveness of the LRRC among the classifiers that is compared to.},
   issn      = {2076-1465},
   keywords  = {music;pattern classification;support vector machines;LRRC;MTV;Soundtracks180 datasets;automatic music mood classification;low-rank representation-based classification;nearest neighbor classifiers;slow auditory spectro-temporal modulations;sparse representations-based classifier;support vector machines;Accuracy;Modulation;Mood;Psychoacoustic models;Support vector machines;Training;Vectors},
+  url       = {https://www.eurasip.org/Proceedings/Eusipco/Eusipco2011/papers/1569427041.pdf},
 }
 
 @InProceedings{mayhew_etal_2016,
@@ -1134,7 +855,7 @@
   keywords  = {Internet;information analysis;information retrieval;multimedia computing;music;pattern classification;Internet users;binary classifiers;multilabel classification;multimedia information retrieval;multimedia tag annotation systems;music piece tagging;music tag annotation stacking;unstructured tag annotation data;Multimedia communication;Niobium;Stacking;Support vector machines;Tagging;Training;Vectors;automatic tag annotation;classification;multi-label classificaiton;multimedia information retrieval;music information retrieval;stacking},
 }
 
-@InProceedings{zhou_etal_2017a,
+@InProceedings{zhou_etal_2017,
   author    = {P. Zhou and J. Liu and Z. Yang and G. Zhou},
   title     = {Scalable tag recommendation for software information sites},
   booktitle = {2017 IEEE 24th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
@@ -1146,7 +867,7 @@
   keywords  = {program debugging;public domain software;recommender systems;software engineering;AskDifferent;AskUbuntu;English skills;Freecode;StackOverflow;TagMulRec;bug fixes;development experience;large-scale software information sites;open source projects;scalable tag recommendation;software developers;software objects;Indexes;Search problems;Semantics;Social network services;Software;Software algorithms;Tagging;Multi-Classification;Software Information Site;Software Object;Tag Recommendation, rank1},
 }
 
-@Article{cui_etal_2017b,
+@Article{cui_etal_2017a,
   author   = {P. Cui and S. Liu and W. Zhu},
   title    = {General Knowledge Embedded Image Representation Learning},
   journal  = {IEEE Transactions on Multimedia},
@@ -1158,18 +879,6 @@
   abstract = {Image representation learning is a fundamental problem in understanding semantics of images. However, traditional classification-based representation learning methods face the noisy and incomplete problem of the supervisory labels. In this paper, we propose a General Knowledge Base Embedded Image Representation Learning approach, which uses general knowledge graph, which is a multi-type relational knowledge graph consisting of human commonsense beyond image space, as external semantic resource to capture the relations of concepts in image representation learning. A Relational Regularized Regression CNN (R$^{3}$CNN) model is designed to jointly optimize the image representation learning problem and knowledge graph embedding problem. In this manner, the learnt representation can capture not only labeled tags but also related concepts of images, which involves more precise and complete semantics. Comprehensive experiments are conducted to investigate the effectiveness and transferability of our approach in tag prediction task, zero-shot tag inference task, and content based image retrieval task. The experimental results demonstrate that the proposed approach performs significantly better than the existing representation learning methods. Finally, observation of the learnt relations show that our approach can somehow refine the knowledge base to describe images and label the images with structured tags.},
   doi      = {10.1109/TMM.2017.2724843},
   keywords = {Bridges;Image representation;Knowledge based systems;Learning systems;Noise measurement;Semantics;Visualization;image representation learning;knowledge base;multi-relational graph embedding},
-}
-
-@InProceedings{demir_oezguer_2014,
-  author    = {H. Demir and A. Özgür},
-  title     = {Improving Named Entity Recognition for Morphologically Rich Languages Using Word Embeddings},
-  booktitle = {2014 13th International Conference on Machine Learning and Applications},
-  year      = {2014},
-  pages     = {117-122},
-  month     = {Dec},
-  abstract  = {In this paper, we addressed the Named Entity Recognition (NER) problem for morphologically rich languages by employing a semi-supervised learning approach based on neural networks. We adopted a fast unsupervised method for learning continuous vector representations of words, and used these representations along with language independent features to develop a NER system. We evaluated our system for the highly inflectional Turkish and Czech languages. We improved the state-of-the-art F-score obtained for Turkish without using gazetteers by 2.26% and for Czech by 1.53%. Unlike the previous state-of-the-art systems developed for these languages, our system does not make use of any language dependent features. Therefore, we believe it can easily be applied to other morphologically rich languages.},
-  doi       = {10.1109/ICMLA.2014.24},
-  keywords  = {natural language processing;neural nets;unsupervised learning;word processing;Czech languages;F-score;NER problem;NER system;Turkish languages;continuous word vector representations;language independent features;morphologically rich languages;named entity recognition problem;neural networks;semisupervised learning approach;unsupervised learning method;word embeddings;Cities and towns;Context;Measurement;Neural networks;Semisupervised learning;Training;Vectors;Czech NER;Named Entity Recognition;Skip-gram;Turkish NER;Word Embeddings},
 }
 
 @InProceedings{lin_etal_2009c,
@@ -1209,7 +918,7 @@
   keywords  = {Internet;Web sites;information retrieval;text analysis;MRR metric;NMF based tag expansion approach;Web corpus;WikiSem;Wikipedia based nearest neighbor tagging;high quality semantic descriptors;item content structure;low-content items;mean reciprocal rank metric;multimedia items;nonnegative matrix factorization;tag expansion automation process;text content;topic drift problem;Databases;Google;Noise measurement;Search engines;Semantics;Tagging},
 }
 
-@Article{xu_etal_2014c,
+@Article{xu_etal_2014,
   author   = {Z. Xu and Y. Zhang and L. Cao},
   title    = {Social Image Analysis From a Non-IID Perspective},
   journal  = {IEEE Transactions on Multimedia},
@@ -1247,21 +956,6 @@
   abstract  = {The concept of Web 2.0 or "semantic web" has been getting more and more popular during the last half decade. The potential of very subtle yet important emergent semantics hidden in such environments calls for equally elegant and powerful methods to "mine" them. However, much of the previous work on model based recommender systems for folksonomies considered user to resource and resource to tag similarity separately, ignoring the dependency of users' interest to both the tags and the corresponding resources. In this paper, we propose a probabilistic personalized recommendation model, Latent Interest Model, that accounts for users, tags and resources jointly. The proposed method's performance is evaluated on real data sets obtained from a popular online bookmarking site using different performance measures for tag and resource recommendation tasks. Our experimental results show that our model captures personal preferences for tag usage and resource selection. Performance evaluation of Latent Interest Model indicates that the proposed personalized method yields significant improvement of recommendation accuracy.},
   doi       = {10.1109/ICMLA.2012.68},
   keywords  = {identification technology;recommender systems;resource allocation;semantic Web;Web 2.0;emergent semantics;environments calls;folksonomies;joint probabilistic model;latent interest model performance evaluation;model-based recommender systems;performance measures;personal preferences;popular online bookmarking site;probabilistic personalized recommendation model;real data sets;resource recommendation tasks;resource selection;semantic Web;tag usage;Computational modeling;Context;Context modeling;Data models;Probabilistic logic;Tagging;Vectors;folksonomy;personalized recommendation},
-}
-
-@Article{lo_etal_2011a,
-  author   = {H. Y. Lo and J. C. Wang and H. M. Wang and S. D. Lin},
-  title    = {Cost-Sensitive Multi-Label Learning for Audio Tag Annotation and Retrieval},
-  journal  = {IEEE Transactions on Multimedia},
-  year     = {2011},
-  volume   = {13},
-  number   = {3},
-  pages    = {518-529},
-  month    = {June},
-  issn     = {1520-9210},
-  abstract = {Audio tags correspond to keywords that people use to describe different aspects of a music clip. With the explosive growth of digital music available on the Web, automatic audio tagging, which can be used to annotate unknown music or retrieve desirable music, is becoming increasingly important. This can be achieved by training a binary classifier for each tag based on the labeled music data. Our method that won the MIREX 2009 audio tagging competition is one of this kind of methods. However, since social tags are usually assigned by people with different levels of musical knowledge, they inevitably contain noisy information. By treating the tag counts as costs, we can model the audio tagging problem as a cost-sensitive classification problem. In addition, tag correlation information is useful for automatic audio tagging since some tags often co-occur. By considering the co-occurrences of tags, we can model the audio tagging problem as a multi-label classification problem. To exploit the tag count and correlation information jointly, we formulate the audio tagging task as a novel cost-sensitive multi-label (CSML) learning problem and propose two solutions to solve it. The experimental results demonstrate that the new approach outperforms our MIREX 2009 winning method.},
-  doi      = {10.1109/TMM.2011.2129498},
-  keywords = {audio signal processing;information retrieval;learning (artificial intelligence);music;pattern classification;MIREX 2009 audio tagging;audio retrieval;audio tag annotation;automatic audio tagging;binary classifier;cost sensitive multi label learning;digital music;music clip;tag correlation information;Correlation;Electronic mail;Feature extraction;Measurement;Support vector machines;Tagging;Training;Audio tag annotation;audio tag retrieval;cost-sensitive learning;multi-label;tag count},
 }
 
 @InProceedings{pliakos_kotropoulos_2014,
@@ -1324,18 +1018,6 @@
   abstract = {In this paper, we address the problem of social image tagging using practical vocabulary for mobile users on the social media. On the social media, images usually have an incomplete or noisy set of social tags provided by the mobile users, and we consider this issue as defective tag assignments. Previous studies on social image tagging have mostly focused on multi-label classification without considering the defective tags. In these studies, the usage of multi-label classification techniques is expected to synergically exploit the linear relations between the image features and the semantic tags. However, these approaches usually aimed to capture the linear relations from the training data while ignoring the helpful information from the test data. In addition, they failed to incorporate the non-linear associations residing in the visual features as well as in the semantic tags. To overcome these drawbacks, we introduce a novel approach based on non-linear matrix completion for image tagging task with defective tags. Specifically, we first construct the entire feature-tag matrix based on the visual features with non-linear kernel mapping. Then, we present a formal methodology together with an optimization method under the matrix completion framework to jointly complete the tags of training and test images. Experimental evaluations demonstrate that our method shows promising results on image tagging task on two benchmark social image datasets with defective tags, and establishes a baseline for such models in this research domain.},
   doi      = {10.1109/ACCESS.2016.2624267},
   keywords = {Noise measurement;Semantics;Social network services;Sparse matrices;Tagging;Training;Visualization;Social image tagging;defective tag assignment;tag completion},
-}
-
-@InProceedings{yang_etal_2017a,
-  author    = {L. C. Yang and S. Y. Chou and J. Y. Liu and Y. H. Yang and Y. A. Chen},
-  title     = {Revisiting the problem of audio-based hit song prediction using convolutional neural networks},
-  booktitle = {2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  year      = {2017},
-  pages     = {621-625},
-  month     = {March},
-  abstract  = {Being able to predict whether a song can be a hit has important applications in the music industry. Although it is true that the popularity of a song can be greatly affected by external factors such as social and commercial influences, to which degree audio features computed from musical signals (whom we regard as internal factors) can predict song popularity is an interesting research question on its own. Motivated by the recent success of deep learning techniques, we attempt to extend previous work on hit song prediction by jointly learning the audio features and prediction models using deep learning. Specifically, we experiment with a convolutional neural network model that takes the primitive mel-spectrogram as the input for feature learning, a more advanced JYnet model that uses an external song dataset for supervised pre-training and auto-tagging, and the combination of these two models. We also consider the inception model to characterize audio information in different scales. Our experiments suggest that deep structures are indeed more accurate than shallow structures in predicting the popularity of either Chinese or Western Pop songs in Taiwan. We also use the tags predicted by JYnet to gain insights into the result of different models.},
-  doi       = {10.1109/ICASSP.2017.7952230},
-  keywords  = {audio signal processing;learning (artificial intelligence);music;neural nets;Chinese Pop songs;JYnet model;Western Pop songs;audio features;audio information;audio-based hit song prediction;autotagging;convolutional neural network model;deep learning;deep structures;feature learning;inception model;music industry;prediction models;primitive mel-spectrogram;song dataset;supervised pretraining;Computational modeling;Convolution;Machine learning;Music;Neural networks;Predictive models;Training;Hit song prediction;convolutional neural network;cultural factors;deep learning;music tags},
 }
 
 @InProceedings{charte_etal_2015,
@@ -1452,19 +1134,6 @@
   keywords = {audio signal processing;information retrieval;music;polynomials;Dirichlet mixture model;audio clips;auto-taggers model;automatic music annotation;contextual relationship modeling;direct auditory cues;generative context model;semantic associations;semantic multinomial;semantic music annotation;semantic music retrieval;song annotation;tag vocabulary;Acoustics;Context;Context modeling;Correlation;Rocks;Semantics;Vocabulary;Audio annotation and retrieval;Dirichlet mixture models;context modeling;music information retrieval},
 }
 
-@InProceedings{yang_toderici_2011,
-  author    = {W. Yang and G. Toderici},
-  title     = {Discriminative tag learning on YouTube videos with latent sub-tags},
-  booktitle = {CVPR 2011},
-  year      = {2011},
-  pages     = {3217-3224},
-  month     = {June},
-  abstract  = {We consider the problem of content-based automated tag learning. In particular, we address semantic variations (sub-tags) of the tag. Each video in the training set is assumed to be associated with a sub-tag label, and we treat this sub-tag label as latent information. A latent learning framework based on LogitBoost is proposed, which jointly considers both the tag label and the latent sub-tag label. The latent sub-tag information is exploited in our framework to assist the learning of our end goal, i.e., tag prediction. We use the cowatch information to initialize the learning process. In experiments, we show that the proposed method achieves significantly better results over baselines on a large-scale testing video set which contains about 50 million YouTube videos.},
-  doi       = {10.1109/CVPR.2011.5995402},
-  issn      = {1063-6919},
-  keywords  = {content-based retrieval;learning (artificial intelligence);social networking (online);video retrieval;LogitBoost;YouTube videos;content-based automated tag learning;discriminative tag learning;latent learning framework;latent sub-tag label;tag label;Feature extraction;Semantics;Support vector machines;Tagging;Training;Videos;YouTube},
-}
-
 @Article{rad_jamzad_2015,
   author   = {R. Rad and M. Jamzad},
   title    = {Automatic image annotation by a loosely joint non-negative matrix factorisation},
@@ -1477,6 +1146,7 @@
   abstract = {Nowadays, the number of digital images has increased so that the management of this volume of data needs an efficient system for browsing, categorising and searching. Automatic image annotation is designed for assigning tags to images for more accurate retrieval. Non-negative matrix factorisation (NMF) is a traditional machine learning technique for decomposing a matrix into a set of basis and coefficients under the non-negative constraints. In this study, the authors propose a two-step algorithm for designing an automatic image annotation system that employs the NMF framework for its first step and a variant of K-nearest neighbourhood as its second step. In the first step, a new multimodal NMF algorithm is proposed to extract the latent factors which reflect the content of images. This is done by jointly factorising the visual and textual data feature matrices so that they have close representation, although not necessarily the same. In the second step, after mapping images to the latent factors space a few tags are predicted for the new images based on a weighted average of similar data. They evaluated the performance of the proposed method and compared it to the state-of-the-art literature. Comparison results demonstrate the effectiveness and potential of the proposed method in image annotation applications.},
   doi      = {10.1049/iet-cvi.2014.0413},
   keywords = {image classification;image retrieval;learning (artificial intelligence);matrix decomposition;visual databases;K-nearest neighbourhood;automatic image annotation system;digital images;machine learning technique;multimodal NMF algorithm;nonnegative matrix factorisation;textual data feature matrices;visual data feature matrices},
+  url      = {http://ieeexplore.ieee.org/abstract/document/7328507/},
 }
 
 @InProceedings{wang_etal_2012,
@@ -1489,19 +1159,6 @@
   abstract  = {In recent years, several methods have been proposed to exploit image context (such as location) that provides valuable cues complementary to the image content, i.e., image annotations and geotags have been shown to assist the prediction of each other. To exploit the useful interrelatedness between these two heterogeneous prediction tasks, we propose a new correlation guided structured sparse multi-task learning method. We utilize a joint classification and regression model to identify annotation-informative and geotag-relevant image features. We also introduce the tree-structured sparsity regularizations into multi-task learning to integrate the label correlations in multi-label image annotation. Finally we derive an efficient algorithm to optimize our non-smooth objective function. We demonstrate the performance of our method on three real-world geotagged multi-label image data sets for both semantic annotation and geotag prediction.},
   doi       = {10.1109/ISM.2012.21},
   keywords  = {correlation methods;feature extraction;image classification;learning (artificial intelligence);regression analysis;tree data structures;annotation-informative image feature;classification;correlation guided structured sparse multitask learning method;feature selection;geotag prediction;geotag-relevant image feature;heterogeneous prediction task;image content;image context;image location;label correlation;multilabel image annotation;nonsmooth objective function;regression model;semantic annotation;tree-structured sparsity regularization;Context;Correlation;Global Positioning System;Joints;Multimedia communication;Prediction algorithms;Semantics;feature selection;geotag;multi-task learning},
-}
-
-@InProceedings{koh_etal_2012,
-  author    = {J. L. Koh and N. Shongwe and C. W. Cho},
-  title     = {A multi-level hierarchical index structure for supporting efficient similarity search on tag sets},
-  booktitle = {2012 Sixth International Conference on Research Challenges in Information Science (RCIS)},
-  year      = {2012},
-  pages     = {1-12},
-  month     = {May},
-  abstract  = {Social communication websites has been an emerging type of a Web service that helps users to share their resources. For providing efficient similarity search of tag set in a social tagging system, we propose a multi-level hierarchical index structure to group similar tag sets. Not only the algorithms of similarity searches of tag sets, but also the algorithms of deletion and updating of tag sets by using the constructed index structure are provided. Furthermore, we define a modified hamming distance function on tag sets, which consider the semantically relatedness when comparing the members for evaluating the similarity of two tag sets. This function is more applicable to evaluate the similarity search of two tag sets. A systematic performance study is performed to verify the effectiveness and the efficiency of the proposed strategies. The experiment results show that the proposed MHIB approach further improves the pruning effect of the previous work which constructs a two-level index structure. Especially, the MHIB approach is well scalable with respect to the three parameters when using either the hamming distance or the modified hamming distance for similarity measure. Although the insertion operation of the MHIB approach requires higher cost than the naïve method, with the assistant of the constructed inverted list of clusters, it performs faster than the previous work. Besides, the cost of performing deletion operation by using the MHIB approach is much less than the other two approaches and so is the update operation.},
-  doi       = {10.1109/RCIS.2012.6240436},
-  issn      = {2151-1349},
-  keywords  = {Web services;information retrieval;resource allocation;social networking (online);MHIB approach;Web service;efficient similarity search;modified hamming distance function;multilevel hierarchical index structure;resource sharing;similar tag set grouping;social communication Web sites;social tagging system;tag sets deletion;two-level index structure;Hamming distance;Indexing;Search problems;Tagging;Transaction databases;Upper bound;Social tagging;index structure;similarity search},
 }
 
 @Article{sun_etal_2017,
@@ -1522,19 +1179,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords = {Databases;Nearest neighbor searches;Prediction methods;Semantics;Tagging;Videos;Visualization;Video summarization;highlight retrieval},
 }
 
-@InProceedings{wang_etal_2014f,
-  author    = {S. Y. Wang and J. C. Wang and Y. H. Yang and H. M. Wang},
-  title     = {Towards time-varying music auto-tagging based on CAL500 expansion},
-  booktitle = {2014 IEEE International Conference on Multimedia and Expo (ICME)},
-  year      = {2014},
-  pages     = {1-6},
-  month     = {July},
-  abstract  = {Music auto-tagging refers to automatically assigning semantic labels (tags) such as genre, mood and instrument to music so as to facilitate text-based music retrieval. Although significant progress has been made in recent years, relatively little research has focused on semantic labels that are time-varying within a track. Existing approaches and datasets usually assume that different fragments of a track share the same tag labels, disregarding the tags that are time-varying (e.g., mood) or local in time (e.g., instrument solo). In this paper, we present a new dataset dedicated to time-varying music auto-tagging. The dataset, called CAL500exp, is an enriched version of the well-known CAL500 dataset used for conventional track-level tagging. Given the tag set of CAL500, eleven subjects with strong music background were recruited to annotate the time-varying tag labels. A new user interface for annotation is developed to reduce the subject's annotation effort yet increase the quality of labels. Moreover, we present an empirical evaluation that demonstrates the performance improvement CAL500exp brings about for time-varying music auto-tagging. By providing more accurate and consistent descriptions of music content in a finer granularity, CAL500exp may open new opportunities to understand and to model the temporal context of musical semantics.},
-  doi       = {10.1109/ICME.2014.6890290},
-  issn      = {1945-7871},
-  keywords  = {information retrieval;music;musical instruments;semantic Web;text analysis;user interfaces;CAL500 dataset;CAL500exp dataset;musical semantics;semantic labels;subject annotation effort;text-based music retrieval;time-varying music auto-tagging;time-varying tag labels;track-level tagging;user interface;Instruments;Multiple signal classification;Semantics;Tagging;Training;User interfaces;Vectors;Music auto-tagging;annotation interface;dataset construction;temporal context;time-varying},
-}
-
 @InProceedings{yuan_2017,
   author    = {H. Yuan},
   title     = {A Method of Personalized Tag Prediction Based on Graph Structure},
@@ -1545,19 +1189,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   abstract  = {In the past few years, social tags and tagging systems have gained large momentum for service categorizing and indexing content on the Web. Tags are used freely, which leads a random correspondence between the tags and the services, which affects the performance of the tag in the search and applications. We propose a novel scheme for tag predicting based on graph, aiming to automatically sort the tags associated with a given API services according to their relevance to the service content using the theory of random walk. Tag sorting is applied to tag predicting of Web service. We evaluate our methodology through experiment using open data set. Our results show that our approach really boosts the performances of tag predicting.},
   doi       = {10.1109/QRS-C.2017.71},
   keywords  = {Correlation;Correlation coefficient;Prediction algorithms;Semantics;Sorting;Tagging;Web services;graph;predicting;random walk;service;tag, rank1},
-}
-
-@InProceedings{karpathy_etal_2014,
-  author    = {A. Karpathy and G. Toderici and S. Shetty and T. Leung and R. Sukthankar and L. Fei-Fei},
-  title     = {Large-Scale Video Classification with Convolutional Neural Networks},
-  booktitle = {2014 IEEE Conference on Computer Vision and Pattern Recognition},
-  year      = {2014},
-  pages     = {1725-1732},
-  month     = {June},
-  abstract  = {Convolutional Neural Networks (CNNs) have been established as a powerful class of models for image recognition problems. Encouraged by these results, we provide an extensive empirical evaluation of CNNs on large-scale video classification using a new dataset of 1 million YouTube videos belonging to 487 classes. We study multiple approaches for extending the connectivity of a CNN in time domain to take advantage of local spatio-temporal information and suggest a multiresolution, foveated architecture as a promising way of speeding up the training. Our best spatio-temporal networks display significant performance improvements compared to strong feature-based baselines (55.3% to 63.9%), but only a surprisingly modest improvement compared to single-frame models (59.3% to 60.9%). We further study the generalization performance of our best model by retraining the top layers on the UCF-101 Action Recognition dataset and observe significant performance improvements compared to the UCF-101 baseline model (63.3% up from 43.9%).},
-  doi       = {10.1109/CVPR.2014.223},
-  issn      = {1063-6919},
-  keywords  = {image classification;image motion analysis;multimedia computing;neural nets;social networking (online);spatiotemporal phenomena;video signal processing;CNN;UCF-101 action recognition dataset;UCF-101 baseline model;YouTube videos;convolutional neural networks;feature-based baselines;image recognition problems;local spatiotemporal information;spatiotemporal networks;video classification;Computational modeling;Computer architecture;Feature extraction;Spatial resolution;Streaming media;Training;action;classification;convolutional;dataset;large-scale;network;neural;recognition;sports;video},
 }
 
 @Article{nwana_chen_2017,
@@ -1623,7 +1254,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords  = {audio recording;information retrieval;music;pattern classification;10-fold cross-validation experimental protocol;CAL500 dataset;PARAFAC2;auditory temporal modulation;automatic music tagging;autotagging system;dimensionality reduction;multilabel vector;music recording representation;parallel factor analysis 2;third order tensor;vectorized test auditory representation;vectorized training temporal modulation;Feature extraction;Modulation;Semantics;Tagging;Tensile stress;Training;Vectors;Automatic Music Tagging;Multi-label Classification;PARAFAC2;Tensor Decompositions},
 }
 
-@InProceedings{li_etal_2013c,
+@InProceedings{li_etal_2013,
   author    = {S. Li and G. Huang and R. Tan and R. Pan},
   title     = {Tag-Weighted Dirichlet Allocation},
   booktitle = {2013 IEEE 13th International Conference on Data Mining},
@@ -1754,18 +1385,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords  = {feature extraction;image processing;matrix algebra;recommender systems;social networking (online);Flickr;Greek popular tourist landmark;PARAFAC2;automatic image annotation;automatic image tagging;cross-validation experimental protocol;feature vector extraction;image recommendation;image-feature matrix;image-tag matrix;image-user matrix;multitag information;multiuser information;parallel factor analysis 2;recommendation system;recommendation vector;singular vector;social network;tag vector;test image sketch;visual appearance;Feature extraction;Measurement;Semantics;Sparse matrices;Tagging;Tensile stress;Training;Automatic Image Tagging;Image Recommendation;Multi-label Classification;PARAFAC2},
 }
 
-@InProceedings{musleh_pai_2015,
-  author    = {M. Musleh and V. S. Pai},
-  title     = {Automatic sharing classification and timely push for cache-coherent systems},
-  booktitle = {SC15: International Conference for High Performance Computing, Networking, Storage and Analysis},
-  year      = {2015},
-  pages     = {1-12},
-  month     = {Nov},
-  abstract  = {This paper proposes and evaluates Sharing/Timing Adaptive Push (STAP), a dynamic scheme for preemptively sending data from producers to consumers to minimize critical-path communication latency. STAP uses small hardware buffers to dynamically detect sharing patterns and timing requirements. The scheme applies to both intra-node and inter-socket directory-based shared memory networks. We integrate STAP into a MOESI cache-coherence (prefetching-enabled) protocol using heuristics to detect different data sharing patterns, including broadcasts, producer/consumer, and migratory-data sharing. Using 15 benchmarks from the PARSEC and SPLASH-2 suites we show that our scheme significantly reduces communication latency in NUMA systems and achieves an average of 9% performance improvement, with at most 3% on-chip storage overhead.},
-  doi       = {10.1145/2807591.2807649},
-  keywords  = {cache storage;critical path analysis;pattern classification;protocols;shared memory systems;MOESI cache-coherence protocol;NUMA systems;PARSEC;SPLASH-2;STAP;automatic sharing classification;cache-coherent systems;critical-path communication latency;data sharing patterns;inter-socket directory-based shared memory networks;intra-node directory-based shared memory networks;sharing/timing adaptive push;Benchmark testing;Coherence;Data transfer;Hardware;Prefetching;Protocols;Timing},
-}
-
 @InProceedings{beyer_pinzger_2015,
   author    = {S. Beyer and M. Pinzger},
   title     = {Synonym Suggestion for Tags on Stack Overflow},
@@ -1815,18 +1434,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   abstract  = {Previous work has correctly identified that many of the tags that users provide on images are not visually relevant, and subsequently assume such user generated tags are noise or irrelevant. Another assumption about user generated tags is that the order of these tags provides no useful information for the prediction of tags on future images. We challenge the aforementioned assumptions, and provide a machine learning approach to the problem of personalized image tagging with the following contributions: 1.) We reformulate the personalized image tagging problem as a search/retrieval ranking problem, 2.) We leverage the order of tags, which does not always reflect visual relevance, provided by the user in the past as a cue to their tag preferences, similar to click data, 3.) We propose a technique to augment sparse user tag data (semi-supervision), and 4.) We demonstrate the efficacy of our method on a subset of Flickr images, showing improvement over our previous methods.},
   doi       = {10.1109/ISM.2016.0016},
   keywords  = {image classification;image retrieval;learning (artificial intelligence);Flickr;QUOTE;machine learning;personalized image tagging;querying users as oracles in tag engines;search-retrieval ranking problem;semisupervised learning;Computers;Market research;Search engines;Search problems;Tagging;Visualization;Vocabulary;L2R;behavior;learning-to-rank;personalization;rankSVM;tagging;user preference},
-}
-
-@InProceedings{ghaly_etal_2016,
-  author    = {R. S. Ghaly and E. Elabd and M. A. Mostafa},
-  title     = {Tweets classification, hashtags suggestion and tweets linking in social semantic web},
-  booktitle = {2016 SAI Computing Conference (SAI)},
-  year      = {2016},
-  pages     = {1140-1146},
-  month     = {July},
-  abstract  = {Nowadays social semantic Web has become one of the most important sources of data. The quality of data is crucial for data integration and annotation in social Linked Open Data (LOD). The main goal of tweets classification and linking is to integrate all tweets that are related semantically in one place on the Web. The data inequality problems exist because authors post tweets and hashtag them based on their own preference. The authors can post tweets in different languages (English-Arabic). Therefore, the hashtags cannot be the only trackback function of the tweet to link it with the related tweets. Thus, the goal of this paper is to develop an automated tweet classifier which is not limited by the language or the category of the tweet. The approach can create new suggested multilingual (English, Arabic) hashtags from tweet's content and comments "auto-tagging" in social linked open data (LOD), matching the tweets in the same topic and provides high accuracy and performance using blocking and indexing techniques. The proposed framework has substantial improvements in tweets classification and linking compared to state of the art framework of classifying and linking techniques with better classifying rate which reach 95% in precision and 97% in recall.},
-  doi       = {10.1109/SAI.2016.7556121},
-  keywords  = {data integration;indexing;pattern classification;pattern matching;semantic Web;social networking (online);Arabic languages;English languages;blocking techniques;data annotation;data integration;data quality;indexing techniques;social Linked Open Data;social semantic Web;tweet classification;tweet content;tweet linking;tweet matching;Feature extraction;Joining processes;Resource description framework;Tagging;Twitter;Data Annotation;Hashtags suggestion;Social Semantic Web;Tweet classification;Tweet linking},
 }
 
 @InProceedings{nam_etal_2012,
@@ -1956,7 +1563,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords  = {data mining;recommender systems;relevance feedback;social networking (online);Web 2.0 application;social tagging system;tag recommendation;tagging data;user interest lattice matching;website;Lattices;Social tagging;Tag recommendation;User interest lattice},
 }
 
-@InProceedings{liu_etal_2013c,
+@InProceedings{liu_etal_2013,
   author    = {S. Liu and Y. Zhu and J. Guo and Y. Wang and X. Cheng and Y. Liu},
   title     = {A Blending Method for Automated Social Tagging},
   booktitle = {2013 IEEE/WIC/ACM International Joint Conferences on Web Intelligence (WI) and Intelligent Agent Technologies (IAT)},
@@ -1966,7 +1573,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   month     = {Nov},
   abstract  = {Social tagging has grown in popularity on the web due to its effectiveness in organizing and accessing web pages. This short paper addresses the problem of automated social tagging, which aims to predict tags for web pages automatically and help with future navigation, filtering or search. We explore and find three foundations of the collaborative tags in social tagging services, that are consistency, sharability and stability. The complementary advantages are studied among three well-known methods, i.e. TF-weighted keyword extraction, collaborative filtering approach, and Corr-LDA (correspondence latent Dirichlet allocation) topic model. We then propose a blending model for automated social tagging to emphasize all the foundations, which linearly combines those tags generated by the three methods, and a permutation probability model is built to learn the linear blending. With the experiments on 50,000 training and 10,000 testing web pages from Delicious database, the results show that our blending method outperforms the four baselines. Furthermore, compared with both topic models, Corr-LDA and mixed membership LDA, our approach results in 14.2% and 25.6% of NDCG10 improvement separately.},
   doi       = {10.1109/WI-IAT.2013.17},
-  keywords  = {Internet;collaborative filtering;data integrity;social networking (online);Corr-LDA topic model;Del.icio.us database;TF-weighted keyword extraction;automated social tagging services;blending model;collaborative filtering approach;collaborative tags;consistency;correspondence latent Dirichlet allocation topic model;linear blending;permutation probability model;sharability;stability;testing Web pages;training Web pages;Accuracy;Collaboration;Data models;Equations;Mathematical model;Stability analysis;Tagging;automatic annotation;collaborative filtering;social tagging;topic model},
+  keywords  = {Internet;collaborative filtering;data integrity;social networking (online);Corr-LDA topic model;Del.icio.us database;TF-weighted keyword extraction;automated social tagging services;blending model;collaborative filtering approach;collaborative tags;consistency;correspondence latent Dirichlet allocation topic model;linear blending;permutation probability model;sharability;stability;testing Web pages;training Web pages;Accuracy;Collaboration;Data models;Equations;Mathematical model;Stability analysis;Tagging;automatic annotation;collaborative filtering;social tagging;topic model, rank1},
 }
 
 @InProceedings{fan_etal_2012,
@@ -2004,7 +1611,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   pages    = {125 - 133},
   issn     = {0378-4371},
   doi      = {http://dx.doi.org/10.1016/j.physa.2014.06.048},
-  keywords = {Social tagging system, Latent interaction potential, Collective intelligence},
+  keywords = {Social tagging system, Latent interaction potential, Collective intelligence, rank1},
   url      = {http://www.sciencedirect.com/science/article/pii/S0378437114005238},
 }
 
@@ -2022,7 +1629,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S1568494613001087},
 }
 
-@Article{li_etal_2013d,
+@Article{li_etal_2013a,
   author   = {Zechao Li and Jing Liu and Hanqing Lu},
   title    = {Nonlinear matrix factorization with unified embedding for social tag relevance learning},
   journal  = {Neurocomputing},
@@ -2036,33 +1643,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0925231212006984},
 }
 
-@Article{bertola_patti_2016,
-  author   = {Federico Bertola and Viviana Patti},
-  title    = {Ontology-based affective models to organize artworks in the social semantic web},
-  journal  = {Information Processing \& Management},
-  year     = {2016},
-  volume   = {52},
-  number   = {1},
-  pages    = {139 - 162},
-  issn     = {0306-4573},
-  note     = {Emotion and Sentiment in Social and Expressive Media},
-  doi      = {http://dx.doi.org/10.1016/j.ipm.2015.10.003},
-  keywords = {Ontologies, Emotion visualization, Sentiment analysis, Social tagging, Semantic web, Linked open data},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306457315001235},
-}
-
-@Article{hossain_etal_2017,
-  author   = {M. Shamim Hossain and Mohammed F. Alhamid and Ghulam Muhammad},
-  title    = {Collaborative analysis model for trending images on social networks},
-  journal  = {Future Generation Computer Systems},
-  year     = {2017},
-  issn     = {0167-739X},
-  doi      = {http://dx.doi.org/10.1016/j.future.2017.01.030},
-  keywords = {Social media, Verification and image forgery, Collaborative analysis, Particle Swarm Optimization, Social networks},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0167739X17301383},
-}
-
-@Article{wang_etal_2017c,
+@Article{wang_etal_2017,
   author   = {Peng Wang and Lifeng Sun and Shiqiang Yang and Alan F. Smeaton},
   title    = {Training-free indexing refinement for visual media via multi-semantics},
   journal  = {Neurocomputing},
@@ -2085,21 +1666,8 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   pages    = {8 - 12},
   issn     = {0167-8655},
   doi      = {http://dx.doi.org/10.1016/j.patrec.2017.06.024},
-  keywords = {Large scale learning, Multi label learning, Independent learning},
+  keywords = {Large scale learning, Multi label learning, Independent learning, rank1},
   url      = {http://www.sciencedirect.com/science/article/pii/S0167865517302295},
-}
-
-@Article{bouadjenek_etal_2016,
-  author   = {Mohamed Reda Bouadjenek and Hakim Hacid and Mokrane Bouzeghoub},
-  title    = {Social networks and information retrieval, how are they converging? A survey, a taxonomy and an analysis of social information retrieval approaches and platforms},
-  journal  = {Information Systems},
-  year     = {2016},
-  volume   = {56},
-  pages    = {1 - 18},
-  issn     = {0306-4379},
-  doi      = {http://dx.doi.org/10.1016/j.is.2015.07.008},
-  keywords = {Information Retrieval, Social networks, Social Information Retrieval, Social search, Social recommendation},
-  url      = {http://www.sciencedirect.com/science/article/pii/S030643791500160X},
 }
 
 @Article{horsburgh_etal_2015,
@@ -2157,7 +1725,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S095741741200317X},
 }
 
-@Article{zhang_etal_2012a,
+@Article{zhang_etal_2012,
   author   = {Yin Zhang and Bin Zhang and Kening Gao and Pengwei Guo and Daming Sun},
   title    = {Combining content and relation analysis for recommendation in social tagging systems},
   journal  = {Physica A: Statistical Mechanics and its Applications},
@@ -2197,34 +1765,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi      = {http://dx.doi.org/10.1016/j.ins.2014.04.047},
   keywords = {Non-negative Sparse LSA, Social tagging, GPU computing, Tag recommendation, Image classification},
   url      = {http://www.sciencedirect.com/science/article/pii/S002002551400512X},
-}
-
-@Article{kim_etal_2012a,
-  author   = {Heung-Nam Kim and Majdi Rawashdeh and Abdullah Alghamdi and Abdulmotaleb El Saddik},
-  title    = {Folksonomy-based personalized search and ranking in social media services},
-  journal  = {Information Systems},
-  year     = {2012},
-  volume   = {37},
-  number   = {1},
-  pages    = {61 - 76},
-  issn     = {0306-4379},
-  doi      = {http://dx.doi.org/10.1016/j.is.2011.07.002},
-  keywords = {Folksonomy, Personalized search, Social media search, Social Ranking, Social tagging},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306437911000858},
-}
-
-@Article{kakali_2014,
-  author   = {Constantia Kakali},
-  title    = {A Utilization Model of Users' Metadata in Libraries},
-  journal  = {The Journal of Academic Librarianship},
-  year     = {2014},
-  volume   = {40},
-  number   = {6},
-  pages    = {565 - 573},
-  issn     = {0099-1333},
-  doi      = {http://dx.doi.org/10.1016/j.acalib.2014.08.004},
-  keywords = {Subject indexing, Social tagging, Folksonomy, Classification, Users' metadata, Cataloguers},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0099133314001785},
 }
 
 @Article{li_etal_2014b,
@@ -2268,19 +1808,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S108480451400085X},
 }
 
-@Article{lu_etal_2015,
-  author   = {Jie Lu and Dianshuang Wu and Mingsong Mao and Wei Wang and Guangquan Zhang},
-  title    = {Recommender system application developments: A survey},
-  journal  = {Decision Support Systems},
-  year     = {2015},
-  volume   = {74},
-  pages    = {12 - 32},
-  issn     = {0167-9236},
-  doi      = {http://dx.doi.org/10.1016/j.dss.2015.03.008},
-  keywords = {Recommender systems, E-service personalization, E-commerce, E-learning, E-government},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0167923615000627},
-}
-
 @Article{maihami_yaghmaee_2017,
   author   = {Vafa Maihami and Farzin Yaghmaee},
   title    = {A genetic-based prototyping for automatic image annotation},
@@ -2290,33 +1817,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi      = {http://dx.doi.org/10.1016/j.compeleceng.2017.03.019},
   keywords = {Automatic image annotation, Genetic algorithm, Prototyping, Relevance tags, Image retrieval},
   url      = {http://www.sciencedirect.com/science/article/pii/S0045790617306407},
-}
-
-@Article{pang_law_2017,
-  author   = {Natalie Pang and Pei Wen Law},
-  title    = {Retweeting #WorldEnvironmentDay: A study of content features and visual rhetoric in an environmental movement},
-  journal  = {Computers in Human Behavior},
-  year     = {2017},
-  volume   = {69},
-  pages    = {54 - 61},
-  issn     = {0747-5632},
-  doi      = {http://dx.doi.org/10.1016/j.chb.2016.12.003},
-  keywords = {Twitter, Persuasion, Netoric, Visual rhetoric, World Environment Day, Social movements},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0747563216308238},
-}
-
-@Article{marchand_etal_2017,
-  author   = {André Marchand and Thorsten Hennig-Thurau and Caroline Wiertz},
-  title    = {Not all digital word of mouth is created equal: Understanding the respective impact of consumer reviews and microblogs on new product success},
-  journal  = {International Journal of Research in Marketing},
-  year     = {2017},
-  volume   = {34},
-  number   = {2},
-  pages    = {336 - 354},
-  issn     = {0167-8116},
-  doi      = {http://dx.doi.org/10.1016/j.ijresmar.2016.09.003},
-  keywords = {WOM, Social media, Consumer decision making, Video games},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0167811615300318},
 }
 
 @Article{mika_2007,
@@ -2335,20 +1835,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url           = {http://www.sciencedirect.com/science/article/pii/S1570826806000552},
 }
 
-@Article{ma_etal_2017,
-  author   = {Huifang Ma and Meihuizi Jia and Di Zhang and Xianghong Lin},
-  title    = {Combining tag correlation and user social relation for microblog recommendation},
-  journal  = {Information Sciences},
-  year     = {2017},
-  volume   = {385},
-  pages    = {325 - 337},
-  issn     = {0020-0255},
-  doi      = {http://dx.doi.org/10.1016/j.ins.2016.12.047},
-  keywords = {Microblog recommendation, Tag retrieval, User-tag matrix, User-tag weight, Tag correlation, User–user social relation},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0020025516322794},
-}
-
-@Article{wang_etal_2014a,
+@Article{wang_etal_2014,
   author   = {Jingdong Wang and Jiazhen Zhou and Hao Xu and Tao Mei and Xian-Sheng Hua and Shipeng Li},
   title    = {Image tag refinement by regularized latent Dirichlet allocation},
   journal  = {Computer Vision and Image Understanding},
@@ -2362,7 +1849,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S107731421400037X},
 }
 
-@Article{zhang_etal_2015a,
+@Article{zhang_etal_2015,
   author   = {Jing Zhang and Xin Liu and Li Zhuo and Chao Wang},
   title    = {Social images tag ranking based on visual words in compressed domain},
   journal  = {Neurocomputing},
@@ -2375,34 +1862,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0925231214015604},
 }
 
-@Article{huang_etal_2012a,
-  author   = {Yuexiang Huang and Chun-Hsien Chen and Li Pheng Khoo},
-  title    = {Products classification in emotional design using a basic-emotion based semantic differential method},
-  journal  = {International Journal of Industrial Ergonomics},
-  year     = {2012},
-  volume   = {42},
-  number   = {6},
-  pages    = {569 - 580},
-  issn     = {0169-8141},
-  doi      = {http://dx.doi.org/10.1016/j.ergon.2012.09.002},
-  keywords = {Emotional design, Kansei engineering, Products classification, Semantic differential, Basic emotions},
-  url      = {http://www.sciencedirect.com/science/article/pii/S016981411200087X},
-}
-
-@Article{zou_etal_2015,
-  author   = {Benyou Zou and Cuiping Li and Liwen Tan and Hong Chen},
-  title    = {GPUTENSOR: Efficient tensor factorization for context-aware recommendations},
-  journal  = {Information Sciences},
-  year     = {2015},
-  volume   = {299},
-  pages    = {159 - 177},
-  issn     = {0020-0255},
-  doi      = {http://dx.doi.org/10.1016/j.ins.2014.12.004},
-  keywords = {Recommendation system, Context-aware, Tensor factorization},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0020025514011414},
-}
-
-@Article{deng_etal_2013a,
+@Article{deng_etal_2013,
   author   = {Zhi-Hong Deng and Zhong-Hui Wang and Jie Zhang},
   title    = {ROBIN: A novel personal recommendation model based on information propagation},
   journal  = {Expert Systems with Applications},
@@ -2429,20 +1889,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0957417416305395},
 }
 
-@Article{ali_etal_2014,
-  author   = {Haider Ali and Faisal Shafait and Eirini Giannakidou and Athena Vakali and Nadia Figueroa and Theodoros Varvadoukas and Nikolaos Mavridis},
-  title    = {Contextual object category recognition for RGB-D scene labeling},
-  journal  = {Robotics and Autonomous Systems},
-  year     = {2014},
-  volume   = {62},
-  number   = {2},
-  pages    = {241 - 256},
-  issn     = {0921-8890},
-  doi      = {http://dx.doi.org/10.1016/j.robot.2013.10.001},
-  keywords = {Object recognition, Contextual modeling, RGB-D scenes, Social media, 3D scene labeling},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0921889013001929},
-}
-
 @Article{feng_etal_2011,
   author   = {Songhe Feng and Hong Bao and Congyan Lang and De Xu},
   title    = {Combining visual attention model with multi-instance learning for tag ranking},
@@ -2457,7 +1903,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0925231211003791},
 }
 
-@Article{zhang_etal_2013a,
+@Article{zhang_etal_2013,
   author   = {Xiaoming Zhang and Xiaojian Zhao and Zhoujun Li and Jiali Xia and Ramesh Jain and Wenhan Chao},
   title    = {Social image tagging using graph-based reinforcement on multi-type interrelated objects},
   journal  = {Signal Processing},
@@ -2472,7 +1918,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0165168412001661},
 }
 
-@Article{sun_etal_2011a,
+@Article{sun_etal_2011,
   author   = {Ke Sun and Xiaolong Wang and Chengjie Sun and Lei Lin},
   title    = {A language model approach for tag recommendation},
   journal  = {Expert Systems with Applications},
@@ -2482,36 +1928,8 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   pages    = {1575 - 1582},
   issn     = {0957-4174},
   doi      = {http://dx.doi.org/10.1016/j.eswa.2010.07.075},
-  keywords = {Tag recommendation, Language model for tag recommendation},
+  keywords = {Tag recommendation, Language model for tag recommendation, rank1},
   url      = {http://www.sciencedirect.com/science/article/pii/S0957417410007037},
-}
-
-@Article{mehdi_etal_2017,
-  author   = {Mohamad Mehdi and Chitu Okoli and Mostafa Mesgari and Finn Årup Nielsen and Arto Lanamäki},
-  title    = {Excavating the mother lode of human-generated text: A systematic review of research that uses the wikipedia corpus},
-  journal  = {Information Processing \& Management},
-  year     = {2017},
-  volume   = {53},
-  number   = {2},
-  pages    = {505 - 529},
-  issn     = {0306-4573},
-  doi      = {http://dx.doi.org/10.1016/j.ipm.2016.07.003},
-  keywords = {Information retrieval, Information extraction, Natural language processing, Ontologies, Wikipedia, Literature review},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306457316303004},
-}
-
-@Article{liang_etal_2014,
-  author   = {Bin Liang and Yiqun Liu and Min Zhang and Shaoping Ma and Liyun Ru and Kuo Zhang},
-  title    = {Searching for people to follow in social networks},
-  journal  = {Expert Systems with Applications},
-  year     = {2014},
-  volume   = {41},
-  number   = {16},
-  pages    = {7455 - 7465},
-  issn     = {0957-4174},
-  doi      = {http://dx.doi.org/10.1016/j.eswa.2014.05.050},
-  keywords = {Social network mining, Ranking algorithm, Tag expansion and prediction, SPTF},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0957417414003376},
 }
 
 @Article{qian_etal_2015,
@@ -2525,34 +1943,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi      = {http://dx.doi.org/10.1016/j.image.2015.03.008},
   keywords = {Personalized image annotation, Cross-domain learning, Nearest neighbor model, Multiple kernel learning},
   url      = {http://www.sciencedirect.com/science/article/pii/S0923596515000442},
-}
-
-@Article{orso_etal_2017,
-  author   = {Valeria Orso and Tuukka Ruotsalo and Jukka Leino and Luciano Gamberini and Giulio Jacucci},
-  title    = {Overlaying social information: The effects on users’ search and information-selection behavior},
-  journal  = {Information Processing \& Management},
-  year     = {2017},
-  volume   = {53},
-  number   = {6},
-  pages    = {1269 - 1286},
-  issn     = {0306-4573},
-  doi      = {http://dx.doi.org/10.1016/j.ipm.2017.06.001},
-  keywords = {Social search, Information retrieval, Personalization, rank1},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306457316306045},
-}
-
-@Article{spyrou_mylonas_2016,
-  author   = {Evaggelos Spyrou and Phivos Mylonas},
-  title    = {A survey on Flickr multimedia research challenges},
-  journal  = {Engineering Applications of Artificial Intelligence},
-  year     = {2016},
-  volume   = {51},
-  pages    = {71 - 91},
-  issn     = {0952-1976},
-  note     = {Mining the Humanities: Technologies and Applications},
-  doi      = {http://dx.doi.org/10.1016/j.engappai.2016.01.006},
-  keywords = {Flickr, Retrieval, Recommendations, Localization, Travel applications, Knowledge extraction, rank1},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0952197616000105},
 }
 
 @InProceedings{cao_etal_2009,
@@ -2603,26 +1993,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   document_type   = {Article},
   doi             = {10.1145/3012287},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85026805266&doi=10.1145%2f3012287&partnerID=40&md5=0f8a40044c154045fd955d60a28c8050},
-}
-
-@Article{bollen_halpin_2013,
-  author          = {Bollen, D. and Halpin, H.},
-  title           = {An experimental analysis of suggestions in collaborative tagging},
-  journal         = {Web Intelligence and Agent Systems},
-  year            = {2013},
-  volume          = {11},
-  number          = {1},
-  pages           = {41-53},
-  note            = {cited By},
-  abstract        = {Most tagging systems support the user in the tag selection process by providing tag suggestions, or recommendations, based on a popularity measurement of tags other users provided when tagging the same resource, such as web-page. In this paper we investigate the influence of tag suggestions on the emergence of power-law distributions as a result of collaborative tag behavior. Although previous research has already shown that power-laws emerge in tagging systems, the cause of why power-law distributions emerge is not understood empirically. The majority of theories and mathematical models of tagging found in the literature assume that the emergence of power-laws in tagging systems is mainly driven by the imitation behavior of users when observing tag suggestions provided by the user interface of the tagging system. This imitation behavior leads to a feedback loop in which some tags are reinforced, which is also known as the 'rich get richer' or a preferential attachment model. We present experimental results showing that the power-law distribution forms when tag suggestions are not presented to the users, and the power-law distribution does not hold when tag suggestions are presented to the user. Furthermore, we show that the real effect of tag suggestions is rather subtle; the power-law distribution that would naturally occur without tag suggestions is 'compressed' if tag suggestions are given to the user, resulting in a shorter long tail and a 'compressed' top of the power-law distribution. We show that tag suggestions by themselves do not account for the formation of power-law distributions in tagging systems. © 2013-IOS Press and the authors. All rights reserved.},
-  affiliation     = {Faculty of Innovation Sciences and Industrial Engineering, Eindhoven University of Technology, Den Dolech 2, 5600 MB Eindhoven, Netherlands; School of Informatics, University of Edinburgh, United Kingdom},
-  author_keywords = {Distributed information systems; information retrieval; user interfaces},
-  document_type   = {Article},
-  doi             = {10.3233/WIA-130261},
-  keywords        = {rank1},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84880193043&doi=10.3233%2fWIA-130261&partnerID=40&md5=ba0a9574fe05508b555fa4ceda23c04a},
+  url             = {http://dl.acm.org/citation.cfm?doid=3129277.3012287},
 }
 
 @Conference{chelmis_prasanna_2013,
@@ -2726,20 +2097,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84924370976&partnerID=40&md5=fabd13a20f0884428c4e6e52bcc366b0},
 }
 
-@Conference{trabelsi_yahia_2013,
-  author          = {Trabelsi, C. and Yahia, S.B.},
-  title           = {An integrated approach for context-aware query recommendation in folksonomies},
-  year            = {2013},
-  note            = {cited By},
-  abstract        = {Collaborative tagging systems have recently emerged as one of the most popular tools for Web search users to find their desired information. Indeed, the informal social classification structure in these systems, also known as folksonomy, provides a convenient way to annotate resources by allowing users to use any keyword or tag that they find relevant. In turn, the flat and non-hierarchical structure with unsupervised vocabularies leads to low search precision and poor resource navigation and retrieval. The widely keyword-based approaches used for locating information on the Web, are hence not straightforwardly adaptable to folksonomies. This drawback has created the need for an effective framework to support folksonomy users in effectively retrieving the resources matching their real search intents. The primary focus of this paper is to propose an integrated approach for context-aware query recommendation infolksonomies that exploits the power of both Hidden Markov Models (HMMs) and triadic concepts. We demonstrate through carried out experiments that the proposed approach yields mainly highly Precise and highly Relevant tag query recommendation.},
-  affiliation     = {Université de Tunis El Manar, Faculty of Sciences of Tunis, Laboratory LIPAH, Tunis, Tunisia},
-  author_keywords = {Folksonomy search intent; HMMs; Query context; Triadic concept},
-  document_type   = {Conference Paper},
-  journal         = {CORIA 2013 - Conference in Research and Applications Informations - 10th French Information Retrieval Conference},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84969961731&partnerID=40&md5=782584e533c4712d1e44d69599ec122a},
-}
-
 @Article{jaeschke_etal_2012,
   author        = {Jäschke, R. and Hotho, A. and Mitzlaff, F. and Stumme, G.},
   title         = {Challenges in Tag recommendations for collaborative tagging systems},
@@ -2752,6 +2109,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   affiliation   = {Knowledge and Data Engineering Group, University of Kassel, Wilhelmshöher Allee 73, 34121 Kassel, Germany; Data Mining and Information Retrieval Group at LS VI, University of Würzburg, Am Hubland, 97074 Würzburg, Germany},
   document_type = {Article},
   doi           = {10.1007/978-3-642-25694-3_3},
+  keywords      = {rank2},
   source        = {Scopus},
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84881393421&doi=10.1007%2f978-3-642-25694-3_3&partnerID=40&md5=ff92ab9e4138fe1dd251e4a55d1c9d36},
 }
@@ -2898,44 +2256,12 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   author_keywords = {Broad folksonomies; Collaborative tagging; Folksonomies; Hybrid systems; Narrow folksonomies; Tag recommendation},
   document_type   = {Article},
   doi             = {10.1145/2036264.2036266},
+  keywords        = {rank2},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80155142204&doi=10.1145%2f2036264.2036266&partnerID=40&md5=df14bbdf33162f25a86c52ef693c1a4c},
+  url             = {http://dl.acm.org/citation.cfm?doid=2036264.2036266},
 }
 
-@Conference{das_etal_2011,
-  author          = {Das, M. and Das, G. and Hristidis, V.},
-  title           = {Leveraging collaborative tagging for web item design},
-  year            = {2011},
-  pages           = {538-546},
-  note            = {cited By},
-  abstract        = {The popularity of collaborative tagging sites has created new challenges and opportunities for designers of web items, such as electronics products, travel itineraries, popular blogs, etc. An increasing number of people are turning to online reviews and user-specified tags to choose from among competing items. This creates an opportunity for designers to build items that are likely to attract desirable tags when published. In this paper, we consider a novel optimization problem: given a training dataset of existing items with their user-submitted tags, and a query set of desirable tags, design the k best new items expected to attract the maximum number of desirable tags. We show that this problem is NP-Complete, even if simple Naive Bayes Classifiers are used for tag prediction. We present two principled algorithms for solving this problem: (a) an exact "two-tier" algorithm (based on top-k querying techniques), which performs much better than the naive brute-force algorithm and works well for moderate problem instances, and (b) a novel polynomialtime approximation algorithm with provable error bound for larger problem instances. We conduct detailed experiments on synthetic and real data crawled from the web to evaluate the efficiency and quality of our proposed algorithms. Copyright 2011 ACM.},
-  affiliation     = {Department of Computer Science and Engineering, University of Texas, Arlington, United States; School of Computing and Information Sciences, Florida International University, United States},
-  author_keywords = {Collaborative tagging; Item design; Naive bayes; Optimization},
-  document_type   = {Conference Paper},
-  doi             = {10.1145/2020408.2020493},
-  journal         = {Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80052690914&doi=10.1145%2f2020408.2020493&partnerID=40&md5=a195c6db2a96937120ae37fe6287e17a},
-}
-
-@Article{kichou_etal_2011,
-  author          = {Kichou, S. and Mellah, H. and Amghar, Y. and Dahak, F.},
-  title           = {Tags weighting based on user profile},
-  journal         = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  year            = {2011},
-  volume          = {6890 LNCS},
-  pages           = {206-216},
-  note            = {cited By},
-  abstract        = {The 'Collaborative Tagging' is gaining popularity on Web 2.0, this new generation of Web which makes user reader/writer. The 'Tagging' is a mean for users to express themselves freely through additions of label called 'Tags' to shared resources. One of the problems encountered in current tagging systems is to define the most appropriate tag for a resource. Tags are typically listed in order of popularity, as del-icio-us. But the popularity of the tag does not always reflect its importance and representativeness for the resource to which it is associated. Starting from the assumptions that the same tag for a resource can take different meanings for different users, and a tag from a knowledgeable user would be more important than a tag from a novice user, we propose an approach for weighting resource's tags based on user profile. For this we define a user model for his integration in the tag weight calculation and a formula for this calculation, based on three factors namely the user, the degree of approximation between his interest centers and the resource field, expertise and personal assessment for tags associated to the resource. A resource descriptor containing the best tags is created. © 2011 Springer-Verlag.},
-  affiliation     = {Research Center on Scientific and Technical Information (CERIST) Benaknoun, Algiers, Algeria; INSA of Lyon, Computing on Images and Information Systems Laboratory, Lyon, France; National Hight School of Computer Science, ESI, Oued Smar, Algiers, Algeria},
-  author_keywords = {Collaborative Tagging; Information retrieval; User profile},
-  document_type   = {Conference Paper},
-  doi             = {10.1007/978-3-642-23620-4_24},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80052424431&doi=10.1007%2f978-3-642-23620-4_24&partnerID=40&md5=e0bd7e0dfe68e376c0b3fc83b1f2a6b0},
-}
-
-@Conference{chen_etal_2011b,
+@Conference{chen_etal_2011,
   author          = {Chen, W. and Hsu, W. and Lee, M.L.},
   title           = {A unified framework for recommendations based on quaternary semantic analysis},
   year            = {2011},
@@ -2948,22 +2274,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi             = {10.1145/2009916.2010052},
   journal         = {SIGIR'11 - Proceedings of the 34th International ACM SIGIR Conference on Research and Development in Information Retrieval},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80052121408&doi=10.1145%2f2009916.2010052&partnerID=40&md5=d73e336b07e93fe97cacc3abc6a1b934},
-}
-
-@Conference{gohr_etal_2011,
-  author          = {Gohr, A. and Hinneburg, A. and Spiliopoulou, M. and Usbeck, R.},
-  title           = {On the distinctiveness of tags in collaborative tagging systems},
-  year            = {2011},
-  note            = {cited By},
-  abstract        = {We study in a quantitative way whether the most popular tags in a collaborative tagging system are distinctive features when looking at the underlying content. For any set of annotations being helpful in searching, this property must necessarily hold to a strong degree. Our initial experiments show that the most frequent tags in CiteULike are distinctive features, despite the process of annotating documents is not centrally coordinated nor correction mechanisms like in a Wiki-system are used. © 2011 ACM.},
-  affiliation     = {Computer Science, Martin-Luther-Univerisity, Halle, Germany; Computer Science, Otto-von-Guericke-University, Magdeburg, Germany},
-  author_keywords = {collaborative information systems; tagging; text mining},
-  document_type   = {Conference Paper},
-  doi             = {10.1145/1988688.1988760},
-  journal         = {ACM International Conference Proceeding Series},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960605362&doi=10.1145%2f1988688.1988760&partnerID=40&md5=ef7d11f6fa78d00949aa1d7500b8eabd},
+  url             = {http://dl.acm.org/citation.cfm?id=2010052},
 }
 
 @Conference{ilhan_oeǧueduecue_2011,
@@ -2980,22 +2291,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {ICAART 2011 - Proceedings of the 3rd International Conference on Agents and Artificial Intelligence},
   source          = {Scopus},
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79960109961&partnerID=40&md5=c25b8bea2544da0c19f2d6ab82aa0a2f},
-}
-
-@Conference{echarte_etal_2011,
-  author          = {Echarte, F. and Astrain, J.J. and Córdoba, A. and Villadangos, J. and Labat, A.},
-  title           = {A method for the classification of folksonomy resources},
-  year            = {2011},
-  pages           = {1675-1680},
-  note            = {cited By},
-  abstract        = {The paper presents a method for the automatic classification of the resources of collaborative tagging systems, also called folksonomies. Folksonomies are an easy way of representing knowledge in Web 2.0 because of its simplicity. However, due to their characteristics, the information retrieval in these systems is more difficult than in classical knowledge representation systems. This method has a high degree of precision and recall, and may adjust these values with the use of different modes of classification and thresholds, improving the performances of other resource classification methods. © 2011 ACM.},
-  affiliation     = {Dpt. Ingeniería Matemática e Informática, Universidad Pública de Navarra, Campus de Arrosadía, 31006, Pamplona, Spain},
-  author_keywords = {clustering; collaborative tagging systems; information retrieval; knowledge discovery},
-  document_type   = {Conference Paper},
-  doi             = {10.1145/1982185.1982535},
-  journal         = {Proceedings of the ACM Symposium on Applied Computing},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79959316408&doi=10.1145%2f1982185.1982535&partnerID=40&md5=f7b09f38ae359cc2c1df198bf4936124},
 }
 
 @Conference{batch_etal_2011,
@@ -3028,24 +2323,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   document_type = {Conference Paper},
   doi           = {10.1007/978-3-642-19173-2_7},
   source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-79952261763&doi=10.1007%2f978-3-642-19173-2_7&partnerID=40&md5=b7a7698293a4bf46dda5921ba48dfd53},
-}
-
-@Article{gawinecki_etal_2011,
-  author          = {Gawinecki, M. and Cabri, G. and Paprzycki, M. and Ganzha, M.},
-  title           = {Structured collaborative tagging: Is it practical for Web service discovery?},
-  journal         = {Lecture Notes in Business Information Processing},
-  year            = {2011},
-  volume          = {75 LNBIP},
-  pages           = {69-84},
-  note            = {cited By},
-  abstract        = {One of the key requirements for the success of Service Oriented Architecture is discoverability of Web services. However, public services suffer from the lack of metadata. Current methods to provide such metadata are impractical for the volume of services published on the Web: they are too expensive to be implemented by a service broker, and too difficult to be used for retrieval. We introduce structured collaborative tagging to address these issues. Here, user tags not only aspects relevant for her but also suggested ones (input, output and behavior). Cost, performance and usability of the proposed technique obtained during the Semantic Service Selection 2009 contest are reported. Obtained results suggests that there is no "free lunch." While the method is user-friendly and supports effective retrieval, it still involves cost of attracting the community, and is practical only as complementary one. The analysis shows this is due to user's autonomy as to what, when and how to tag. © 2011 Springer-Verlag Berlin Heidelberg.},
-  affiliation     = {Department of Information Engineering, University of Modena and Reggio Emilia, Modena, Italy; Systems Research Institute, Polish Academy of Sciences, Warsaw, Poland; Institute of Informatics, University of Gdańsk, Gdańsk, Poland},
-  author_keywords = {Collaborative tagging; Discovery; Web service},
-  document_type   = {Conference Paper},
-  doi             = {10.1007/978-3-642-22810-0_6},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84873463340&doi=10.1007%2f978-3-642-22810-0_6&partnerID=40&md5=e1f5e30600ea34908d2067c59a91f353},
+  url           = {https://link.springer.com/chapter/10.1007%2F978-3-642-19173-2_7},
 }
 
 @Article{shu_etal_2010,
@@ -3745,19 +3023,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url       = {http://www.sciencedirect.com/science/article/pii/B9781843347859500041},
 }
 
-@Article{kalantari_etal_2014,
-  author   = {Mohsen Kalantari and Abbas Rajabifard and Hamed Olfat and Ian Williamson},
-  title    = {Geospatial Metadata 2.0 – An approach for Volunteered Geographic Information},
-  journal  = {Computers, Environment and Urban Systems},
-  year     = {2014},
-  volume   = {48},
-  pages    = {35 - 48},
-  issn     = {0198-9715},
-  doi      = {http://dx.doi.org/10.1016/j.compenvurbsys.2014.06.005},
-  keywords = {Geospatial data, Metadata, VGI, Automation, Tagging, Folksonomy, Web 2.0, Crowdsourcing, Linked data},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0198971514000684},
-}
-
 @Article{gong_etal_2017,
   author   = {Yeyun Gong and Qi Zhang and Xuanjing Huang},
   title    = {Hashtag recommendation for multimodal microblog posts},
@@ -3824,20 +3089,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0306457314000181},
 }
 
-@Article{figueiredo_etal_2013,
-  author   = {Flavio Figueiredo and Henrique Pinto and Fabiano Belém and Jussara Almeida and Marcos Gonçalves and David Fernandes and Edleno Moura},
-  title    = {Assessing the quality of textual features in social media},
-  journal  = {Information Processing \& Management},
-  year     = {2013},
-  volume   = {49},
-  number   = {1},
-  pages    = {222 - 247},
-  issn     = {0306-4573},
-  doi      = {http://dx.doi.org/10.1016/j.ipm.2012.03.003},
-  keywords = {Web 2.0, Textual features, Information quality, Social media},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306457312000465},
-}
-
 @InProceedings{zhao_etal_2014a,
   author    = {Y. Zhao and Y. Zhao and R. Lin and H. Zou},
   title     = {Mining Service Tags with Enriched Information from the Internet},
@@ -3864,7 +3115,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords  = {Web sites;text analysis;Lin similarity measure;SCM;THD;Wikipedia;WordNet thesaurus;free-text annotations;hypernyms;semantic tagging;Collaboration;Collaborative work;Computer science;Informatics;Knowledge engineering;Ontologies;Statistics;Tagging;Taxonomy;Wikipedia;Collaborative image tagging;Semantic Concept Mapping;Targeted Hypernym Discovery;User-Generated Content, rank2},
 }
 
-@InProceedings{wang_etal_2015c,
+@InProceedings{wang_etal_2015a,
   author    = {X. Wang and Y. Jia and R. Chen and B. Zhou},
   title     = {Ranking User Tags in Micro-Blogging Website},
   booktitle = {2015 2nd International Conference on Information Science and Control Engineering},
@@ -3940,6 +3191,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   abstract  = {On Stack Overflow, more than 38,000 diverse tags are used to classify posts. The Stack Overflow community provides tag synonyms to reduce the number of tags that have the same or similar meaning. In our previous research, we used those synonym pairs to derive a number of strategies to create tag synonyms automatically. In this work, we continue this line of research and present an approach to group tag synonyms to meaningful topics. We represent our synonyms as directed, weighted graphs, and investigate several graph community detection algorithms to build meaningful groups of tags, also called tag communities. We apply our approach to the tags obtained from Android-related Stack Overflow posts and evaluate the resulting tag communities quantitatively with various community metrics. In addition, we evaluate our approach qualitatively through a manual inspection and comparison of a random sample of tag communities. Our results show that we can cluster the Android tags to 2,481 meaningful tag communities. We also show how these tag communities can be used to derive trends of topics of Android-related questions on Stack Overflow.},
   doi       = {10.1109/MSR.2016.051},
   keywords  = {Android (operating system);directed graphs;pattern clustering;Android tag synonym grouping;Stack Overflow;directed-weighted graphs;graph community detection algorithm;qualitative analysis;tag community metrics;Androids;Detection algorithms;Humanoid robots;Market research;Software engineering;Tagging;Terminology;Android;Clustering;Stack Overflow;Tags, rank1},
+  url       = {http://ieeexplore.ieee.org/document/7832922/},
 }
 
 @InProceedings{jung_etal_2013,
@@ -4253,18 +3505,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords  = {inference mechanisms;information retrieval;portals;probability;TAM;global noise variable;noisy social annotation data model;probabilistic generative model;real world data sets;reason finding;tag allocation model;probabilistic model;recommendation;social annotation;tagging},
 }
 
-@InProceedings{he_etal_2011,
-  author    = {G. He and T. Zhang and B. Lee and J. S. Kim},
-  title     = {Utilizing SSTAG: A Novel Tag Recommendation Mechanism to Web Page Search},
-  booktitle = {2011 IEEE 11th International Conference on Computer and Information Technology},
-  year      = {2011},
-  pages     = {455-460},
-  month     = {Aug},
-  abstract  = {As a social bookmark tool, Folksonomy gives high freedom to users and allows users to share and notate resources. However, many tags applied arbitrarily by users can not really reflect the contents of web pages and lead to ineffectiveness in information retrieval. Moreover, there are still some important tasks about how to eliminate ambiguity more easily and recommend more interested web pages to users. To resolve the above problems, we propose a novel mechanism named SSTAG, and it can recommend a set of Super-tags to users for their choices based on keywords input. As various topics related to the keywords, the Super-tags are selected from different clusters of web pages related to the keywords. A user chooses a Super-tag, which means the user may have chosen an interested topic, and then some more detailed tags in the topic are recommended as Sub-tags. The relationship between Super-tag and Sub-tag is just like navigation and positioning. Likewise, the user can choose one Sub-tag and submit it with the Super-tag. By means of the user's choice, this system can capture users' preference and recommend a series of related web pages. We employ a real world dataset to examine the mechanism, and the experimental results show that this mechanism can eliminate ambiguity efficiently and recommend a set of appropriate tags.},
-  doi       = {10.1109/CIT.2011.85},
-  keywords  = {Internet;information retrieval;recommender systems;Folksonomy;SSTAG;Sub-tag;Super-tags;Web page search;information retrieval;social bookmark tool;tag recommendation mechanism;user preference;Clustering algorithms;Educational institutions;Information filters;Semantics;Web pages;Information Retrieval;Tag Recommendation;Web Page Search},
-}
-
 @InProceedings{wang_etal_2014d,
   author    = {S. Wang and D. Lo and B. Vasilescu and A. Serebrenik},
   title     = {EnTagRec: An Enhanced Tag Recommendation System for Software Information Sites},
@@ -4347,20 +3587,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url      = {http://www.sciencedirect.com/science/article/pii/S0925231214007747},
 }
 
-@Article{schedl_etal_2011,
-  author   = {Markus Schedl and Gerhard Widmer and Peter Knees and Tim Pohle},
-  title    = {A music information system automatically generated via Web content mining techniques},
-  journal  = {Information Processing \& Management},
-  year     = {2011},
-  volume   = {47},
-  number   = {3},
-  pages    = {426 - 439},
-  issn     = {0306-4573},
-  doi      = {http://dx.doi.org/10.1016/j.ipm.2010.09.002},
-  keywords = {Music information retrieval, Web content mining, Information systems, Application, Evaluation},
-  url      = {http://www.sciencedirect.com/science/article/pii/S0306457310000749},
-}
-
 @Article{wang_etal_2010a,
   author   = {Jun Wang and Maarten Clements and Jie Yang and Arjen P. de Vries and Marcel J.T. Reinders},
   title    = {Personalization of tagging systems},
@@ -4405,55 +3631,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-72249085786&doi=10.1145%2f1639714.1639790&partnerID=40&md5=062ecd56ca4eaee242a5d385183bc77b},
 }
 
-@Article{uma_muneeswaran_2017,
-  author          = {Uma, R. and Muneeswaran, K.},
-  title           = {OMIR: Ontology-Based Multimedia Information Retrieval System for Web Usage Mining},
-  journal         = {Cybernetics and Systems},
-  year            = {2017},
-  volume          = {48},
-  number          = {4},
-  pages           = {393-414},
-  note            = {cited By},
-  abstract        = {Information extraction relevant to the user queries is the challenging task in the ontology environment due to data varieties such as image, video, and text. The utilization of appropriate semantic entities enables the content-based search on annotated text. Recently, the automatic extraction of textual content in the audio-visual content is an advanced research area in a multimedia (MM) environment. The annotation of the video includes several tags and comments. This paper proposes the Collaborative Tagging (CT) model based on the Block Acquiring Page Segmentation (BAPS) method to retrieve the tag-based information. The information extraction in this model includes the Ontology-Based Information Extraction (OBIE) based on the single ontology utilization. The semantic annotation phase in the proposed work inserts the metadata with limited machine-readable terms. The insertion process is split into two major processes such as database uploading to server and extraction of images/web pages based on the results of semantic phase. Novel weight-based novel clustering algorithms are introduced to extract knowledge from MM contents. The ranking based on the weight value in the semantic annotation phase supports the image/web page retrieval process effectively. The comparative analysis of the proposed BAPS-CT with the existing information retrieval (IR) models regarding the average precision rate, time cost, and storage space rate assures the effectiveness of BAPS-CT in OMIR. © 2017 Taylor & Francis Group, LLC.},
-  affiliation     = {Department of Computer Science and Engineering, Jayamatha Engineering College, Aralvaimozhi, Tamil Nadu, India; Department of Computer Science and Engineering, Mepco Schlenk Engineering College, Sivakasi, Tamil Nadu, India},
-  author_keywords = {Ontology-based multimedia information retrieval (OMIR); ranking; semantic annotation technique; semantic similarity; tag-based information prediction},
-  document_type   = {Article},
-  doi             = {10.1080/01969722.2017.1285163},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-85015090312&doi=10.1080%2f01969722.2017.1285163&partnerID=40&md5=cb4dd4812b40876b196c633a971dd086},
-}
-
-@Article{_2017a,
-  title         = {Folksonomy and tag-based recommender systems in E-learning environments},
-  journal       = {Intelligent Systems Reference Library},
-  year          = {2017},
-  volume        = {112},
-  pages         = {77-112},
-  note          = {cited By},
-  abstract      = {Collaborative tagging is technique, highly employed in different domains, which is used for automatic analysis of users’ preferences and recommendations. To improve recommendation quality, metadata such as content information of items has typically been used as additional knowledge. With the increasing reputation of the collaborative tagging systems, tags could be interesting and provide useful information to enhance algorithms for recommender systems. Besides helping user to organize his/her personal collections, a tag also can be regarded as a user’s personal opinion expression, while tagging can be considered as implicit rating or voting on the tagged information resources or items. The overview, presented in this chapter includes descriptions of content-based recommender systems, collaborative filtering systems, hybrid approach, memory-based and model-based algorithms, features of collaborative tagging that are generally attributed to their success and popularity, as well as a model for tagging activities and tag-based recommender systems. © Springer International Publishing Switzerland 2017.},
-  document_type = {Book Chapter},
-  doi           = {10.1007/978-3-319-41163-7_7},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84990060500&doi=10.1007%2f978-3-319-41163-7_7&partnerID=40&md5=2b1f353655f95b69ab42ff12524b0495},
-}
-
-@Article{tibely_etal_2016,
-  author        = {Tibély, G. and Pollner, P. and Palla, G.},
-  title         = {Comparing the hierarchy of author given tags and repository given tags in a large document archive},
-  journal       = {European Physical Journal: Special Topics},
-  year          = {2016},
-  volume        = {225},
-  number        = {10},
-  pages         = {2025-2032},
-  note          = {cited By},
-  abstract      = {Folksonomies – large databases arising from collaborative tagging of items by independent users - are becoming an increasingly important way of categorizing information. In these systems users can tag items with free words, resulting in a tripartite item-tag-user network. Although there are no prescribed relations between tags, the way users think about the different categories presumably has some built in hierarchy, in which more special concepts are descendants of some more general categories. Several applications would benefit from the knowledge of this hierarchy. Here we apply a recent method to check the differences and similarities of hierarchies resulting from tags given by independent individuals and from tags given by a centrally managed repository system. The results from our method showed substantial differences between the lower part of the hierarchies, and in contrast, a relatively high similarity at the top of the hierarchies. © 2016, EDP Sciences and Springer.},
-  affiliation   = {Dept. of Biological Physics, Eötvös University, Budapest, Hungary; MTA-ELTE Statistical and Biological Physics Research Group, Hungarian Academy of Sciences, Budapest, Hungary},
-  document_type = {Article},
-  doi           = {10.1140/epjst/e2015-50154-9},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84992374669&doi=10.1140%2fepjst%2fe2015-50154-9&partnerID=40&md5=3f40e1dfec85787045530471a79501a3},
-}
-
 @Article{kiu_2016,
   author          = {Kiu, C.C.},
   title           = {Automatic tags generation in folksonomy for learning resources reuse and sharing},
@@ -4471,57 +3648,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84974697726&partnerID=40&md5=2d94064dac1f9d55d8dd281d72cc6206},
 }
 
-@Article{godoy_corbellini_2016,
-  author        = {Godoy, D. and Corbellini, A.},
-  title         = {Folksonomy-Based Recommender Systems: A State-of-the-Art Review},
-  journal       = {International Journal of Intelligent Systems},
-  year          = {2016},
-  volume        = {31},
-  number        = {4},
-  pages         = {314-346},
-  note          = {cited By},
-  abstract      = {Collaborative tagging systems, also known as folksonomies, have grown in popularity over the Web on account of their simplicity to organize several types of content (e.g., Web pages, pictures, and video) using open-ended tags. The rapid adoption of these systems has led to an increasing amount of users providing information about themselves and, at the same time, a growing and rich corpus of social knowledge that can be exploited by recommendation technologies. In this context, tripartite relationships between users, resources, and tags contained in folksonomies set new challenges for knowledge discovery approaches to be applied for the purposes of assisting users through recommendation systems. This review aims at providing a comprehensive overview of the literature in the field of folksonomy-based recommender systems. Current recommendation approaches stemming from fields such as user modeling, collaborative filtering, content, and link-analysis are reviewed and discussed to provide a starting point for researchers in the field as well as explore future research lines. © 2015 Wiley Periodicals, Inc.},
-  affiliation   = {ISISTAN Research Institute, Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Universidad Nacional Del Centro de la Provincia de Buenos Aires (UNICEN), University Campus, Paraje Arroyo Seco (BBO7001B), Tandil, Buenos Aires, Argentina},
-  document_type = {Review},
-  doi           = {10.1002/int.21753},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84957435503&doi=10.1002%2fint.21753&partnerID=40&md5=d5cdd0d6da89b95cdfd87fb1b249a531},
-}
-
-@Article{sun_etal_2016,
-  author        = {Sun, Y. and Sun, H. and Cheng, R.},
-  title         = {Fast and semantic measurements on collaborative tagging quality},
-  journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  year          = {2016},
-  volume        = {9652 LNAI},
-  pages         = {363-375},
-  note          = {cited By},
-  abstract      = {This paper focuses on the problem of tagging quality evaluation in collaborative tagging systems. By investigating the dynamics of tagging process, we find that high frequency tags almost cover the main aspects of a resource content and can be determined stable much earlier than a whole tag set. Motivated by this finding, we design the swapping index and smart moving index on tagging quality. We also study the correlations in tag usage and propose the semantic measurement on tagging quality. The proposed methods are evaluated against real datasets and the results show that they are more efficient than previous methods, which are appropriate for a large number of web resources. The effectiveness is justified by the results in tag based applications. The light weight metrics bring a little loss on the performance, while the semantic metric is better than current methods. © Springer International Publishing Switzerland 2016.},
-  affiliation   = {School of Computer Science and Technology, Shandong University, Jinan, China; Engineering Research Center of Digital Media Technology, MOE, Jinan, China; Software College, Shandong University, Jinan, China; Department of Computer Science, The University of Hong Kong, Hong Kong},
-  document_type = {Conference Paper},
-  doi           = {10.1007/978-3-319-31750-2_29},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84987936715&doi=10.1007%2f978-3-319-31750-2_29&partnerID=40&md5=9642782c81662d98a2dc82ed860ee92d},
-}
-
-@Article{klasnja-milicevic_etal_2015,
-  author          = {Klašnja-Milićević, A. and Ivanović, M. and Nanopoulos, A.},
-  title           = {Recommender systems in e-learning environments: a survey of the state-of-the-art and possible extensions},
-  journal         = {Artificial Intelligence Review},
-  year            = {2015},
-  volume          = {44},
-  number          = {4},
-  pages           = {571-604},
-  note            = {cited By},
-  abstract        = {With the development of sophisticated e-learning environments, personalization is becoming an important feature in e-learning systems due to the differences in background, goals, capabilities and personalities of the large numbers of learners. Personalization can achieve using different type of recommendation techniques. This paper presents an overview of the most important requirements and challenges for designing a recommender system in e-learning environments. The aim of this paper is to present the various limitations of the current generation of recommendation techniques and possible extensions with model for tagging activities and tag-based recommender systems, which can apply to e-learning environments in order to provide better recommendation capabilities. © 2015, Springer Science+Business Media Dordrecht.},
-  affiliation     = {University of Novi Sad, Novi Sad, Serbia; Katholische Universität Eichstätt-Ingolstadt, Ostenstraße 26, Eichstätt, Germany},
-  author_keywords = {Collaborative tagging; e-Learning; Personalization; Recommender systems},
-  document_type   = {Article},
-  doi             = {10.1007/s10462-015-9440-z},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84975095854&doi=10.1007%2fs10462-015-9440-z&partnerID=40&md5=b09bb9a648ebcf7f8a2c5f9d61a130fb},
-}
-
 @Conference{park_etal_2015,
   author          = {Park, J. and Park, K.W. and Yun, Y. and Kim, M. and Rho, S. and Man, K.L. and Chong, W.K.},
   title           = {Efficient multimedia contents management system with tag recommendations},
@@ -4535,7 +3661,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   document_type   = {Conference Paper},
   journal         = {Lecture Notes in Engineering and Computer Science},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84937909372&partnerID=40&md5=ab96007c52f521126a6edc5f64f4a793},
+  url             = {http://www.iaeng.org/publication/IMECS2015/IMECS2015_pp737-738.pdf},
 }
 
 @Conference{chong_etal_2015,
@@ -4549,7 +3675,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   document_type   = {Conference Paper},
   journal         = {2015 Americas Conference on Information Systems, AMCIS 2015},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84963626704&partnerID=40&md5=1ba5305fee26bfaf494302ba304b5b06},
+  url             = {https://pdfs.semanticscholar.org/8842/04f9cccdaa6a6a122d4ebc612b5a961782cf.pdf},
 }
 
 @Article{font_etal_2015,
@@ -4569,40 +3695,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords        = {rank1},
   source          = {Scopus},
   url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84942782344&doi=10.1145%2f2743026&partnerID=40&md5=28aa27e54269109a81df0d325cacf81f},
-}
-
-@Article{alvargonzalez_etal_2014,
-  author          = {Alvargonzález, C.L. and Álvarez-Rodrigez, J.M. and Labra Gayo, J.E. and De Pablos, P.O.},
-  title           = {Acota: A multilingual and semi-automatic collaborative tagging web-based approach},
-  journal         = {Journal of Web Engineering},
-  year            = {2014},
-  volume          = {13},
-  number          = {1-2},
-  pages           = {160-180},
-  note            = {cited By},
-  abstract        = {This paper introduces a multilingual hybrid methodology to automatically deploy and combine collaborative tagging techniques based on user-behavior and recommendation algorithms. A reference web architecture called ACOTA (Automatic Collaborative Tagging) is also described in order to show the recommendation capabilities of this approach with the aim to assist users when multilingual resource tagging is required. Finally a quantitative research in the context of corporate knowledge management is also presented to evaluate and assess the goodness and accuracy of the methodology to minimize the effort of multilingual document categorization. © Rinton Press.},
-  affiliation     = {WESO Research Group, University of Oviedo, Oviedo, Spain; Knowledge Reuse Group, Carlos III University of Madrid, Leganés, Spain; WESO Research Group, University of Oviedo, Oviedo, Spain},
-  author_keywords = {Automatic tagging; Collaborative tagging; Document retrieval; Knowledge management; Multilingual data},
-  document_type   = {Article},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84899716775&partnerID=40&md5=ae198590e8bf61a14e5721366b563a1b},
-}
-
-@Article{banda_bharadwaj_2014,
-  author          = {Banda, L. and Bharadwaj, K.K.},
-  title           = {E-FCM algorithms for collaborative tagging system},
-  journal         = {Advances in Intelligent Systems and Computing},
-  year            = {2014},
-  volume          = {327},
-  pages           = {89-97},
-  note            = {cited By},
-  abstract        = {Collaborative Tagging is the process of managing, classifying and describing tags where in user can easily describe or get an information about an item. As growth of information in social networking websites there is a possibility of increase of tags and it is very difficult to predict or recommend items to the user. In this paper we address the problem of sensitivity in the distribution of the tag data in clusters and optimization can be achieved by merging similar clusters in E-FCM and E-GK algorithm for collaborative Tagging Systems. Our experiments on each movie data set shows E-FCM and E-GK with sensitivity gives more accurate results as compared to baseline clustering approaches in collaborative tagging systems. © Springer International Publishing Switzerland 2015.},
-  affiliation     = {School of Computer and System Sciences, Jawaharlal Nehru University, Delhi, India},
-  author_keywords = {Collaborative tagging System; E-FCM Algorithm; Fuzzy cluster and E-GK algorithm; Sensitivity},
-  document_type   = {Conference Paper},
-  doi             = {10.1007/978-3-319-11933-5_11},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84910601063&doi=10.1007%2f978-3-319-11933-5_11&partnerID=40&md5=6ea48a23e7b42205cd812ce67b7b2f25},
 }
 
 @Conference{gueye_etal_2014,
@@ -4668,10 +3760,10 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   document_type   = {Article},
   doi             = {10.1145/2516891},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84890319675&doi=10.1145%2f2516891&partnerID=40&md5=16633ba8391a380334b6d36bee6a83af},
+  url             = {http://dl.acm.org/citation.cfm?doid=2536736.2516891},
 }
 
-@Conference{li_etal_2014a,
+@Conference{li_etal_2014,
   author          = {Li, Y. and Xiong, J. and Liu, X. and Zhang, H. and Zhang, P.},
   title           = {Folksonomy-based in-depth annotation of web services},
   booktitle       = {2014 IEEE 8th International Symposium on Service Oriented System Engineering},
@@ -4688,7 +3780,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {Proceedings - IEEE 8th International Symposium on Service Oriented System Engineering, SOSE 2014},
   keywords        = {Web services;information analysis;semantic Web;Web service portal;automatic Web service composition;automatic Web service discovery;automatic tags assignment;collaborative tagging systems;community-generated folksonomies;folksonomy-based Web service annotation;folksonomy-based in-depth annotation;seekda;semantic Web service technologies;tag-service;third parties;Cities and towns;Collaboration;Meteorology;Ontologies;Semantics;Tagging;Web services;collaborative tagging;folksonomy;semantic annotation;web service},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84903584264&doi=10.1109%2fSOSE.2014.32&partnerID=40&md5=4cff6fc29540454894f3a26d6ddd6ef8},
+  url             = {http://ieeexplore.ieee.org/document/6830912/},
 }
 
 @Conference{djuana_etal_2011,
@@ -4709,7 +3801,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {Proceedings - 2011 IEEE/WIC/ACM International Joint Conferences on Web Intelligence and Intelligent Agent Technology - Workshops, WI-IAT 2011},
   keywords        = {Internet;groupware;ontologies (artificial intelligence);recommender systems;vocabulary;Web;collaborative tagging;ontology learning;semantic ambiguity;tag ontology extraction;tag recommendation making;user tagging systems;Collaboration;Finite element methods;Ontologies;Recommender systems;Semantics;Tagging;Testing;collaborative tagging;ontology learning;tag recommendation},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80155122744&doi=10.1109%2fWI-IAT.2011.163&partnerID=40&md5=49624b55b2c0790e57842b52d85bd799},
+  url             = {http://ieeexplore.ieee.org/document/6040867/},
 }
 
 @Conference{he_etal_2010,
@@ -4750,45 +3842,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords      = {groupware;information resources;multi-agent systems;agent co-evolution;collaborative tagging system design;complex systems;organisational multi-agent systems approach;self-organisation mechanisms;Adaptive systems;Centralized control;Communities;Content addressable storage;Intelligent agent;International collaboration;Multiagent systems;Network topology;Rivers;Tagging;Collaborative Tagging Systems;Organisations in Multi-Agent Systems},
   source        = {Scopus},
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-62949175332&doi=10.1109%2fWIIAT.2008.182&partnerID=40&md5=528c3d0d92caab2c46035b025cf88f2f},
-}
-
-@Conference{tian_etal_2011,
-  author        = {Tian, J. and Gao, K. and Zhang, Y. and Zhang, B.},
-  title         = {Improving search by extending tags according to recommendation level and combinations of types},
-  booktitle     = {2011 Seventh International Conference on Semantics, Knowledge and Grids},
-  year          = {2011},
-  pages         = {36-43},
-  month         = {Oct},
-  note          = {cited By},
-  abstract      = {As the collaborative tagging systems such as Delicious, Flickr and Last.fm become more and more popular, a large amount of resources produced by publishers, together with rich semantic metadata, become available. There are lots of ways to make use of tag information and so far the most discussed usage is for searching. The distribution of tag types differs greatly across different systems. Also the distribution shows large difference between publishers and searchers. In order to expand tags of resources for publishers and keywords for searchers reasonable, this paper shows a comparison of the distributions of both kinds of users and proposes an approach which could calculate the recommendation level of types. The level of types could be used to describe whether the type is valuable to the corresponding users. The distribution of different combination of types has also been investigated, and with such information we analysed the most popular combination of types in query log across different collections. We compare the searching accuracy on original datasets against the datasets with resources after being expanded tags by our proposed methods. Experimental results show that our method could improve searching accuracy. © 2011 IEEE.},
-  affiliation   = {College of Information Science and Technology, Northeastern University, Shenyang, China},
-  art_number    = {6088089},
-  document_type = {Conference Paper},
-  doi           = {10.1109/SKG.2011.17},
-  journal       = {Proceedings - 7th International Conference on Semantics, Knowledge, and Grids, SKG 2011},
-  keywords      = {groupware;query processing;recommender systems;set theory;collaborative tagging system;data sets;query log;recommendation level;searching accuracy;semantic metadata;tag information;Accuracy;Collaboration;Context;Semantics;Tagging;Taxonomy;Web pages},
-  source        = {Scopus},
-  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84055177988&doi=10.1109%2fSKG.2011.17&partnerID=40&md5=ae03483b7328e9cb0e94b398cc91dc01},
-}
-
-@Conference{xiong_etal_2011,
-  author          = {Xiong, H. and Gao, L. and Xu, Y. and Liao, Z.},
-  title           = {Collaborative tagging mechanism and standardization control in Douban},
-  booktitle       = {2011 Fourth International Conference on Business Intelligence and Financial Engineering},
-  year            = {2011},
-  pages           = {118-121},
-  month           = {Oct},
-  note            = {cited By},
-  abstract        = {In order fill the gap in the research on the domestic collaborative tagging system, we select Douban as the study object to conduct this empirical research to study the collaborative tagging mechanism and standardization control. Firstly, we count and analyze the pairwise relationship among the tags, users and resources to reveal the collaborative tagging mechanism. Then we analyze the quality and standardization of users' tag.The statistical results show that the standardization of tags is low, the quality of tags is not high and the recall ratio and precision ratio are restricted. Based on these limits of Douban, we propose some measures for improvement such as constructing the tag library, combination of tag and ontology and the recommendation of tags. © 2011 IEEE.},
-  affiliation     = {Department of Information Management, Central China Normal University, Wuhan 430079, China},
-  art_number      = {6121102},
-  author_keywords = {Collaborative tagging; Douban; Tag; Web2.0},
-  document_type   = {Conference Paper},
-  doi             = {10.1109/BIFE.2011.36},
-  journal         = {Proceedings - 2011 4th International Conference on Business Intelligence and Financial Engineering, BIFE 2011},
-  keywords        = {Internet;groupware;ontologies (artificial intelligence);standardisation;Douban;collaborative tagging mechanism;domestic collaborative tagging system;ontology;precision ratio;recall ratio;standardization control;statistical result;tag library;tag recommendation;Collaboration;Educational institutions;Libraries;Ontologies;Semantics;Standardization;Tagging;Douban;Web2.0;collaborative tagging;tag},
-  source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84862952674&doi=10.1109%2fBIFE.2011.36&partnerID=40&md5=52eb927f6e55791f7bb07e527815d8d7},
 }
 
 @Conference{alepidou_etal_2011,
@@ -4870,7 +3923,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-63149112793&doi=10.1109%2fLA-WEB.2008.15&partnerID=40&md5=693f0560f58f2fb6b1d0317541a19da8},
 }
 
-@Article{zhao_etal_2015a,
+@Article{zhao_etal_2015,
   author          = {Zhao, W. and Guan, Z. and Liu, Z.},
   title           = {Ranking on heterogeneous manifolds for tag recommendation in social tagging services},
   journal         = {Neurocomputing},
@@ -4886,7 +3939,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   doi             = {10.1016/j.neucom.2014.07.011},
   keywords        = {Manifold ranking, Heterogeneous graphs, Social tagging, Recommendation},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84908066978&doi=10.1016%2fj.neucom.2014.07.011&partnerID=40&md5=d976cd701d698201f40b0362654b0cbd},
+  url             = {https://core.ac.uk/download/pdf/11887239.pdf},
 }
 
 @Article{font_etal_2014,
@@ -4925,7 +3978,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {Proceedings of the 2011 15th International Conference on Computer Supported Cooperative Work in Design, CSCWD 2011},
   keywords        = {Internet;recommender systems;social networking (online);Internet;collaborative resource sharing;collaborative tag recommendation;folksonomies;k-nearest neighbor;local lexicon;social comment contex;social networks;Collaboration;Context;Media;Presses;Social network services;Tagging;Vocabulary;Collaborative Tagging;Folksonomies;Social Networks;Tag Co-occurrence;Tag Recommendation},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-80052236511&doi=10.1109%2fCSCWD.2011.5960130&partnerID=40&md5=5f6dcfaee94247778f32fa849f8eb41c},
+  url             = {http://ieeexplore.ieee.org/document/5960130/},
 }
 
 @Conference{kohi_etal_2011,
@@ -4945,7 +3998,7 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   journal         = {2011 1st International eConference on Computer and Knowledge Engineering, ICCKE 2011},
   keywords        = {learning (artificial intelligence);recommender systems;social networking (online);Delicious.com;hybrid methods;inconsistence data;large-scale data;social software;social tagging systems;tag recommendation system;time-consuming machine learning algorithms;Accuracy;Crawlers;Data mining;Databases;Measurement;Tagging;Web pages;collaborative tagging system;collaborative-based;folksonomies;recommendation system;social tagging system;tag recommender},
   source          = {Scopus},
-  url             = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-84874320711&doi=10.1109%2fICCKE.2011.6413358&partnerID=40&md5=24d315fa549096f131a5de4ff525c781},
+  url             = {http://ieeexplore.ieee.org/document/6413358/},
 }
 
 @Conference{rezel_liang_2010,
@@ -5008,25 +4061,6 @@ Viral videos refer to popular online videos. We focus on user-generated viral vi
   keywords        = {information filtering;learning (artificial intelligence);TrBagg;collaborative tagging;multilabel classification problems;personalized tag prediction tasks;simple transfer learning method;social bookmarks;Bagging;Collaboration;Computational efficiency;Costs;Filtering;Industrial training;Labeling;Learning systems;Machine learning algorithms;Tagging;bagging;collaborative tagging;ensemble learning;personalization;recommender system;transfer learning},
   source          = {Scopus},
   url             = {http://ieeexplore.ieee.org/document/5360247/},
-}
-
-@Article{pitsilis_wang_2015,
-  author          = {Georgios Pitsilis and Wei Wang},
-  title           = {Harnessing the power of social bookmarking for improving tag-based recommendations},
-  journal         = {Computers in Human Behavior},
-  year            = {2015},
-  volume          = {50},
-  pages           = {239 - 251},
-  issn            = {0747-5632},
-  note            = {cited By},
-  abstract        = {Social bookmarking and tagging has emerged a new era in user collaboration. Collaborative Tagging allows users to annotate content of their liking, which via the appropriate algorithms can render useful for the provision of product recommendations. It is the case today for tag-based algorithms to work complementary to rating-based recommendation mechanisms to predict the user liking to various products. In this paper we propose an alternative algorithm for computing personalized recommendations of products, that uses exclusively the tags provided by the users. Our approach is based on the idea of using the semantic similarity of the user-provided tags for clustering them into groups of similar meaning. Afterwards, some measurable characteristics of users' Annotation Competency are combined with other metrics, such as user similarity, for computing predictions. The evaluation on data used from a real-world collaborative tagging system, citeUlike, confirmed that our approach outperforms the baseline Vector Space model, as well as other state of the art algorithms, predicting the user liking more accurately. © 2015 Elsevier Ltd.},
-  affiliation     = {Computer Science Research, Athens, Greece; School of Computer and Information Technology, Beijing Jiaotong University, Beijing, China},
-  author_keywords = {Affinity propagation citeUlike; Clustering; Collaborative tagging; Recommender systems; Taxonomy},
-  document_type   = {Article},
-  doi             = {http://dx.doi.org/10.1016/j.chb.2015.03.045},
-  keywords        = {Recommender systems, Collaborative tagging, Clustering, Affinity propagation, citeUlike, Taxonomy},
-  source          = {Scopus},
-  url             = {http://www.sciencedirect.com/science/article/pii/S0747563215002356},
 }
 
 @Article{wang_etal_2015,
