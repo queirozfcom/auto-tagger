@@ -41,3 +41,4 @@ def __get_attribute_dict_from_document_node(document):
             attrs_dict[attribute_node.tag] = attribute_node.text
 
     return attrs_dict
+
