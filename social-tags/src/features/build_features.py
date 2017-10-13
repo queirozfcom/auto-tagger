@@ -3,11 +3,27 @@ import re
 from nltk.tokenize import StanfordTokenizer
 
 
-def clean_text(text):
-    return _clean(text)
+def clean_text_delicious(text):
+    return _clean_html(text)
+
+def clean_text_bibtex(text):
+    """
+    remove chars like '{' and '}'
+
+    :param text: all textual features (e.g. title and abstract put together)
+    :return:
+    """
+
+    return re.sub('{}','',text)
 
 
-def _clean(text):
+def clean_text_bookmark(text):
+    pass
+
+
+
+
+def _clean_html(text):
     # this is the pattern for html tags
     step1 = re.sub('<[^>]+>', '', text)
 

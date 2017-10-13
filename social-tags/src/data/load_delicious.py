@@ -2,6 +2,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 from joblib import Parallel, delayed
 
+
 # read the tag-assignment file (taginfo.xml) into a dataframe
 def load_taginfo_into_dataframe(input_filepath):
     tree = ET.parse(input_filepath)
@@ -20,11 +21,6 @@ def load_taginfo_into_dataframe(input_filepath):
     docs_df = docs_df[docs_df["filetype"] == "html"].reindex()
 
     return docs_df
-
-
-# def load_individual_content(input_filepath):
-
-
 
 
 def __get_attribute_dict_from_document_node(document):
@@ -47,4 +43,3 @@ def __get_attribute_dict_from_document_node(document):
             attrs_dict[attribute_node.tag] = attribute_node.text
 
     return attrs_dict
-
