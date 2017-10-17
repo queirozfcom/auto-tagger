@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def load_bibtex_and_tags(bibtex_filepath, tas_filepath):
+def load_to_dataframe_bibtex(bibtex_filepath, tas_filepath):
     bibtex_df = pd.read_csv(bibtex_filepath, sep='\t', error_bad_lines=False, names=[
         'content_id', 'journal', 'volume', 'chapter', 'edition', 'month', 'day', 'booktitle', 'howPublished',
         'institution', 'organization', 'publisher', 'address', 'school', 'series', 'bibtexKey', 'url', 'type',
@@ -28,7 +28,7 @@ def load_bibtex_and_tags(bibtex_filepath, tas_filepath):
     return bibtex_docs_df
 
 
-def load_bookmark_and_tags(bookmark_filepath, tas_filepath):
+def load_to_dataframe_bookmark(bookmark_filepath, tas_filepath):
     bookmark_df = pd.read_csv(bookmark_filepath, sep='\t', error_bad_lines=False, names=[
         'content_id', 'url_hash', 'url', 'description', 'extended_description', 'date'])
 

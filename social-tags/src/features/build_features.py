@@ -1,41 +1,26 @@
-import re
+def make_bookmark_data(dataframe, columns=None):
+    if columns is None:
+        columns = ['url', 'description', 'extended_description']
 
-from nltk.tokenize import StanfordTokenizer
+    dataframe.fillna('', inplace=True)
 
+    dataframe['contents'] = ''
 
-def clean_text_delicious(text):
-    return _clean_html(text)
+    for column in columns:
+        dataframe['contents'] = dataframe['contents'] + ' ' + dataframe[column]
 
-def clean_text_bibtex(text):
-    """
-    remove chars like '{' and '}'
-
-    :param text: all textual features (e.g. title and abstract put together)
-    :return:
-    """
-
-    return re.sub('{}','',text)
+    return dataframe["contents"].values
 
 
-def clean_text_bookmark(text):
-    pass
+def make_bibtex_data(dataframe, columns=None):
+    if columns is None:
+        columns = ['title', 'bibtexAbstract', 'description', 'note', 'annote']
 
+    dataframe.fillna('', inplace=True)
 
+    dataframe['contents'] = ''
 
+    for column in columns:
+        dataframe['contents'] = dataframe['contents'] + ' ' + dataframe[column]
 
-def _clean_html(text):
-    # this is the pattern for html tags
-    step1 = re.sub('<[^>]+>', '', text)
-
-    # this is not the newline character, this is a literal slash and n
-    step2 = re.sub('\\n',' ', step1)
-
-    step3 = re.sub('\s+',' ', step2)
-
-    return step3
-
-
-def _tokenize(text):
-    OPTIONS = {'ptb3Escaping': False}
-
-    return StanfordTokenizer(options=OPTIONS).tokenize(text)
+    return dataframe["contents"].values

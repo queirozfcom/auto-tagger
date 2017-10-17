@@ -57,3 +57,4 @@ project/plugins/project/
 aclImdb*
 *.iml
 *.bak
+*.p

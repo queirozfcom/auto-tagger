@@ -5,6 +5,9 @@ def truncate_labels(labels, min_doc_count):
     remove labels that occur in less than min_doc_count documents
     """
 
+    if min_doc_count == 0:
+        return labels
+
     label_index = dict()
 
     for label_row in labels:
