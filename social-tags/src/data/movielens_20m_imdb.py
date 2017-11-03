@@ -2,7 +2,8 @@ import pandas as pd
 import os
 import pickle
 import re
-import string
+
+from helpers.labels import filter_tag,get_top_unique_tags
 
 
 def load_or_get_from_cache(path_to_movies_file,
@@ -73,19 +74,44 @@ def _load_into_dataframe(
     # to the same movie using the same tag
     tag_assignments_df = tag_assignments_df.drop(['timestamp'], axis=1)
 
+    # add top 25 unique tags for each movie
     docs_df = pd.merge(
         left=movies_df,
         right=(
             tag_assignments_df.groupby("movie_id")["tag"].apply(
-                # counting only given tag only once.
-                lambda tags: ','.join(set([_filter_tag(str(t)) for t in tags]))
+                lambda tags: ','.join(get_top_unique_tags([filter_tag(str(t).strip()) for t in tags]))
             ).to_frame().reset_index()
         ),
         on="movie_id",
         how="left"
     ).rename(
-        columns={'tag': 'tags'}
+        columns={'tag': 'unique_tags'}
     )
+
+    # add num_users
+    docs_df = pd.merge(
+        left=docs_df,
+        right=(
+            tag_assignments_df.groupby("movie_id")["user_id"].nunique().to_frame().reset_index()
+        ),
+        on="movie_id",
+        how="left"
+    ).rename(
+        columns={'user_id': 'num_users'}
+    )
+
+    # drop movies with no tags
+    docs_df = docs_df[docs_df["unique_tags"].notnull()]
+
+    # add num_tags
+    docs_df['num_unique_tags'] = docs_df['unique_tags'].apply(lambda tags: len(tags.split(',')))
+
+    # in delicious-t140 all documents have been tagged by at least
+    # 2 users
+    docs_df = docs_df[docs_df['num_users'] != 1]
+
+    # in delicious-t140 all documents have at least 2 tags
+    docs_df = docs_df[docs_df['num_unique_tags'] != 1]
 
     unique_movie_titles_movielens = set(docs_df["title"].values)
 
@@ -94,11 +120,16 @@ def _load_into_dataframe(
     plot_dicts = list()
 
     with open(path_to_movie_plots_file, encoding="ISO-8859-1") as file:
+
         recording = False
         current_title = None
         current_block_lines = list()
 
-        for line in file:
+        for (index, line) in enumerate(file):
+
+            # first 15 lines are just metadata
+            if index <= 14:
+                continue
 
             if not recording:
                 if line.startswith("MV:"):
@@ -138,8 +169,7 @@ def _load_into_dataframe(
         how="right"
     )
 
-    # drop movies with no tags
-    docs_df = docs_df[docs_df["tags"].notnull()]
+
 
     return docs_df
 
@@ -253,22 +283,3 @@ def _format_title_to_movielens_format(original_title):
 
     # no match, return original
     return original_title
-
-
-def _filter_tag(tag):
-    """
-    cleans a tag (removes all punctuation and replaces spaces with dashes)
-
-    (inspired by https://github.com/ktsaurabh/recursive_WSABIE/blob/master/tag_embeddings_test_rsdae.py)
-
-    :param tag: possibly badly formatted tag
-    :return: clean tag
-    """
-
-    punctuation_pattern = '[' + string.punctuation + ']'
-
-    no_punctuation = re.sub(punctuation_pattern, '', tag)
-
-    clean_tag = re.sub('\s+', '-', no_punctuation)
-
-    return clean_tag.lower()
