@@ -1,10 +1,23 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
 from joblib import Parallel, delayed
+import pickle
+import os
+
+
+def load_or_get_from_cache(path_to_file, interim_data_root):
+
+    if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
+        docs_df = pickle.load(open("docs_df.p", "rb"))
+    else:
+        docs_df = _load_taginfo_into_dataframe(path_to_file)
+        pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
+
+    return docs_df
 
 
 # read the tag-assignment file (taginfo.xml) into a dataframe
-def load_taginfo_into_dataframe(input_filepath):
+def _load_taginfo_into_dataframe(input_filepath):
     tree = ET.parse(input_filepath)
 
     dataset = tree.getroot()

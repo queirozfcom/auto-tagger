@@ -3,6 +3,10 @@ def truncate_labels(labels, min_doc_count):
     labels is an array of label sets.
 
     remove labels that occur in less than min_doc_count documents
+
+    :param labels: list of lists
+    :param min_doc_count: integer
+    :return:
     """
 
     if min_doc_count == 0:

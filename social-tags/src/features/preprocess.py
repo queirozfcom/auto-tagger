@@ -30,3 +30,4 @@ def _clean_html(text):
 
     # this is the pattern for html tags
     return re.sub('<[^>]+>', '', text)
+

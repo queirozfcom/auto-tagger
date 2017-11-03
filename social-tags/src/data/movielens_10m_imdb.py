@@ -100,9 +100,11 @@ def _extract_title(line_with_title):
     the actual movie title from this line
 
     Sample lines:
-        MV: "#BlackLove" (2015) {Bringing Sexy Back (#1.3)}
-        MV: "13 Going on 13" (????) {(#1.2)}
-        MV: "100% Senorita" (2003/I)
+        MV: Among the Shadows (2014)
+        MV: 13 Going on 13 (????) {(#1.2)}
+    Extracted Titles:
+        Among the Shadows (2014)
+        13 Going on 13 (????)
 
     :param line_with_title:
     :return: title, extracted from given line
