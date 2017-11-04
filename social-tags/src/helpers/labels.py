@@ -68,9 +68,21 @@ def truncate_labels(labels, min_doc_count):
 
     remove labels that occur in less than min_doc_count documents
 
-    :param labels: list of lists
+    Sample input:
+        [
+            ['foo','bar','baz'],
+            ['foo','quux']
+        ]
+
+    Sample output (for min_doc_count=2):
+        [
+            ['foo'],
+            ['foo']
+        ]
+
+    :param labels: list of lists of strings OR a pandas.Series column with strings (comma-separated tags)
     :param min_doc_count: integer
-    :return:
+    :return: list of lists of strings
     """
 
     if min_doc_count == 0:
