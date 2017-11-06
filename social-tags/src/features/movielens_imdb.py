@@ -1,7 +1,3 @@
-import re
-import string
-
-
 def filter_rare_tags(docs_df, min_doc_df=None):
     """
     remove tags that occur in less than $min_doc_df documents
@@ -21,4 +17,3 @@ def filter_rare_tags(docs_df, min_doc_df=None):
     for tag_set in tag_sets:
         for tag in tag_set.split(','):
             all_tags.add(tag)
-

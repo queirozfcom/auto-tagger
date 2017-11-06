@@ -1,10 +1,13 @@
 import pandas as pd
+import numpy as np
 import xml.etree.ElementTree as ET
 from joblib import Parallel, delayed
 import pickle
 import os
 
 from helpers.labels import filter_tag
+from helpers.delicious_t140 import load_contents, make_path_to_file
+
 
 def load_or_get_from_cache(path_to_file, interim_data_root):
     if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
@@ -16,7 +19,36 @@ def load_or_get_from_cache(path_to_file, interim_data_root):
     return docs_df
 
 
+def make_sample_with_contents_or_get_from_cache(source_dataframe, interim_data_root, data_root, sample_frac=None):
+    """
+    extracts a random sample of source_dataframe and loads text contents for each document in the sampled dataframe.
+
+    :param source_dataframe: the full delicious-t140 dataframe, with document tags and IDs, but no contents yet
+    :param interim_data_root: path to the directory where interim data is kept
+    :param data_root: path to the directory where the original files were downloaded
+    :param sample_frac: sample fraction. default is 50
+    :return: a sample
+    """
+    if sample_frac is None:
+        sample_frac = 50
+
+    if os.path.isfile(interim_data_root.rstrip('/') + "/sample_df.p"):
+        sample_df = pickle.load(open(interim_data_root.rstrip('/') + "/sample_df.p", "rb"))
+    else:
+        random_indices = np.random.choice(source_dataframe.index.values, int(len(source_dataframe) / sample_frac),
+                                          replace=False)
+
+        sample_df = source_dataframe.loc[random_indices]
+        sample_df = sample_df.reset_index().drop(['index'], axis=1)
+        sample_df['contents'] = sample_df['hash'].map(lambda hash: load_contents(make_path_to_file(data_root, hash)))
+
+        pickle.dump(sample_df, open(interim_data_root.rstrip('/') + "/sample_df.p", "wb"))
+
+    return sample_df
+
+
 # read the tag-assignment file (taginfo.xml) into a dataframe
+# no contents
 def _load_taginfo_into_dataframe(input_filepath):
     tree = ET.parse(input_filepath)
 
@@ -38,7 +70,7 @@ def _load_taginfo_into_dataframe(input_filepath):
 
     # similarly, only 1 document has been tagged by only one user
     # I'll take that out too, since it's probably noise.
-    docs_df = docs_df[docs_df['num_unique_tags'] != 1]
+    docs_df = docs_df[docs_df['num_users'] != 1]
 
     docs_df = docs_df[docs_df["filetype"] == "html"].reindex()
 
