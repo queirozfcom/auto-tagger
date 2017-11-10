@@ -44,11 +44,11 @@ def load_movie_plots(
                 # reached start of next movie
                 recording = False
 
-                clean_movie_text = re.sub(' PL:', '', current_movie_text)
+                clean_movie_text = re.sub(r"\s*PL:\s*", ' ', current_movie_text.strip())
 
                 current_movie_text = ""
 
-                info = {'title': current_title, 'plot': clean_movie_text}
+                info = {'title': current_title, 'plot': clean_movie_text.strip()}
                 plot_dicts.append(info)
 
             if recording:
@@ -57,9 +57,9 @@ def load_movie_plots(
                 # in which case we should add the summary_separator and ignore the contents
                 # of the line itself.
                 if line.startswith('BY:'):
-                    current_movie_text += summary_separator
+                    current_movie_text = current_movie_text.strip() + summary_separator
                 else:
-                    current_movie_text += " " + line.rstrip('\n')
+                    current_movie_text = current_movie_text.strip() + " " + line.rstrip('\n').strip()
 
     return plot_dicts
 
