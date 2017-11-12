@@ -1,45 +1,38 @@
 import pandas as pd
 import os
 import pickle
-import re
 
 from helpers.labels import filter_tag, get_top_unique_tags
 from helpers.movielens_imdb import load_movie_plots
 
 
-def get_from_cache(path_to_movies_file,
-                   path_to_tag_assignment_file,
-                   path_to_movie_plots_file,
-                   interim_data_root):
+def load_or_get_from_cache(path_to_movies_file,
+                           path_to_tag_assignment_file,
+                           path_to_movie_plots_file,
+                           interim_data_root):
     if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
         docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df.p", "rb"))
     else:
-        raise Exception('cache not set')
-        # docs_df = load_into_dataframe(path_to_movies_file,
-        #                                path_to_tag_assignment_file,
-        #                                path_to_movie_plots_file)
-        #
-        # pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
+        docs_df = _load_into_dataframe(path_to_movies_file,
+                                      path_to_tag_assignment_file,
+                                      path_to_movie_plots_file)
+
+        pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
 
     return docs_df
 
 
-def load_into_dataframe(
+def _load_into_dataframe(
         path_to_movies_file,
         path_to_tag_assignment_file,
-        path_to_movie_plots_file,
-        summary_separator=None):
+        path_to_movie_plots_file):
     """
 
     :param path_to_movies_file:
     :param path_to_tag_assignment_file:
     :param path_to_movie_plots_file:
-    :param summary_separator:
     :return: docs dataframe
     """
-
-    if summary_separator is None:
-        summary_separator = " "
 
     # step 1: movie and tags
 
@@ -125,7 +118,7 @@ def load_into_dataframe(
     # step 2: fetch plots for movies in the dataframe
 
     plot_dicts = load_movie_plots(path_to_movie_plots_file, unique_movie_titles_movielens,
-                                  summary_separator=summary_separator)
+                                  summary_separator=" ")
 
     plots_df = pd.DataFrame(columns=['title', 'plot']).astype({'title': 'object', 'plot': 'object'})
     plots_df = plots_df.from_records(plot_dicts)
