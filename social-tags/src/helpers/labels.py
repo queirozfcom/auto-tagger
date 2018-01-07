@@ -16,17 +16,25 @@ def filter_tag(tag):
     # string.punctuation is the same as '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
     punct = string.punctuation
 
-    # keep single quotes and underscores
+    # keep these
     punct = punct.replace("'", '')
-    punct = punct.replace("_", '')
+    punct = punct.replace("-", '')
 
     punctuation_pattern = '[' + punct + ']'
 
     no_punctuation = re.sub(punctuation_pattern, '', tag)
 
     clean_tag = re.sub('\s+', '-', no_punctuation)
+    clean_tag = re.sub('-+','-',clean_tag)
 
-    return clean_tag.lower()
+    # if clean_tag is a single dash, it's probably some special character
+    # that was turned into a dash
+    final = clean_tag.lower().strip()
+
+    if final == '-':
+        return ''
+    else:
+        return final
 
 
 def get_top_unique_tags(tags_assigned, k=None):

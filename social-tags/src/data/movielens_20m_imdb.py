@@ -1,3 +1,4 @@
+import csv
 import pandas as pd
 import os
 import pickle
@@ -6,130 +7,51 @@ from helpers.labels import filter_tag, get_top_unique_tags
 from helpers.movielens_imdb import load_movie_plots
 
 
-def load_or_get_from_cache(path_to_movies_file,
-                           path_to_tag_assignment_file,
-                           path_to_movie_plots_file,
-                           interim_data_root):
+def load_df_or_get_from_cache(path_to_file, interim_data_root):
+
     if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
         docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df.p", "rb"))
     else:
-        docs_df = _load_into_dataframe(path_to_movies_file,
-                                      path_to_tag_assignment_file,
-                                      path_to_movie_plots_file)
-
+        docs_df = _load_into_dataframe(path_to_file)
         pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
 
     return docs_df
 
 
-def _load_into_dataframe(
-        path_to_movies_file,
-        path_to_tag_assignment_file,
-        path_to_movie_plots_file):
+def _load_into_dataframe(path_to_file):
     """
 
     :param path_to_movies_file:
-    :param path_to_tag_assignment_file:
-    :param path_to_movie_plots_file:
     :return: docs dataframe
     """
 
     # step 1: movie and tags
 
-    movies_df = pd.read_csv(path_to_movies_file,
-                            sep=',',
+    movies_df = pd.read_csv(path_to_file,
                             skiprows=1,
+                            escapechar='\\',  # escape double quotes using a single backslash
+                            doublequote=False,  # don't duplicate every double quote,
+                            quotechar='"',
+                            quoting=csv.QUOTE_ALL,
                             names=[
-                                'movie_id', 'title', 'genres'],
+                                'movie_id', 'title', 'synopsis', 'tags','num_tags'],
                             dtype={
                                 'movie_id': 'int64',
                                 'title': 'object',
-                                'genres': 'object'
+                                'synopsis': 'object',
+                                'tags': 'object',
+                                "num_tags": "int32"
                             })
 
-    # there are some duplicated movie titles (in case a movie was
+
+    # there may be some duplicated movie titles (in case a movie was
     # re-launched for video or TV) or there was some user error.
-    duplicated_titles = movies_df.duplicated(subset=['title'], keep=False)
+    duplicated_titles = movies_df.duplicated(subset=['title'], keep='first')
     movies_df = movies_df[~duplicated_titles]
 
-    # we don't need genres right now
-    movies_df = movies_df.drop(['genres'], axis=1)
+    movies_df = movies_df.sort_values('movie_id').reset_index().drop('index',axis=1)
 
-    tag_assignments_df = pd.read_csv(path_to_tag_assignment_file,
-                                     sep=',',
-                                     skiprows=1,
-                                     names=[
-                                         'user_id',
-                                         'movie_id',
-                                         'tag',
-                                         'timestamp'],
-                                     dtype={
-                                         'user_id': 'int64',
-                                         'movie_id': 'int64',
-                                         'tag': 'object',
-                                         'timestamp': 'object'
-                                     })
-
-    # we could drop user ids too but we need it to differentiate among tag assignments
-    # to the same movie using the same tag
-    tag_assignments_df = tag_assignments_df.drop(['timestamp'], axis=1)
-
-    # add top 25 unique tags for each movie
-    docs_df = pd.merge(
-        left=movies_df,
-        right=(
-            tag_assignments_df.groupby("movie_id")["tag"].apply(
-                lambda tags: ','.join(get_top_unique_tags([filter_tag(str(t).strip()) for t in tags]))
-            ).to_frame().reset_index()
-        ),
-        on="movie_id",
-        how="left"
-    ).rename(
-        columns={'tag': 'unique_tags'}
-    )
-
-    # add num_users
-    docs_df = pd.merge(
-        left=docs_df,
-        right=(
-            tag_assignments_df.groupby("movie_id")["user_id"].nunique().to_frame().reset_index()
-        ),
-        on="movie_id",
-        how="left"
-    ).rename(
-        columns={'user_id': 'num_users'}
-    )
-
-    # drop movies with no tags
-    docs_df = docs_df[docs_df["unique_tags"].notnull()]
-
-    # add num_tags
-    docs_df['num_unique_tags'] = docs_df['unique_tags'].apply(lambda tags: len(tags.split(',')))
-
-    # in delicious-t140 all documents have been tagged by at least
-    # 2 users
-    docs_df = docs_df[docs_df['num_users'] != 1]
-
-    # in delicious-t140 all documents have at least 2 tags
-    docs_df = docs_df[docs_df['num_unique_tags'] != 1]
-
-    unique_movie_titles_movielens = set(docs_df["title"].values)
-
-    # step 2: fetch plots for movies in the dataframe
-
-    plot_dicts = load_movie_plots(path_to_movie_plots_file, unique_movie_titles_movielens,
-                                  summary_separator=" ")
-
-    plots_df = pd.DataFrame(columns=['title', 'plot']).astype({'title': 'object', 'plot': 'object'})
-    plots_df = plots_df.from_records(plot_dicts)
-
-    # Step 3) join everything and return
-
-    docs_df = pd.merge(
-        left=docs_df,
-        right=plots_df,
-        on="title",
-        how="right"
-    )
+    # stick to the standard name
+    docs_df = movies_df
 
     return docs_df

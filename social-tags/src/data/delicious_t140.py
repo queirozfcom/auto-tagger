@@ -10,11 +10,11 @@ from helpers.delicious_t140 import load_contents, make_path_to_file
 
 
 def load_or_get_from_cache(path_to_file, interim_data_root):
-    if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
-        docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df.p", "rb"))
+    if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df_old.p"):
+        docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df_old.p", "rb"))
     else:
         docs_df = _load_taginfo_into_dataframe(path_to_file)
-        pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
+        pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df_old.p", "wb"))
 
     return docs_df
 
