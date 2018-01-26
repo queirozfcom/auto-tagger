@@ -26,16 +26,16 @@ def make_sample_with_contents_or_get_from_cache(source_dataframe, interim_data_r
     :param source_dataframe: the full delicious-t140 dataframe, with document tags and IDs, but no contents yet
     :param interim_data_root: path to the directory where interim data is kept
     :param data_root: path to the directory where the original files were downloaded
-    :param sample_frac: sample fraction. default is 50
+    :param sample_frac: sample fraction. default is 0.1
     :return: a sample
     """
     if sample_frac is None:
-        sample_frac = 50
+        sample_frac = 0.1
 
     if os.path.isfile(interim_data_root.rstrip('/') + "/sample_df.p"):
         sample_df = pickle.load(open(interim_data_root.rstrip('/') + "/sample_df.p", "rb"))
     else:
-        random_indices = np.random.choice(source_dataframe.index.values, int(len(source_dataframe) / sample_frac),
+        random_indices = np.random.choice(source_dataframe.index.values, int(len(source_dataframe) * sample_frac),
                                           replace=False)
 
         sample_df = source_dataframe.loc[random_indices]

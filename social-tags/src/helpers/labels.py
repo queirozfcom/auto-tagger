@@ -100,6 +100,7 @@ def truncate_labels(labels, min_doc_count):
 
     for label_row in labels:
 
+
         for label in label_row:
             if label_index.get(label) is None:
                 label_index[label] = 1
