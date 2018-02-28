@@ -3,17 +3,23 @@ import pandas as pd
 import os
 import pickle
 
-from helpers.labels import filter_tag, get_top_unique_tags
-from helpers.movielens_imdb import load_movie_plots
+from src.helpers.labels import filter_tag, get_top_unique_tags
+from src.helpers.movielens_imdb import load_movie_plots
 
 
-def load_df_or_get_from_cache(path_to_file, interim_data_root):
+def load_df_or_get_from_cache(path_to_file, interim_data_root, bust_cache=None):
+    if bust_cache is None:
+        bust_cache = False
 
-    if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
-        docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df.p", "rb"))
-    else:
+    if bust_cache:
         docs_df = _load_into_dataframe(path_to_file)
         pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
+    else:
+        if os.path.isfile(interim_data_root.rstrip('/') + "/docs_df.p"):
+            docs_df = pickle.load(open(interim_data_root.rstrip('/') + "/docs_df.p", "rb"))
+        else:
+            docs_df = _load_into_dataframe(path_to_file)
+            pickle.dump(docs_df, open(interim_data_root.rstrip('/') + "/docs_df.p", "wb"))
 
     return docs_df
 
