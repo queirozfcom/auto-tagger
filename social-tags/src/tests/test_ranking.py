@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .context import ranking
+from src.tests.context import ranking
 
 import numpy as np
 from numpy.testing import *
@@ -387,7 +387,7 @@ class RecallSuite(unittest.TestCase):
 
         values_actual = ranking.recall_at_k(y_true=arr1, y_score=scores1, k=k)
 
-        print(values_actual)
+        # print(values_actual)
 
 
 class F1Suite(unittest.TestCase):
@@ -554,6 +554,39 @@ class MicroF1Suite(unittest.TestCase):
         expected_micro_average_at_k = 5 / 12
 
         assert_allclose(ranking.micro_f1_at_k(arr1, scores1, k=k), expected_micro_average_at_k)
+
+    def test1_f1_2d_normalized(self):
+        arr1 = np.array([
+            [0,  1,  0],
+            [1,  1,  0],
+            [0,  0,  1],
+            [0,  0,  1],
+            [1,  1,  1],
+        ])
+        scores1 = np.array([
+            [0.2, 0.5, 0.3],
+            [0.5, 0.2, 0.3],
+            [0.6, 0.1, 0.3],
+            [0.5, 0.4, 0.1],
+            [0.2, 0.5, 0.1],
+        ])
+
+        # stuff in parentheses is (TP+FN+FP)
+        k = 1
+        expected_micro_average_at_k = 3 / (3 + 0 + 2)
+
+        assert_allclose(ranking.micro_f1_at_k(arr1, scores1, k=k, normalize=True), expected_micro_average_at_k)
+
+        k = 2
+        expected_micro_average_at_k = 5 / (5 + 0 + 5)
+
+        assert_allclose(ranking.micro_f1_at_k(arr1, scores1, k=k, normalize=True), expected_micro_average_at_k)
+
+        k = 3
+        expected_micro_average_at_k = 8 / (8 + 0 + 7)
+
+        assert_allclose(ranking.micro_f1_at_k(arr1, scores1, k=k, normalize=True), expected_micro_average_at_k)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -69,8 +69,8 @@ def precision_at_k(y_true, y_score, k=None, normalize=None):
     # just assume the true value is 1 and false is zero
     positive_label = 1
 
-    y_true = _normalize_input(y_true)
-    y_score = _normalize_input(y_score)
+    y_true = _reshape_input(y_true)
+    y_score = _reshape_input(y_score)
 
     # array indices in increasing order
     order_ascending = np.argsort(y_score, axis=1)
@@ -109,17 +109,20 @@ def precision_at_k(y_true, y_score, k=None, normalize=None):
     return precisions_at_k.reshape(-1, 1)
 
 
-def micro_f1_at_k(y_true, y_score, k=None):
+def micro_f1_at_k(y_true, y_score, k=None, normalize=None):
     if k is None:
         k = 10
+
+    if normalize is None:
+        normalize = False
 
     _validate_inputs(y_true, y_score)
 
     # just assume the true value is 1 and false is zero
     positive_label = 1
 
-    y_true = _normalize_input(y_true)
-    y_score = _normalize_input(y_score)
+    y_true = _reshape_input(y_true)
+    y_score = _reshape_input(y_score)
 
     # array indices in increasing order
     order_ascending = np.argsort(y_score, axis=1)
@@ -156,8 +159,12 @@ def micro_f1_at_k(y_true, y_score, k=None):
     if sum_tp + sum_fn + sum_fp == 0:
         return 0.0
     else:
-        micro_averaged_f1_at_k = sum_tp / (sum_tp + sum_fn + sum_fp)
+        if normalize:
+            micro_averaged_f1_at_k = sum_tp / (sum_tp + sum_fp)
+        else:
+            micro_averaged_f1_at_k = sum_tp / (sum_tp + sum_fn + sum_fp)
         return float(micro_averaged_f1_at_k)
+
 
 def recall_at_k(y_true, y_score, k=None, normalize=None):
     """
@@ -180,8 +187,8 @@ def recall_at_k(y_true, y_score, k=None, normalize=None):
     # just assume the true value is 1 and false is zero
     positive_label = 1
 
-    y_true = _normalize_input(y_true)
-    y_score = _normalize_input(y_score)
+    y_true = _reshape_input(y_true)
+    y_score = _reshape_input(y_score)
 
     # array indices in increasing order
     order_ascending = np.argsort(y_score, axis=1)
@@ -265,7 +272,7 @@ def _validate_inputs(y_true, y_score):
         raise ValueError("y_true must be a binary indicator ndarray")
 
 
-def _normalize_input(array):
+def _reshape_input(array):
     """
 
     In case the argument is a 1-d array turn it into
@@ -281,3 +288,4 @@ def _normalize_input(array):
         return array.reshape(1, -1).astype(float)
     else:
         return array.astype(float)
+
