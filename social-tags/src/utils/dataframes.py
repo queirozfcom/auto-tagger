@@ -5,11 +5,17 @@ def sample_rows(source_dataframe, num_samples=None):
     """
 
     :param source_dataframe:
-    :param num_samples:
+    :param num_samples: if it's a number between 0 and 1, it's used as the sampling rate. If it's an integer larger than
+        1 then it's used as the number of samples to take.
     :return:
     """
     if num_samples is None:
         num_samples = 100
+    elif num_samples >0 and num_samples <1.0:
+        num_samples = int(len(source_dataframe)*num_samples)
+    elif num_samples <= 0:
+        raise Exception("num_samples must be a positive number")
+
 
     random_indices = np.random.choice(source_dataframe.index.values, num_samples, replace=False)
 
