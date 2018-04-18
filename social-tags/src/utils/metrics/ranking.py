@@ -160,9 +160,9 @@ def micro_f1_at_k(y_true, y_score, k=None, normalize=None):
         return 0.0
     else:
         if normalize:
-            micro_averaged_f1_at_k = sum_tp / (sum_tp + sum_fp)
+            micro_averaged_f1_at_k = (2 * sum_tp) / (2 * sum_tp + sum_fp)
         else:
-            micro_averaged_f1_at_k = sum_tp / (sum_tp + sum_fn + sum_fp)
+            micro_averaged_f1_at_k = (2 * sum_tp) / (2 * sum_tp + sum_fn + sum_fp)
         return float(micro_averaged_f1_at_k)
 
 
@@ -288,4 +288,3 @@ def _reshape_input(array):
         return array.reshape(1, -1).astype(float)
     else:
         return array.astype(float)
-
