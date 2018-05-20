@@ -1,7 +1,6 @@
 import numpy as np
 
-from hausdorff import hausdorff
-
+from src.utils.distances import hausdorff
 
 def make_distance_matrix_for_segments(vectorized_segments, distance='hausdorff'):
     """
