@@ -1,7 +1,9 @@
 import numpy as np
 
 
-def get_predicted_labels_from_neighbours(neighbour_labels, neighbour_distances, weights=None):
+# we can remove this because I've created a better way to do this.
+#
+def __get_predicted_labels_from_neighbours(neighbour_labels, neighbour_distances, weights=None):
     """
     Returns the predicted labels (as a binary indicator array) for an instance, based upon
     the given neighbour_labels and neighbour_distances.
@@ -15,6 +17,8 @@ def get_predicted_labels_from_neighbours(neighbour_labels, neighbour_distances, 
     :param weights: either 'distance' or 'uniform'
     :return:
     """
+
+    raise Exception('THIS FUNCTION IS DEPRECTAED, THERES NO NEED TO USE IT')
 
     assert (neighbour_labels.shape[0] == len(neighbour_distances))
 

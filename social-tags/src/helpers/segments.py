@@ -7,7 +7,7 @@ def make_distance_matrix_for_segments(vectorized_segments, distance='hausdorff')
     Returns the distance matrix for the documents having the given segments.
 
     :param vectorized_segments: array of size M, where each element is a "bag" of segments: matrix of
-        shape (*,NUM_FEATURES), and each row on this matrix is the TF-IDF vector for one segment.
+        shape (*,NUM_FEATURES), and each row on this matrix is the feature vector for one segment.
     :param distance: how to compare the two bags
     :return: pairwise distance matrix (MxM matrix)
     """

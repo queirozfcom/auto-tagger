@@ -71,11 +71,11 @@ def load_or_get_from_cache(path_to_file, interim_data_root):
     return docs_df
 
 
-def load_or_get_from_cache_with_contents(source_dataframe, interim_data_root, data_root, sample_frac=None):
+def load_or_get_from_cache_with_contents(source_dataframe_with_no_contents, interim_data_root, data_root, sample_frac=None):
     """
     extracts a random sample of source_dataframe and loads text contents for each document in the sampled dataframe.
 
-    :param source_dataframe: the full delicious-t140 dataframe, with document tags and IDs, but no contents yet
+    :param source_dataframe_with_no_contents: the full delicious-t140 dataframe, with document tags and IDs, but no contents yet
         or None if you just want to use this method to load the dataset with contents from cache
     :param interim_data_root: path to the directory where interim data is kept. This is our cache directory.
     :param data_root: path to the directory where the original files were downloaded, or None if you just want
@@ -98,10 +98,10 @@ def load_or_get_from_cache_with_contents(source_dataframe, interim_data_root, da
         sample_df = sample_df_src.reset_index().drop(['index'], axis=1).copy()
 
     else:
-        random_indices = np.random.choice(source_dataframe.index.values, int(len(source_dataframe) * sample_frac),
+        random_indices = np.random.choice(source_dataframe_with_no_contents.index.values, int(len(source_dataframe_with_no_contents) * sample_frac),
                                           replace=False)
 
-        sample_df = source_dataframe.loc[random_indices]
+        sample_df = source_dataframe_with_no_contents.loc[random_indices]
         sample_df = sample_df.reset_index().drop(['index'], axis=1)
         sample_df['contents'] = sample_df['hash'].map(
             lambda hash: clean_text_delicious(load_contents(make_path_to_file(data_root, hash))))

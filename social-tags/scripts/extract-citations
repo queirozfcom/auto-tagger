@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import re
+
+# extracts all occurrences of citations like 
+# \cite and \citep{}
+# note that there may be multiple like \cite{foo_etal_2009,bar_2009}
+
+cite_pat = r"\\citep?{[-_,\w]+}"
+
+name_pat = r"\\citep?{([-_,\w]+)}"
+
+with open('text-with-citations.txt','r') as f:
+
+	contents = f.read()
+
+	matched_strs = re.findall(cite_pat,contents)
+
+	names = []
+
+	for string in matched_strs:
+		name = re.match(name_pat,string).group(1)
+
+		if "," in name:
+			for subname in name.split(","):
+				names.append(subname)
+		else:
+			names.append(name)
+
+	print(len(names),len(set(names)))
+
+all_needed_refs = set(names)
+
+
+refs_pat = r"@\w+{[^@]+}(?=\s*\n+)"
+
+refname_pat = r"@\w+{([-_\w]+),\s*"
+
+all_ref_names = []
+
+final_ref_list = []
+
+with open('main-full.bib','r') as f:
+	contents = f.read()
+	matches = re.findall(refs_pat,contents,re.IGNORECASE)
+
+	for match in matches:
+		ref_name = match.split("\n")[0]
+
+		try:
+
+			ref_name = re.match(refname_pat,ref_name).group(1)
+
+			all_ref_names.append(ref_name)
+		except AttributeError:
+			print('not matched: {}'.format(ref_name))
+			pass
+
+
+		if ref_name in all_needed_refs:
+			final_ref_list.append(match.strip())
+
+# just to make sure there is no used refs that we haven't covered
+for used_ref in all_needed_refs:
+	if used_ref not in all_ref_names:
+		print('used ref not found in all refs: {}'.format(used_ref))
+
+with open('main-lite.bib','w+') as f:
+	for ref in final_ref_list:
+		f.write(ref+"\n\n")
